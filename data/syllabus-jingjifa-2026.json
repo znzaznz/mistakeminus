@@ -1,0 +1,682 @@
+{
+  "subject": "中级会计·经济法",
+  "year": 2026,
+  "source": "财政部会计司 2026年度中级会计专业技术资格考试大纲",
+  "source_url": "http://kjs.mof.gov.cn/zhengcefabu/202604/t20260409_3987210.htm",
+  "chapters": [
+    {
+      "name": "总论",
+      "sections": [
+        {
+          "name": "法律体系",
+          "knowledge_points": [
+            {
+              "name": "法律体系的概念和构成",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "法律部门的概念和构成",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "法律行为与代理",
+          "knowledge_points": [
+            {
+              "name": "法律行为制度",
+              "mastery": "掌握"
+            },
+            {
+              "name": "代理制度",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "经济纠纷解决途径",
+          "knowledge_points": [
+            {
+              "name": "经济纠纷的解决途径",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "仲裁法律制度的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "民事诉讼法律制度的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "行政复议法律制度的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "行政诉讼法律制度的规定",
+              "mastery": "掌握"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "公司法律制度",
+      "sections": [
+        {
+          "name": "公司法律制度概述",
+          "knowledge_points": [
+            {
+              "name": "公司法的概念与性质",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "公司法人财产权制度",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "公司登记管理",
+          "knowledge_points": [
+            {
+              "name": "公司登记管理的规定",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "有限责任公司",
+          "knowledge_points": [
+            {
+              "name": "有限责任公司设立的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "有限责任公司组织机构的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "有限责任公司股权转让的规定",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "股份有限公司",
+          "knowledge_points": [
+            {
+              "name": "股份有限公司设立的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "股份有限公司组织机构的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "上市公司组织机构的特别规定",
+              "mastery": "了解"
+            }
+          ]
+        },
+        {
+          "name": "国家出资公司组织机构的特别规定",
+          "knowledge_points": [
+            {
+              "name": "国家出资公司组织机构的特别规定",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "公司董事、监事、高级管理人员的资格和义务",
+          "knowledge_points": [
+            {
+              "name": "公司董事、监事、高级管理人员的资格",
+              "mastery": "掌握"
+            },
+            {
+              "name": "公司董事、监事、高级管理人员的义务",
+              "mastery": "掌握"
+            },
+            {
+              "name": "股东诉讼的规定",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "公司股份和公司债券",
+          "knowledge_points": [
+            {
+              "name": "公司股份发行和转让的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "公司债券的规定",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "公司财务、会计",
+          "knowledge_points": [
+            {
+              "name": "公司财务、会计的基本要求",
+              "mastery": "掌握"
+            },
+            {
+              "name": "公司利润分配的规定",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "公司合并、分立、增资、减资、解散和清算",
+          "knowledge_points": [
+            {
+              "name": "公司合并与分立的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "公司增资与减资的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "公司解散与清算的规定",
+              "mastery": "熟悉"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "合伙企业法律制度",
+      "sections": [
+        {
+          "name": "普通合伙企业",
+          "knowledge_points": [
+            {
+              "name": "普通合伙企业的设立",
+              "mastery": "掌握"
+            },
+            {
+              "name": "普通合伙企业财产",
+              "mastery": "掌握"
+            },
+            {
+              "name": "普通合伙企业事务执行的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "普通合伙企业与第三人关系的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "普通合伙企业的入伙与退伙规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "特殊的普通合伙企业的规定",
+              "mastery": "了解"
+            }
+          ]
+        },
+        {
+          "name": "有限合伙企业",
+          "knowledge_points": [
+            {
+              "name": "有限合伙企业设立的特殊规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "有限合伙企业合伙事务执行的特殊规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "有限合伙人财产份额出质与转让的特殊规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "有限合伙人债务清偿的特殊规定",
+              "mastery": "了解"
+            },
+            {
+              "name": "有限合伙人入伙与退伙的特殊规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "有限合伙企业合伙人性质转变的特殊规定",
+              "mastery": "了解"
+            }
+          ]
+        },
+        {
+          "name": "合伙企业的解散和清算",
+          "knowledge_points": [
+            {
+              "name": "合伙企业的解散和清算的规定",
+              "mastery": "了解"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "物权法律制度",
+      "sections": [
+        {
+          "name": "物权法通则",
+          "knowledge_points": [
+            {
+              "name": "物权的概念、种类和效力",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "物权变动制度",
+              "mastery": "掌握"
+            },
+            {
+              "name": "物权的保护制度",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "所有权",
+          "knowledge_points": [
+            {
+              "name": "所有权取得的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "共有的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "相邻关系的规定",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "用益物权",
+          "knowledge_points": [
+            {
+              "name": "土地承包经营权的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "建设用地使用权的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "宅基地使用权的规定",
+              "mastery": "了解"
+            },
+            {
+              "name": "居住权的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "地役权的规定",
+              "mastery": "了解"
+            }
+          ]
+        },
+        {
+          "name": "担保物权",
+          "knowledge_points": [
+            {
+              "name": "担保物权的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "抵押权的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "质权的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "留置权的规定",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "占有",
+          "knowledge_points": [
+            {
+              "name": "占有的分类和保护",
+              "mastery": "熟悉"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "合同法律制度",
+      "sections": [
+        {
+          "name": "合同法律制度概述",
+          "knowledge_points": [
+            {
+              "name": "合同的概念和分类",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "合同编调整范围和基本原则",
+              "mastery": "了解"
+            }
+          ]
+        },
+        {
+          "name": "合同的订立",
+          "knowledge_points": [
+            {
+              "name": "合同订立的形式",
+              "mastery": "掌握"
+            },
+            {
+              "name": "合同订立的方式",
+              "mastery": "掌握"
+            },
+            {
+              "name": "合同格式条款",
+              "mastery": "掌握"
+            },
+            {
+              "name": "合同成立的时间和地点",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "缔约过失责任的规定",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "合同的效力",
+          "knowledge_points": [
+            {
+              "name": "合同生效的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "效力待定合同的规定",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "合同的履行",
+          "knowledge_points": [
+            {
+              "name": "合同履行的规则",
+              "mastery": "掌握"
+            },
+            {
+              "name": "抗辩权的行使",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "合同的保全",
+          "knowledge_points": [
+            {
+              "name": "合同保全的概念",
+              "mastery": "掌握"
+            },
+            {
+              "name": "代位权的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "撤销权的规定",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "合同的变更和转让",
+          "knowledge_points": [
+            {
+              "name": "合同变更的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "合同转让的规定",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "合同的消灭",
+          "knowledge_points": [
+            {
+              "name": "清偿的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "抵销的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "提存的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "免除的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "混同的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "合同解除的规定",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "违约责任",
+          "knowledge_points": [
+            {
+              "name": "违约责任的概念与基本构成",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "承担违约责任的形式",
+              "mastery": "掌握"
+            },
+            {
+              "name": "免责事由",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "主要合同",
+          "knowledge_points": [
+            {
+              "name": "买卖合同的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "赠与合同的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "借款合同的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "保证合同的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "租赁合同的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "融资租赁合同的规定",
+              "mastery": "掌握"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "金融法律制度",
+      "sections": [
+        {
+          "name": "票据法律制度",
+          "knowledge_points": [
+            {
+              "name": "票据法的基础理论",
+              "mastery": "掌握"
+            },
+            {
+              "name": "汇票的规定及相关运用",
+              "mastery": "掌握"
+            },
+            {
+              "name": "本票的规定及相关运用",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "支票的规定及相关运用",
+              "mastery": "掌握"
+            },
+            {
+              "name": "涉外票据的概念与法律适用",
+              "mastery": "了解"
+            }
+          ]
+        },
+        {
+          "name": "证券法律制度",
+          "knowledge_points": [
+            {
+              "name": "证券与证券法的基础理论",
+              "mastery": "了解"
+            },
+            {
+              "name": "证券发行制度的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "证券交易制度的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "上市公司收购制度的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "信息披露制度的相关规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "投资者保护制度的规定",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "保险法律制度",
+          "knowledge_points": [
+            {
+              "name": "保险与保险法的基础理论",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "保险合同的相关规定",
+              "mastery": "掌握"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "财政法律制度",
+      "sections": [
+        {
+          "name": "预算法律制度",
+          "knowledge_points": [
+            {
+              "name": "预算基本原则与预算体制",
+              "mastery": "了解"
+            },
+            {
+              "name": "预算收支范围",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "预算编制、审查和批准的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "预算执行和调整的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "决算的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "预算监督的规定",
+              "mastery": "熟悉"
+            }
+          ]
+        },
+        {
+          "name": "国有资产管理法律制度",
+          "knowledge_points": [
+            {
+              "name": "企业国有资产管理法律制度的规定",
+              "mastery": "掌握"
+            },
+            {
+              "name": "行政事业性国有资产管理法律制度的规定",
+              "mastery": "掌握"
+            }
+          ]
+        },
+        {
+          "name": "政府采购法律制度",
+          "knowledge_points": [
+            {
+              "name": "政府采购当事人",
+              "mastery": "掌握"
+            },
+            {
+              "name": "政府采购方式",
+              "mastery": "掌握"
+            },
+            {
+              "name": "政府采购程序的规定",
+              "mastery": "了解"
+            },
+            {
+              "name": "政府采购合同的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "政府采购的质疑与投诉的规定",
+              "mastery": "熟悉"
+            },
+            {
+              "name": "政府采购监督检查的规定",
+              "mastery": "了解"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
