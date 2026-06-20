@@ -41,17 +41,14 @@ export default function App() {
         </div>
       </header>
       <main className="app-main">
-        <div className="tab-panel" hidden={tab !== "practice"}>
-          <Practice />
-        </div>
-        <div className="tab-panel" hidden={tab !== "mistakes"}>
-          <MistakeBook />
-        </div>
-        <div className="tab-panel" hidden={tab !== "weakness"}>
-          <WeaknessPage />
-        </div>
-        <div className="tab-panel" hidden={tab !== "upload"}>
-          <UploadPage />
+        {/* 条件渲染：切到某 tab 时重新挂载，useEffect 随之重新拉取后端最新数据，
+            避免做完题后错题本/薄弱点仍是切换前的旧数据。各页数据均持久化在后端，
+            切走再回来不丢进度。 */}
+        <div className="tab-panel">
+          {tab === "practice" && <Practice />}
+          {tab === "mistakes" && <MistakeBook />}
+          {tab === "weakness" && <WeaknessPage />}
+          {tab === "upload" && <UploadPage />}
         </div>
       </main>
     </>
