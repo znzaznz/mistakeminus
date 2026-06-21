@@ -56,6 +56,10 @@ NUM_START_RE = re.compile(r"(?m)^(?:\d{1,2}[\.、]|[（(]\d{1,2}[）)])\s*")
 BRACKET_Q_RE = re.compile(
     r"(?:【|\[)(单选题|单项选择题|多选题|多项选择题|判断题|简答题|计算分析题|综合题)(?:】|\])\s*"
 )
+TAG_RES = [
+    re.compile(r"本题考核[“\"\s]*([^。；;，,]+?)(?:[”\"\s]*知识点)?[。；;，,]"),
+    re.compile(r"【知识点】([^。；;，,]+)"),
+]
 
 
 @dataclass
@@ -267,35 +271,45 @@ def load_kps(conn: sqlite3.Connection) -> dict[str, list[sqlite3.Row]]:
     return out
 
 
-def score_kp(text: str, row: sqlite3.Row) -> int:
-    score = 0
+def explicit_tag(explanation: str) -> str | None:
+    for pattern in TAG_RES:
+        m = pattern.search(explanation or "")
+        if not m:
+            continue
+        tag = m.group(1).strip(" ：:、“”\"")
+        # ponytail: reject tags that swallowed the next section; OCR/PDF text sometimes drops newlines.
+        if any(x in tag for x in ("一、", "二、", "三、", "四、", "单选", "多选", "判断")):
+            return None
+        return tag if 2 <= len(tag) <= 40 else None
+    return None
+
+
+def score_tag(tag: str, row: sqlite3.Row) -> int:
     kp = row["kp_name"]
-    ep = row["exam_point"]
-    chapter = row["chapter"]
-    for value, weight in ((kp, 7), (ep, 5), (chapter, 2)):
-        if value and value in text:
-            score += weight
-    for token in re.findall(r"[\u4e00-\u9fff]{2,}", kp + " " + ep):
-        if len(token) >= 3 and token in text:
-            score += 1
-    return score
+    if tag == kp:
+        return 100
+    if kp and (tag in kp or kp in tag):
+        return 80
+    return 0
 
 
 def attach_kps(conn: sqlite3.Connection, questions: list[Question]) -> None:
     by_subject = load_kps(conn)
     for q in questions:
-        text = f"{q.stem} {q.explanation}"
+        tag = explicit_tag(q.explanation)
+        if not tag:
+            continue
         best = None
         best_score = 0
         for row in by_subject.get(q.subject, []):
-            score = score_kp(text, row)
+            score = score_tag(tag, row)
             if score > best_score:
                 best_score, best = score, row
-        if best and best_score >= 5:
+        if best and best_score >= 80:
             q.knowledge_point_id = int(best["id"])
             q.chapter = str(best["chapter"])
             q.exam_point = str(best["exam_point"])
-            q.confidence = min(0.9, q.confidence + best_score / 50)
+            q.confidence = min(0.9, q.confidence + best_score / 200)
 
 
 def source_ref(q: Question) -> str:
@@ -347,7 +361,7 @@ def backup_db() -> Path:
     return dst
 
 
-def run(pdf_dir: Path, *, dry: bool) -> dict:
+def run(pdf_dir: Path, *, dry: bool, replace: bool = False) -> dict:
     pdfs = sorted(pdf_dir.glob("*.pdf"))
     all_questions: list[Question] = []
     per_file = []
@@ -364,6 +378,8 @@ def run(pdf_dir: Path, *, dry: bool) -> dict:
         imported = {"inserted": 0, "duplicates": 0}
         if not dry and all_questions:
             backup = str(backup_db())
+            if replace:
+                conn.execute("DELETE FROM questions WHERE source = ?", (SOURCE,))
             imported = import_questions(conn, all_questions)
             conn.commit()
     finally:
@@ -413,8 +429,9 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--pdf-dir", type=Path, default=PDF_DIR)
     parser.add_argument("--import", dest="do_import", action="store_true")
+    parser.add_argument("--replace", action="store_true")
     args = parser.parse_args()
-    report = run(args.pdf_dir, dry=not args.do_import)
+    report = run(args.pdf_dir, dry=not args.do_import, replace=args.replace)
     print(json.dumps({k: report[k] for k in ["dry", "pdfs", "extracted", "mapped", "by_subject", "by_type", "imported", "backup"]}, ensure_ascii=False, indent=2))
     return 0
 
