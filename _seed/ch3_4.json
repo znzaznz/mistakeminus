@@ -1,0 +1,26 @@
+[
+  {"knowledge_point_id":39,"question_type":"单选","stem":"【单选】根据《合伙企业法》的规定，有限合伙人对有限合伙企业债务承担责任的范围是（　）。","options":[{"key":"A","text":"以其认缴的出资额为限"},{"key":"B","text":"承担无限连带责任"},{"key":"C","text":"以其全部自有财产"},{"key":"D","text":"以其退伙时取回的财产为限"}],"correct_answer":["A"],"explanation":"有限合伙人以其认缴的出资额为限对合伙企业债务承担责任。注意区分：普通合伙人承担无限连带责任。选项A当选。"},
+  {"knowledge_point_id":39,"question_type":"判断","stem":"有限合伙人的自有财产不足清偿其个人债务的，该合伙人的债权人可以请求人民法院强制执行该合伙人在有限合伙企业中的财产份额用于清偿。（　）","correct_answer":["对"],"explanation":"有限合伙人的自有财产不足清偿其个人债务的，该合伙人的债权人可以依法请求人民法院强制执行该合伙人在有限合伙企业中的财产份额用于清偿。本题表述正确。"},
+
+  {"knowledge_point_id":45,"question_type":"多选","stem":"【多选】根据物权法律制度的规定，下列各项中，属于物权保护方式的有（　）。","options":[{"key":"A","text":"请求确认物权"},{"key":"B","text":"请求返还原物"},{"key":"C","text":"请求排除妨害、消除危险"},{"key":"D","text":"请求损害赔偿"}],"correct_answer":["A","B","C","D"],"explanation":"物权的保护方式包括：确认物权，返还原物，排除妨害、消除危险，修理、重作、更换或者恢复原状，损害赔偿等。选项A、B、C、D均当选。"},
+  {"knowledge_point_id":45,"question_type":"单选","stem":"【单选】占有人的返还原物请求权，自侵占发生之日起（　）内未行使的，该请求权消灭。","options":[{"key":"A","text":"6个月"},{"key":"B","text":"1年"},{"key":"C","text":"2年"},{"key":"D","text":"3年"}],"correct_answer":["B"],"explanation":"占有人返还原物的请求权，自侵占发生之日起1年内未行使的，该请求权消灭。选项B当选。"},
+  {"knowledge_point_id":45,"question_type":"判断","stem":"物权受到侵害的，权利人可以通过和解、调解、仲裁、诉讼等途径解决。（　）","correct_answer":["对"],"explanation":"物权受到侵害的，权利人可以通过和解、调解、仲裁、诉讼等途径解决。本题表述正确。"},
+
+  {"knowledge_point_id":48,"question_type":"单选","stem":"【单选】根据物权法律制度的规定，处理不动产相邻关系应当遵循的原则是（　）。","options":[{"key":"A","text":"有利生产、方便生活、团结互助、公平合理"},{"key":"B","text":"谁主张、谁举证"},{"key":"C","text":"完全意思自治"},{"key":"D","text":"先来后到"}],"correct_answer":["A"],"explanation":"不动产相邻权利人应当按照有利生产、方便生活、团结互助、公平合理的原则，正确处理相邻关系。选项A当选。"},
+  {"knowledge_point_id":48,"question_type":"判断","stem":"相邻关系是法定权利，不动产权利人不得通过约定排除相邻权。（　）","correct_answer":["对"],"explanation":"相邻权为法定权利，不得通过约定排除；不动产权利人因相邻关系给相邻方造成损害的，应当给予补偿。本题表述正确。"},
+  {"knowledge_point_id":48,"question_type":"单选","stem":"【单选】不动产权利人因用水、排水、通行等利用相邻不动产给相邻权利人造成损害的，应当（　）。","options":[{"key":"A","text":"无需补偿"},{"key":"B","text":"给予补偿"},{"key":"C","text":"承担刑事责任"},{"key":"D","text":"返还该不动产"}],"correct_answer":["B"],"explanation":"不动产权利人因用水、排水、通行、铺设管线等利用相邻不动产，给相邻权利人造成损害的，应当给予补偿。选项B当选。"},
+
+  {"knowledge_point_id":50,"question_type":"单选","stem":"【单选】根据物权法律制度的规定，建设用地使用权（　）。","options":[{"key":"A","text":"自合同生效时设立"},{"key":"B","text":"自登记时设立"},{"key":"C","text":"自土地交付时设立"},{"key":"D","text":"自批准之日设立"}],"correct_answer":["B"],"explanation":"建设用地使用权自登记时设立（登记生效主义）。登记机构应当向建设用地使用权人发放权属证书。选项B当选。"},
+  {"knowledge_point_id":50,"question_type":"单选","stem":"【单选】根据物权法律制度的规定，住宅建设用地使用权期间届满的，（　）。","options":[{"key":"A","text":"自动续期"},{"key":"B","text":"自动收回"},{"key":"C","text":"须重新申请审批"},{"key":"D","text":"无偿收归国有"}],"correct_answer":["A"],"explanation":"住宅建设用地使用权期间届满的，自动续期，续期费用的缴纳或者减免依照法律、行政法规的规定办理。选项A当选。"},
+  {"knowledge_point_id":50,"question_type":"判断","stem":"建设用地使用权可以在土地的地表、地上或者地下分别设立。（　）","correct_answer":["对"],"explanation":"建设用地使用权可以在土地的地表、地上或者地下分别设立。本题表述正确。"},
+
+  {"knowledge_point_id":51,"question_type":"单选","stem":"【单选】根据物权法律制度的规定，下列关于宅基地使用权的表述中，正确的是（　）。","options":[{"key":"A","text":"宅基地使用权可以单独抵押"},{"key":"B","text":"宅基地使用权不得抵押"},{"key":"C","text":"一户可以拥有多处宅基地"},{"key":"D","text":"宅基地使用权可以自由转让给城镇居民"}],"correct_answer":["B"],"explanation":"宅基地使用权不得抵押；一户只能拥有一处宅基地，面积不得超过省、自治区、直辖市规定的标准。选项B当选。"},
+  {"knowledge_point_id":51,"question_type":"判断","stem":"宅基地使用权的取得主体是农村集体经济组织成员，一户只能拥有一处宅基地。（　）","correct_answer":["对"],"explanation":"宅基地使用权由农村集体经济组织成员依法享有，用以占有和使用集体所有的土地建造住宅及附属设施；一户只能拥有一处宅基地。本题表述正确。"},
+
+  {"knowledge_point_id":53,"question_type":"单选","stem":"【单选】根据物权法律制度的规定，下列关于地役权设立的表述中，正确的是（　）。","options":[{"key":"A","text":"地役权自登记时设立，未经登记不生效"},{"key":"B","text":"地役权自地役权合同生效时设立，未经登记不得对抗善意第三人"},{"key":"C","text":"地役权自供役地交付时设立"},{"key":"D","text":"地役权自批准之日设立"}],"correct_answer":["B"],"explanation":"地役权自地役权合同生效时设立；当事人要求登记的，可以申请登记，未经登记不得对抗善意第三人（登记对抗主义）。这与建设用地使用权的登记生效主义不同。选项B当选。"},
+  {"knowledge_point_id":53,"question_type":"判断","stem":"地役权不得单独转让；需役地以及需役地上的权利转让的，地役权一并转让。（　）","correct_answer":["对"],"explanation":"地役权不得单独转让、单独抵押；需役地转让的，地役权一并转让。本题表述正确。"},
+
+  {"knowledge_point_id":58,"question_type":"单选","stem":"【单选】根据物权法律制度的规定，善意占有人因使用占有的不动产或者动产而取得的孳息，（　）。","options":[{"key":"A","text":"无须返还权利人"},{"key":"B","text":"应当返还权利人"},{"key":"C","text":"返还一半给权利人"},{"key":"D","text":"折价补偿权利人"}],"correct_answer":["A"],"explanation":"占有物使用产生的孳息，善意占有人无须返还；恶意占有人应当返还。选项A当选。"},
+  {"knowledge_point_id":58,"question_type":"单选","stem":"【单选】占有人返还原物的请求权，自侵占发生之日起（　）内未行使的，该请求权消灭。","options":[{"key":"A","text":"6个月"},{"key":"B","text":"1年"},{"key":"C","text":"2年"},{"key":"D","text":"3年"}],"correct_answer":["B"],"explanation":"占有人返还原物的请求权，自侵占发生之日起1年内未行使的，该请求权消灭。选项B当选。"},
+  {"knowledge_point_id":58,"question_type":"判断","stem":"因占有人的占有使不动产或者动产毁损、灭失的，恶意占有人应当赔偿权利人的全部损失。（　）","correct_answer":["对"],"explanation":"善意占有人因占有物毁损灭失取得保险金、赔偿金等的应返还权利人；恶意占有人应当赔偿权利人的一切损失。本题表述正确。"}
+]

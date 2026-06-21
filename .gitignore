@@ -22,8 +22,7 @@ backfill_preview.txt
 import_console.txt
 import_log.txt
 
-# 本地数据库（含备份）
-*.db
+# 数据库：当前主库要进 git，避免题库数据丢失；备份仍忽略
 *.db-journal
 *.db.bak*
 *.bak

@@ -4,7 +4,7 @@
     python -m scripts.import_pdf "../刘琪老师-....pdf"
     python -m scripts.import_pdf ../a.pdf ../b.pdf      # 可一次多份
 
-需要 .env 里配好 DASHSCOPE_API_KEY（真实调用视觉模型）。
+DashScope 模式需要 .env 里配好 DASHSCOPE_API_KEY；Ollama 模式需要本地模型已拉取。
 """
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ def main(argv: list[str]) -> int:
         print(__doc__)
         return 2
 
-    if not settings.dashscope_api_key.strip():
+    if settings.vlm_provider.lower() != "ollama" and not settings.dashscope_api_key.strip():
         print("✗ 未配置 DASHSCOPE_API_KEY，请先在 .env 填入 key。")
         return 1
 

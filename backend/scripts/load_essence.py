@@ -41,8 +41,9 @@ def _parse_md(text: str) -> list[tuple[str, str]]:
 
 
 def collect_essence_files(root: Path | None = None) -> list[Path]:
+    # 三科要义文件：jingjifa / shiwu / caiwuguanli，均为 knowledge-content-<科目>-ch*.md
     data = root or (PROJECT_ROOT / "data")
-    return sorted(data.glob("knowledge-content-jingjifa-ch*.md"))
+    return sorted(data.glob("knowledge-content-*-ch*.md"))
 
 
 def load_essence(

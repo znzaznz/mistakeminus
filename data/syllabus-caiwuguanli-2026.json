@@ -1,0 +1,250 @@
+{
+  "subject": "中级会计·财务管理",
+  "subject_key": "财务管理",
+  "year": 2026,
+  "source": "财政部会计司 2026年度中级会计专业技术资格考试大纲《财务管理》",
+  "source_url": "https://kjs.mof.gov.cn/zhengcefabu/202604/P020260409389805733636.pdf",
+  "chapters": [
+    {"name": "总论", "sections": [
+      {"name": "企业与企业财务管理", "knowledge_points": [
+        {"name": "企业及其组织形式", "mastery": "熟悉"},
+        {"name": "企业财务管理的内容", "mastery": "掌握"}
+      ]},
+      {"name": "财务管理目标", "knowledge_points": [
+        {"name": "企业财务管理目标理论", "mastery": "掌握"},
+        {"name": "财务管理目标与利益冲突", "mastery": "熟悉"}
+      ]},
+      {"name": "财务管理原则与环节", "knowledge_points": [
+        {"name": "财务管理原则", "mastery": "熟悉"},
+        {"name": "财务管理环节", "mastery": "掌握"}
+      ]},
+      {"name": "财务管理体制与环境", "knowledge_points": [
+        {"name": "财务管理体制", "mastery": "掌握"},
+        {"name": "财务管理环境", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "财务管理基础", "sections": [
+      {"name": "货币时间价值", "knowledge_points": [
+        {"name": "货币时间价值的概念", "mastery": "掌握"},
+        {"name": "货币时间价值的计算方法（复利终值和现值、年金现值和终值）", "mastery": "掌握"},
+        {"name": "年偿债基金和年资本回收额", "mastery": "掌握"},
+        {"name": "利率的计算", "mastery": "掌握"}
+      ]},
+      {"name": "收益与风险", "knowledge_points": [
+        {"name": "资产收益与收益率", "mastery": "掌握"},
+        {"name": "资产的风险及其衡量", "mastery": "掌握"},
+        {"name": "风险管理", "mastery": "熟悉"},
+        {"name": "证券资产组合的收益与风险", "mastery": "掌握"},
+        {"name": "资本资产定价模型的基本原理", "mastery": "掌握"}
+      ]},
+      {"name": "成本性态分析", "knowledge_points": [
+        {"name": "固定成本", "mastery": "掌握"},
+        {"name": "变动成本", "mastery": "掌握"},
+        {"name": "混合成本", "mastery": "掌握"},
+        {"name": "总成本模型", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "预算管理", "sections": [
+      {"name": "预算管理概述", "knowledge_points": [
+        {"name": "预算的特征与作用", "mastery": "熟悉"},
+        {"name": "预算的分类", "mastery": "掌握"},
+        {"name": "预算管理的概念和原则", "mastery": "掌握"},
+        {"name": "预算管理工作的组织", "mastery": "熟悉"},
+        {"name": "预算体系", "mastery": "了解"}
+      ]},
+      {"name": "预算的编制方法与程序", "knowledge_points": [
+        {"name": "预算的编制方法", "mastery": "掌握"},
+        {"name": "预算的编制程序", "mastery": "熟悉"}
+      ]},
+      {"name": "预算编制", "knowledge_points": [
+        {"name": "经营预算的编制", "mastery": "掌握"},
+        {"name": "专门决策预算的编制", "mastery": "熟悉"},
+        {"name": "财务预算的编制", "mastery": "掌握"}
+      ]},
+      {"name": "预算的执行与考核", "knowledge_points": [
+        {"name": "预算的执行", "mastery": "掌握"},
+        {"name": "预算的分析与考核", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "筹资管理（上）", "sections": [
+      {"name": "筹资管理概述", "knowledge_points": [
+        {"name": "企业筹资的动机", "mastery": "了解"},
+        {"name": "筹资管理的内容", "mastery": "熟悉"},
+        {"name": "企业的筹资方式", "mastery": "熟悉"},
+        {"name": "企业筹资的分类", "mastery": "熟悉"},
+        {"name": "筹资管理的原则", "mastery": "熟悉"}
+      ]},
+      {"name": "债务筹资", "knowledge_points": [
+        {"name": "债务筹资的基本形式", "mastery": "掌握"},
+        {"name": "债务筹资的优缺点", "mastery": "熟悉"}
+      ]},
+      {"name": "股权筹资", "knowledge_points": [
+        {"name": "股权筹资的基本形式", "mastery": "掌握"},
+        {"name": "股权筹资的优缺点", "mastery": "熟悉"}
+      ]},
+      {"name": "衍生工具筹资", "knowledge_points": [
+        {"name": "衍生工具筹资的基本形式", "mastery": "了解"}
+      ]},
+      {"name": "筹资实务创新", "knowledge_points": [
+        {"name": "筹资实务创新的主要形式", "mastery": "熟悉"},
+        {"name": "筹资实务创新的实施要点", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "筹资管理（下）", "sections": [
+      {"name": "资金需要量预测", "knowledge_points": [
+        {"name": "因素分析法", "mastery": "掌握"},
+        {"name": "销售百分比法", "mastery": "掌握"},
+        {"name": "资金习性预测法", "mastery": "掌握"}
+      ]},
+      {"name": "资本成本", "knowledge_points": [
+        {"name": "资本成本的含义与作用", "mastery": "熟悉"},
+        {"name": "影响资本成本的因素", "mastery": "熟悉"},
+        {"name": "个别资本成本的计算", "mastery": "掌握"},
+        {"name": "平均资本成本的计算", "mastery": "掌握"},
+        {"name": "边际资本成本的计算", "mastery": "掌握"},
+        {"name": "项目资本成本的计算", "mastery": "熟悉"},
+        {"name": "金融工具价值评估方法", "mastery": "掌握"}
+      ]},
+      {"name": "杠杆效应", "knowledge_points": [
+        {"name": "经营杠杆的原理及其杠杆系数的测算", "mastery": "掌握"},
+        {"name": "财务杠杆的原理及其杠杆系数的测算", "mastery": "掌握"},
+        {"name": "总杠杆的原理及其杠杆系数的测算", "mastery": "掌握"}
+      ]},
+      {"name": "资本结构", "knowledge_points": [
+        {"name": "资本结构理论", "mastery": "熟悉"},
+        {"name": "影响资本结构的因素", "mastery": "熟悉"},
+        {"name": "资本结构优化的分析方法", "mastery": "掌握"},
+        {"name": "双重股权结构", "mastery": "了解"}
+      ]}
+    ]},
+    {"name": "投资管理", "sections": [
+      {"name": "投资管理概述", "knowledge_points": [
+        {"name": "企业投资管理的原则", "mastery": "熟悉"},
+        {"name": "企业投资的分类", "mastery": "熟悉"}
+      ]},
+      {"name": "投资项目财务评价指标", "knowledge_points": [
+        {"name": "投资项目现金流量的测算", "mastery": "掌握"},
+        {"name": "投资项目财务评价指标", "mastery": "掌握"}
+      ]},
+      {"name": "项目投资管理", "knowledge_points": [
+        {"name": "独立投资方案的决策", "mastery": "掌握"},
+        {"name": "互斥投资方案的决策", "mastery": "掌握"},
+        {"name": "固定资产更新决策", "mastery": "掌握"}
+      ]},
+      {"name": "证券投资管理", "knowledge_points": [
+        {"name": "证券投资的目的", "mastery": "熟悉"},
+        {"name": "证券投资的风险", "mastery": "熟悉"},
+        {"name": "债券的估值方法", "mastery": "掌握"},
+        {"name": "股票的估值方法", "mastery": "掌握"}
+      ]},
+      {"name": "基金投资与期权投资", "knowledge_points": [
+        {"name": "证券投资基金的特点和分类", "mastery": "熟悉"},
+        {"name": "证券投资基金的业绩评价", "mastery": "了解"},
+        {"name": "私募股权投资基金", "mastery": "了解"},
+        {"name": "期权投资", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "营运资金管理", "sections": [
+      {"name": "营运资金管理概述", "knowledge_points": [
+        {"name": "营运资金的概念及特点", "mastery": "掌握"},
+        {"name": "营运资金的管理原则", "mastery": "掌握"},
+        {"name": "营运资金的管理策略", "mastery": "掌握"}
+      ]},
+      {"name": "现金管理", "knowledge_points": [
+        {"name": "持有现金的动机", "mastery": "了解"},
+        {"name": "目标现金余额的确定", "mastery": "掌握"},
+        {"name": "现金管理模式", "mastery": "熟悉"},
+        {"name": "现金收支的日常管理", "mastery": "掌握"}
+      ]},
+      {"name": "应收账款管理", "knowledge_points": [
+        {"name": "应收账款的功能", "mastery": "熟悉"},
+        {"name": "应收账款的成本", "mastery": "掌握"},
+        {"name": "信用政策", "mastery": "熟悉"},
+        {"name": "应收账款的监控", "mastery": "掌握"},
+        {"name": "应收账款的日常管理", "mastery": "掌握"}
+      ]},
+      {"name": "存货管理", "knowledge_points": [
+        {"name": "存货管理目标", "mastery": "熟悉"},
+        {"name": "存货的成本", "mastery": "掌握"},
+        {"name": "最优存货量的确定", "mastery": "掌握"},
+        {"name": "存货的控制系统", "mastery": "了解"}
+      ]},
+      {"name": "流动负债管理", "knowledge_points": [
+        {"name": "流动负债的来源", "mastery": "掌握"},
+        {"name": "流动负债的利弊", "mastery": "熟悉"},
+        {"name": "流动负债的管理策略", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "成本管理", "sections": [
+      {"name": "成本管理概述", "knowledge_points": [
+        {"name": "成本管理的目标", "mastery": "掌握"},
+        {"name": "成本管理的原则", "mastery": "熟悉"},
+        {"name": "成本管理的主要内容", "mastery": "掌握"}
+      ]},
+      {"name": "本量利分析与应用", "knowledge_points": [
+        {"name": "本量利分析的含义", "mastery": "掌握"},
+        {"name": "本量利分析的基本假设", "mastery": "熟悉"},
+        {"name": "本量利分析的基本原理", "mastery": "掌握"},
+        {"name": "本量利分析的优缺点", "mastery": "熟悉"},
+        {"name": "盈亏平衡分析", "mastery": "掌握"},
+        {"name": "目标利润分析", "mastery": "掌握"},
+        {"name": "敏感性分析", "mastery": "掌握"},
+        {"name": "边际分析", "mastery": "掌握"},
+        {"name": "本量利分析在经营决策中的应用", "mastery": "掌握"}
+      ]},
+      {"name": "标准成本控制与分析", "knowledge_points": [
+        {"name": "标准成本的制定", "mastery": "掌握"},
+        {"name": "成本差异的计算与分析", "mastery": "掌握"}
+      ]},
+      {"name": "作业成本", "knowledge_points": [
+        {"name": "作业成本法的应用目标和应用程序", "mastery": "熟悉"},
+        {"name": "作业成本管理", "mastery": "熟悉"}
+      ]},
+      {"name": "责任成本", "knowledge_points": [
+        {"name": "责任中心及其考核", "mastery": "熟悉"},
+        {"name": "内部转移价格的制定", "mastery": "了解"}
+      ]}
+    ]},
+    {"name": "收入与分配管理", "sections": [
+      {"name": "收入与分配管理概述", "knowledge_points": [
+        {"name": "企业收入与分配管理的原则", "mastery": "掌握"},
+        {"name": "收入与分配管理的内容", "mastery": "掌握"}
+      ]},
+      {"name": "收入管理", "knowledge_points": [
+        {"name": "销售预测分析方法", "mastery": "掌握"},
+        {"name": "企业的定价目标", "mastery": "熟悉"},
+        {"name": "产品定价方法", "mastery": "掌握"}
+      ]},
+      {"name": "纳税管理", "knowledge_points": [
+        {"name": "纳税管理", "mastery": "熟悉"}
+      ]},
+      {"name": "分配管理", "knowledge_points": [
+        {"name": "股利分配理论", "mastery": "了解"},
+        {"name": "股利政策", "mastery": "熟悉"},
+        {"name": "利润分配制约因素", "mastery": "熟悉"},
+        {"name": "股利支付形式与程序、股票分割与股票回购、股权激励模式", "mastery": "了解"}
+      ]}
+    ]},
+    {"name": "财务分析与评价", "sections": [
+      {"name": "财务分析与评价概述", "knowledge_points": [
+        {"name": "财务分析的方法", "mastery": "掌握"},
+        {"name": "财务分析的局限性", "mastery": "了解"}
+      ]},
+      {"name": "基本的财务报表分析", "knowledge_points": [
+        {"name": "偿债能力分析", "mastery": "掌握"},
+        {"name": "营运能力分析", "mastery": "掌握"},
+        {"name": "盈利能力分析", "mastery": "掌握"},
+        {"name": "发展能力分析", "mastery": "掌握"},
+        {"name": "现金流量分析", "mastery": "掌握"}
+      ]},
+      {"name": "上市公司财务分析", "knowledge_points": [
+        {"name": "上市公司特殊财务分析指标", "mastery": "掌握"},
+        {"name": "管理层讨论与分析", "mastery": "熟悉"}
+      ]},
+      {"name": "财务评价与考核", "knowledge_points": [
+        {"name": "企业综合绩效分析的方法", "mastery": "掌握"},
+        {"name": "综合绩效评价", "mastery": "熟悉"}
+      ]}
+    ]}
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "subject": "中级会计·中级会计实务",
+  "subject_key": "中级会计实务",
+  "year": 2026,
+  "source": "财政部会计司 2026年度中级会计专业技术资格考试大纲《中级会计实务》",
+  "source_url": "https://kjs.mof.gov.cn/zhengcefabu/202604/P020260409389805733636.pdf",
+  "chapters": [
+    {"name": "总论", "sections": [
+      {"name": "会计职业道德概述", "knowledge_points": [
+        {"name": "会计人员从事会计工作的基本要求", "mastery": "掌握"},
+        {"name": "会计人员职业道德规范", "mastery": "掌握"}
+      ]},
+      {"name": "会计法规制度体系概述", "knowledge_points": [
+        {"name": "会计法规体系的构成", "mastery": "熟悉"},
+        {"name": "国家统一的会计制度体系", "mastery": "熟悉"}
+      ]},
+      {"name": "财务报告目标、会计要素和会计信息质量要求", "knowledge_points": [
+        {"name": "财务报告目标", "mastery": "掌握"},
+        {"name": "会计要素", "mastery": "掌握"},
+        {"name": "会计信息质量要求", "mastery": "掌握"}
+      ]},
+      {"name": "可持续信息披露", "knowledge_points": [
+        {"name": "可持续信息披露", "mastery": "了解"}
+      ]}
+    ]},
+    {"name": "存货", "sections": [
+      {"name": "存货的确认和初始计量", "knowledge_points": [
+        {"name": "存货的确认条件", "mastery": "掌握"},
+        {"name": "存货的初始计量", "mastery": "掌握"}
+      ]},
+      {"name": "存货的期末计量", "knowledge_points": [
+        {"name": "存货期末计量原则", "mastery": "掌握"},
+        {"name": "存货减值迹象的判断", "mastery": "熟悉"},
+        {"name": "存货可变现净值的确定", "mastery": "掌握"},
+        {"name": "存货跌价准备的计提与转回", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "固定资产", "sections": [
+      {"name": "固定资产的确认和初始计量", "knowledge_points": [
+        {"name": "固定资产的确认条件", "mastery": "掌握"},
+        {"name": "固定资产的初始计量", "mastery": "掌握"}
+      ]},
+      {"name": "固定资产的后续计量", "knowledge_points": [
+        {"name": "固定资产折旧", "mastery": "掌握"},
+        {"name": "固定资产后续支出", "mastery": "掌握"}
+      ]},
+      {"name": "固定资产的处置", "knowledge_points": [
+        {"name": "固定资产终止确认的条件", "mastery": "掌握"},
+        {"name": "固定资产处置的账务处理", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "无形资产", "sections": [
+      {"name": "无形资产的确认和初始计量", "knowledge_points": [
+        {"name": "无形资产及其特征", "mastery": "掌握"},
+        {"name": "无形资产的确认条件", "mastery": "掌握"},
+        {"name": "无形资产的初始计量", "mastery": "掌握"}
+      ]},
+      {"name": "内部研究开发支出的确认和计量", "knowledge_points": [
+        {"name": "研究阶段与开发阶段的区分", "mastery": "掌握"},
+        {"name": "研究阶段与开发阶段支出的确认", "mastery": "掌握"},
+        {"name": "内部研究开发支出的账务处理", "mastery": "掌握"}
+      ]},
+      {"name": "无形资产的后续计量", "knowledge_points": [
+        {"name": "无形资产使用寿命的确定", "mastery": "掌握"},
+        {"name": "使用寿命有限的无形资产摊销", "mastery": "掌握"},
+        {"name": "使用寿命不确定的无形资产", "mastery": "掌握"}
+      ]},
+      {"name": "无形资产的处置", "knowledge_points": [
+        {"name": "无形资产的出售", "mastery": "掌握"},
+        {"name": "无形资产的报废", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "投资性房地产", "sections": [
+      {"name": "投资性房地产及其范围", "knowledge_points": [
+        {"name": "投资性房地产的定义及特征", "mastery": "掌握"},
+        {"name": "投资性房地产的范围", "mastery": "掌握"}
+      ]},
+      {"name": "投资性房地产的确认和初始计量", "knowledge_points": [
+        {"name": "投资性房地产的确认", "mastery": "掌握"},
+        {"name": "投资性房地产的初始计量", "mastery": "掌握"},
+        {"name": "与投资性房地产有关的后续支出", "mastery": "熟悉"}
+      ]},
+      {"name": "投资性房地产的后续计量", "knowledge_points": [
+        {"name": "采用成本模式进行后续计量的投资性房地产", "mastery": "掌握"},
+        {"name": "采用公允价值模式进行后续计量的投资性房地产", "mastery": "熟悉"},
+        {"name": "投资性房地产后续计量模式的变更", "mastery": "熟悉"}
+      ]},
+      {"name": "投资性房地产的转换和处置", "knowledge_points": [
+        {"name": "投资性房地产的转换", "mastery": "掌握"},
+        {"name": "投资性房地产的处置", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "长期股权投资和合营安排", "sections": [
+      {"name": "长期股权投资的范围和初始计量", "knowledge_points": [
+        {"name": "长期股权投资的范围", "mastery": "熟悉"},
+        {"name": "长期股权投资的初始计量", "mastery": "掌握"}
+      ]},
+      {"name": "长期股权投资的后续计量", "knowledge_points": [
+        {"name": "成本法", "mastery": "掌握"},
+        {"name": "权益法", "mastery": "掌握"},
+        {"name": "长期股权投资核算方法的转换", "mastery": "掌握"},
+        {"name": "长期股权投资的处置", "mastery": "熟悉"}
+      ]},
+      {"name": "合营安排", "knowledge_points": [
+        {"name": "合营安排的认定", "mastery": "熟悉"},
+        {"name": "共同经营中合营方的账务处理", "mastery": "熟悉"},
+        {"name": "共同经营中不享有共同控制的参与方的账务处理", "mastery": "了解"}
+      ]}
+    ]},
+    {"name": "资产减值", "sections": [
+      {"name": "资产减值的范围及迹象", "knowledge_points": [
+        {"name": "资产减值的定义及范围", "mastery": "掌握"},
+        {"name": "资产减值迹象的判断", "mastery": "熟悉"}
+      ]},
+      {"name": "资产可收回金额的计量和减值损失的确定", "knowledge_points": [
+        {"name": "资产可收回金额计量的基本要求", "mastery": "熟悉"},
+        {"name": "资产的公允价值减去处置费用后净额的确定", "mastery": "熟悉"},
+        {"name": "资产预计未来现金流量现值的确定", "mastery": "熟悉"},
+        {"name": "资产减值损失的确定及账务处理", "mastery": "熟悉"}
+      ]},
+      {"name": "资产组减值的处理", "knowledge_points": [
+        {"name": "资产组的认定", "mastery": "熟悉"},
+        {"name": "资产组可收回金额和账面价值的确定", "mastery": "熟悉"},
+        {"name": "资产组减值测试", "mastery": "了解"},
+        {"name": "总部资产减值测试", "mastery": "了解"}
+      ]}
+    ]},
+    {"name": "金融资产和金融负债", "sections": [
+      {"name": "金融资产和金融负债的分类", "knowledge_points": [
+        {"name": "金融资产的分类", "mastery": "掌握"},
+        {"name": "金融负债的分类", "mastery": "掌握"},
+        {"name": "金融资产的重分类", "mastery": "熟悉"}
+      ]},
+      {"name": "金融资产和金融负债的计量", "knowledge_points": [
+        {"name": "金融资产和金融负债的初始计量", "mastery": "掌握"},
+        {"name": "金融资产的后续计量", "mastery": "掌握"},
+        {"name": "金融负债的后续计量", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "职工薪酬", "sections": [
+      {"name": "职工薪酬的范围及分类", "knowledge_points": [
+        {"name": "职工薪酬的范围", "mastery": "熟悉"},
+        {"name": "职工薪酬的分类", "mastery": "熟悉"}
+      ]},
+      {"name": "短期薪酬的确认和计量", "knowledge_points": [
+        {"name": "一般短期薪酬的确认和计量", "mastery": "掌握"},
+        {"name": "短期带薪缺勤的确认和计量", "mastery": "熟悉"},
+        {"name": "短期利润分享计划的确认和计量", "mastery": "熟悉"},
+        {"name": "非货币性福利", "mastery": "熟悉"}
+      ]},
+      {"name": "离职后福利", "knowledge_points": [
+        {"name": "设定提存计划", "mastery": "熟悉"},
+        {"name": "设定受益计划", "mastery": "了解"}
+      ]},
+      {"name": "辞退福利和其他长期职工福利的确认和计量", "knowledge_points": [
+        {"name": "辞退福利的确认和计量", "mastery": "掌握"},
+        {"name": "其他长期职工福利", "mastery": "了解"}
+      ]}
+    ]},
+    {"name": "股份支付", "sections": [
+      {"name": "股份支付的主要环节及类型", "knowledge_points": [
+        {"name": "股份支付的四个主要环节", "mastery": "熟悉"},
+        {"name": "股份支付工具的主要类型", "mastery": "熟悉"}
+      ]},
+      {"name": "股份支付的确认和计量", "knowledge_points": [
+        {"name": "股份支付的确认和计量原则", "mastery": "熟悉"},
+        {"name": "可行权条件的种类、处理和修改", "mastery": "了解"},
+        {"name": "股份支付的账务处理", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "借款费用", "sections": [
+      {"name": "借款费用的范围", "knowledge_points": [
+        {"name": "借款费用的范围", "mastery": "掌握"},
+        {"name": "借款的范围", "mastery": "熟悉"}
+      ]},
+      {"name": "借款费用资本化的确认", "knowledge_points": [
+        {"name": "借款费用资本化形成的时点", "mastery": "掌握"},
+        {"name": "借款费用暂停资本化的时间", "mastery": "掌握"},
+        {"name": "借款费用停止资本化的时点", "mastery": "掌握"}
+      ]},
+      {"name": "借款费用资本化金额的计量", "knowledge_points": [
+        {"name": "借款利息资本化金额的确定", "mastery": "掌握"},
+        {"name": "借款辅助费用资本化金额的确定", "mastery": "熟悉"},
+        {"name": "外币专门借款汇兑差额资本化金额的确定", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "或有事项", "sections": [
+      {"name": "或有事项及特征", "knowledge_points": [
+        {"name": "或有事项的定义及其特征", "mastery": "熟悉"},
+        {"name": "或有负债和或有资产", "mastery": "熟悉"}
+      ]},
+      {"name": "或有事项的确认和计量", "knowledge_points": [
+        {"name": "或有事项的确认", "mastery": "掌握"},
+        {"name": "预计负债的计量", "mastery": "掌握"},
+        {"name": "资产负债表日对预计负债账面价值的复核及列报", "mastery": "熟悉"}
+      ]},
+      {"name": "或有事项账务处理原则的应用", "knowledge_points": [
+        {"name": "未决诉讼或未决仲裁", "mastery": "掌握"},
+        {"name": "产品质量保证", "mastery": "掌握"},
+        {"name": "亏损合同", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "收入", "sections": [
+      {"name": "收入的范围及确认和计量的原则", "knowledge_points": [
+        {"name": "收入的定义及其范围", "mastery": "掌握"},
+        {"name": "收入确认和计量的原则", "mastery": "掌握"}
+      ]},
+      {"name": "收入的确认和计量的步骤", "knowledge_points": [
+        {"name": "识别与客户订立的合同", "mastery": "熟悉"},
+        {"name": "识别合同中单项履约义务", "mastery": "掌握"},
+        {"name": "履行每一单项履约义务时确认收入", "mastery": "掌握"},
+        {"name": "确定交易价格", "mastery": "掌握"},
+        {"name": "将交易价格分摊至各单项履约义务", "mastery": "掌握"}
+      ]},
+      {"name": "合同成本", "knowledge_points": [
+        {"name": "合同履约成本", "mastery": "掌握"},
+        {"name": "合同取得成本", "mastery": "掌握"},
+        {"name": "与合同成本有关的资产的摊销和减值", "mastery": "了解"}
+      ]},
+      {"name": "特定交易的会计处理", "knowledge_points": [
+        {"name": "附有销售退回条款的销售", "mastery": "掌握"},
+        {"name": "附有质量保证条款的销售", "mastery": "掌握"},
+        {"name": "主要责任人和代理人", "mastery": "掌握"},
+        {"name": "附有客户额外购买选择权的销售", "mastery": "掌握"},
+        {"name": "授予知识产权许可", "mastery": "掌握"},
+        {"name": "售后回购", "mastery": "掌握"},
+        {"name": "客户未行使的权利", "mastery": "掌握"},
+        {"name": "无需退回的初始费", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "政府补助", "sections": [
+      {"name": "政府补助的特征及分类", "knowledge_points": [
+        {"name": "政府补助的定义及其特征", "mastery": "掌握"},
+        {"name": "政府补助的分类", "mastery": "掌握"}
+      ]},
+      {"name": "政府补助的会计处理", "knowledge_points": [
+        {"name": "政府补助的会计处理方法", "mastery": "掌握"},
+        {"name": "与资产相关的政府补助", "mastery": "掌握"},
+        {"name": "与收益相关的政府补助", "mastery": "掌握"},
+        {"name": "综合性项目政府补助", "mastery": "熟悉"},
+        {"name": "政府补助的退回", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "非货币性资产交换", "sections": [
+      {"name": "非货币性资产交换的认定", "knowledge_points": [
+        {"name": "非货币性资产交换的定义", "mastery": "掌握"},
+        {"name": "非货币性资产交换的认定", "mastery": "掌握"}
+      ]},
+      {"name": "非货币性资产交换的确认和计量", "knowledge_points": [
+        {"name": "非货币性资产交换的确认和计量原则", "mastery": "掌握"},
+        {"name": "非货币性资产交换具有商业实质的判断", "mastery": "掌握"},
+        {"name": "不涉及补价情况下的非货币性资产交换的会计处理", "mastery": "掌握"},
+        {"name": "涉及补价情况下的非货币性资产交换的会计处理", "mastery": "掌握"},
+        {"name": "涉及多项资产的非货币性资产交换的会计处理", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "债务重组", "sections": [
+      {"name": "债务重组的定义及方式", "knowledge_points": [
+        {"name": "债务重组的定义", "mastery": "熟悉"},
+        {"name": "债务重组的方式", "mastery": "熟悉"}
+      ]},
+      {"name": "债务重组的会计处理", "knowledge_points": [
+        {"name": "债权和债务的终止确认", "mastery": "熟悉"},
+        {"name": "债权人的会计处理", "mastery": "掌握"},
+        {"name": "债务人的会计处理", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "所得税费用", "sections": [
+      {"name": "计税基础与暂时性差异", "knowledge_points": [
+        {"name": "所得税会计核算的基本原理和程序", "mastery": "熟悉"},
+        {"name": "资产及负债的计税基础及暂时性差异", "mastery": "掌握"}
+      ]},
+      {"name": "递延所得税负债和递延所得税资产的确认与计量", "knowledge_points": [
+        {"name": "递延所得税负债的确认与计量", "mastery": "掌握"},
+        {"name": "递延所得税资产的确认与计量", "mastery": "熟悉"},
+        {"name": "所得税税率变化对已确认递延所得税资产和递延所得税负债的影响", "mastery": "了解"}
+      ]},
+      {"name": "所得税费用的确认和计量", "knowledge_points": [
+        {"name": "当期所得税", "mastery": "掌握"},
+        {"name": "递延所得税", "mastery": "熟悉"},
+        {"name": "所得税费用", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "外币折算", "sections": [
+      {"name": "外币交易的会计处理", "knowledge_points": [
+        {"name": "记账本位币的确定", "mastery": "掌握"},
+        {"name": "发生日的会计处理", "mastery": "掌握"},
+        {"name": "资产负债表日或结算日的会计处理", "mastery": "掌握"}
+      ]},
+      {"name": "外币财务报表的折算", "knowledge_points": [
+        {"name": "境外经营记账本位币的确定", "mastery": "掌握"},
+        {"name": "外币财务报表的折算", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "租赁", "sections": [
+      {"name": "租赁的识别、分拆与合并", "knowledge_points": [
+        {"name": "租赁的识别", "mastery": "掌握"},
+        {"name": "租赁的分拆和合并", "mastery": "了解"},
+        {"name": "租赁期", "mastery": "掌握"}
+      ]},
+      {"name": "承租人会计处理", "knowledge_points": [
+        {"name": "承租人租赁的初始计量", "mastery": "掌握"},
+        {"name": "承租人租赁的后续计量", "mastery": "掌握"},
+        {"name": "租赁变更", "mastery": "熟悉"},
+        {"name": "短期租赁和低价值资产租赁", "mastery": "掌握"}
+      ]},
+      {"name": "出租人会计处理", "knowledge_points": [
+        {"name": "出租人的租赁分类", "mastery": "掌握"},
+        {"name": "融资租赁的会计处理", "mastery": "掌握"},
+        {"name": "经营租赁的会计处理", "mastery": "掌握"}
+      ]},
+      {"name": "特殊租赁业务的会计处理", "knowledge_points": [
+        {"name": "转租赁", "mastery": "了解"},
+        {"name": "生产商或经销商出租人的融资租赁", "mastery": "熟悉"},
+        {"name": "售后租回交易", "mastery": "熟悉"}
+      ]}
+    ]},
+    {"name": "持有待售的非流动资产、处置组和终止经营", "sections": [
+      {"name": "持有待售的非流动资产、处置组", "knowledge_points": [
+        {"name": "持有待售类别的分类", "mastery": "掌握"},
+        {"name": "持有待售类别的计量", "mastery": "掌握"}
+      ]},
+      {"name": "终止经营", "knowledge_points": [
+        {"name": "终止经营的定义及判断", "mastery": "熟悉"},
+        {"name": "终止经营的列报", "mastery": "了解"}
+      ]}
+    ]},
+    {"name": "企业合并与合并财务报表", "sections": [
+      {"name": "企业合并", "knowledge_points": [
+        {"name": "同一控制下企业合并的会计处理", "mastery": "掌握"},
+        {"name": "非同一控制下企业合并的会计处理", "mastery": "掌握"}
+      ]},
+      {"name": "合并财务报表的编制", "knowledge_points": [
+        {"name": "合并财务报表的编制原则及前期准备", "mastery": "熟悉"},
+        {"name": "合并资产负债表的编制", "mastery": "掌握"},
+        {"name": "合并利润表的编制", "mastery": "掌握"},
+        {"name": "合并现金流量表的编制", "mastery": "掌握"},
+        {"name": "合并所有者权益变动表的编制", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "会计政策、会计估计变更和差错更正", "sections": [
+      {"name": "会计政策及其变更", "knowledge_points": [
+        {"name": "会计政策", "mastery": "掌握"},
+        {"name": "会计政策的变更及其会计处理", "mastery": "掌握"}
+      ]},
+      {"name": "会计估计及其变更", "knowledge_points": [
+        {"name": "会计估计", "mastery": "掌握"},
+        {"name": "会计估计的变更及其会计处理", "mastery": "掌握"}
+      ]},
+      {"name": "会计政策变更与会计估计变更的划分", "knowledge_points": [
+        {"name": "会计政策变更与会计估计变更的划分", "mastery": "熟悉"}
+      ]},
+      {"name": "前期差错及其更正", "knowledge_points": [
+        {"name": "前期差错", "mastery": "掌握"},
+        {"name": "前期差错更正的会计处理", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "资产负债表日后事项", "sections": [
+      {"name": "资产负债表日后事项及其内容", "knowledge_points": [
+        {"name": "资产负债表日后事项的定义及涵盖的期间", "mastery": "掌握"},
+        {"name": "资产负债表日后事项的内容", "mastery": "掌握"}
+      ]},
+      {"name": "资产负债表日后调整事项", "knowledge_points": [
+        {"name": "调整事项的处理原则", "mastery": "掌握"},
+        {"name": "调整事项的会计处理方法", "mastery": "掌握"}
+      ]},
+      {"name": "资产负债表日后非调整事项", "knowledge_points": [
+        {"name": "非调整事项的处理原则", "mastery": "掌握"},
+        {"name": "非调整事项的会计处理方法", "mastery": "掌握"}
+      ]}
+    ]},
+    {"name": "政府会计", "sections": [
+      {"name": "政府会计概述", "knowledge_points": [
+        {"name": "政府会计核算模式", "mastery": "掌握"},
+        {"name": "政府会计要素及其确认和计量", "mastery": "掌握"},
+        {"name": "政府决算报告和财务报告", "mastery": "了解"}
+      ]},
+      {"name": "行政事业单位特定业务的会计核算", "knowledge_points": [
+        {"name": "财政拨款收支、非财政拨款收支、预算结转结余及分配、净资产业务的账务处理", "mastery": "掌握"},
+        {"name": "常见资产业务、负债业务的账务处理", "mastery": "掌握"},
+        {"name": "部门（单位）合并财务报表的编制", "mastery": "了解"}
+      ]}
+    ]},
+    {"name": "民间非营利组织会计", "sections": [
+      {"name": "民间非营利组织会计概述", "knowledge_points": [
+        {"name": "民间非营利组织会计的特点", "mastery": "熟悉"},
+        {"name": "民间非营利组织的会计要素", "mastery": "掌握"},
+        {"name": "民间非营利组织财务会计报告的构成", "mastery": "了解"}
+      ]},
+      {"name": "民间非营利组织特定业务的会计核算", "knowledge_points": [
+        {"name": "捐赠收入", "mastery": "掌握"},
+        {"name": "受托代理业务", "mastery": "掌握"},
+        {"name": "业务活动成本", "mastery": "掌握"},
+        {"name": "净资产", "mastery": "掌握"}
+      ]}
+    ]}
+  ]
+}

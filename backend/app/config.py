@@ -25,6 +25,11 @@ class Settings(BaseSettings):
     qwen_vl_model: str = "qwen-vl-max"
     qwen_text_model: str = "qwen-plus"
 
+    # ===== 本地 Ollama =====
+    vlm_provider: str = "dashscope"  # dashscope / ollama
+    ollama_base_url: str = "http://127.0.0.1:11434"
+    ollama_vl_model: str = "qwen3-vl:8b"
+
     # ===== 数据库 =====
     db_path: Path = PROJECT_ROOT / "mistakegenie.db"
 
@@ -39,6 +44,9 @@ class Settings(BaseSettings):
             "DASHSCOPE_BASE_URL": bool(self.dashscope_base_url.strip()),
             "QWEN_VL_MODEL": bool(self.qwen_vl_model.strip()),
             "QWEN_TEXT_MODEL": bool(self.qwen_text_model.strip()),
+            "VLM_PROVIDER": bool(self.vlm_provider.strip()),
+            "OLLAMA_BASE_URL": bool(self.ollama_base_url.strip()),
+            "OLLAMA_VL_MODEL": bool(self.ollama_vl_model.strip()),
         }
 
 

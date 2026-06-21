@@ -106,6 +106,10 @@ def init_db(db_path: Path | None = None) -> None:
             )
             """
         )
+        # 科目维度（中级会计三科：经济法/中级会计实务/财务管理）。
+        # 旧库 exam_points 无此列，补列后回填为经济法（已有数据均属经济法）。
+        _migrate_add_column(conn, "exam_points", "subject", "TEXT")
+        conn.execute("UPDATE exam_points SET subject = '经济法' WHERE subject IS NULL")
 
         # 错题本（S3）。一题一行，作答出错时自动收录、重复出错累加。
         conn.execute(
@@ -168,6 +172,24 @@ def init_db(db_path: Path | None = None) -> None:
                 draft_json TEXT NOT NULL,
                 confidence REAL,
                 created_at TEXT NOT NULL DEFAULT (datetime('now'))
+            )
+            """
+        )
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS lecture_materials (
+                id             INTEGER PRIMARY KEY AUTOINCREMENT,
+                source         TEXT NOT NULL,
+                source_pdf     TEXT NOT NULL,
+                page           INTEGER NOT NULL,
+                text           TEXT NOT NULL,
+                readable_summary TEXT,
+                images         TEXT NOT NULL DEFAULT '[]',
+                page_image     TEXT,
+                status         TEXT NOT NULL DEFAULT 'pass',
+                review_reason  TEXT,
+                created_at     TEXT NOT NULL DEFAULT (datetime('now')),
+                UNIQUE (source, source_pdf, page)
             )
             """
         )

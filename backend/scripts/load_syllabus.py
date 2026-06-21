@@ -23,6 +23,7 @@ DEFAULT_SEED = PROJECT_ROOT / "data" / "syllabus-jingjifa-2026.json"
 
 def load_syllabus(seed_path: Path, conn: sqlite3.Connection) -> dict:
     data = json.loads(Path(seed_path).read_text(encoding="utf-8"))
+    subject = data.get("subject_key") or data.get("subject")  # 科目维度，三科共存；缺省留空由 init_db 回填
     n_ep = n_kp = 0
     ep_seq = kp_seq = 0
     for chapter in data["chapters"]:
@@ -31,10 +32,10 @@ def load_syllabus(seed_path: Path, conn: sqlite3.Connection) -> dict:
             ep_seq += 1
             conn.execute(
                 """
-                INSERT INTO exam_points (chapter, name, seq) VALUES (?, ?, ?)
-                ON CONFLICT(chapter, name) DO UPDATE SET seq = excluded.seq
+                INSERT INTO exam_points (chapter, name, seq, subject) VALUES (?, ?, ?, ?)
+                ON CONFLICT(chapter, name) DO UPDATE SET seq = excluded.seq, subject = excluded.subject
                 """,
-                (chap, section["name"], ep_seq),
+                (chap, section["name"], ep_seq, subject),
             )
             ep_id = conn.execute(
                 "SELECT id FROM exam_points WHERE chapter = ? AND name = ?",

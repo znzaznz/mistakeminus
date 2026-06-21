@@ -13,6 +13,7 @@ from app.config import PROJECT_ROOT
 from app.extraction import pdf
 from app.extraction.importer import import_pdf
 from app.extraction.schema import validate_draft
+from app.extraction import vlm
 from app.extraction.vlm import _parse_questions_json
 
 
@@ -84,6 +85,41 @@ def test_parse_json_with_trailing_extra_data():
     # 模型在 JSON 后多输出了说明文字，不应整页丢弃
     qs = _parse_questions_json('{"questions": [{"stem": "z"}]}\n以上是识别结果。')
     assert qs == [{"stem": "z"}]
+
+
+def test_ollama_extract_posts_image(monkeypatch):
+    class FakeResponse:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"response": '{"questions": [{"stem": "x"}]}'}
+
+    seen = {}
+
+    class FakeClient:
+        def __init__(self, trust_env, timeout):
+            seen["trust_env"] = trust_env
+            seen["timeout"] = timeout
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return False
+
+        def post(self, url, json):
+            seen["url"] = url
+            seen["json"] = json
+            return FakeResponse()
+
+    monkeypatch.setattr(vlm.httpx, "Client", FakeClient)
+    qs = vlm._extract_questions_ollama(b"png")
+
+    assert qs == [{"stem": "x"}]
+    assert seen["trust_env"] is False
+    assert seen["url"].endswith("/api/generate")
+    assert seen["json"]["images"] == ["cG5n"]
 
 
 # --------------------- pdf.py 在真实 PDF 上的确定性 ---------------------

@@ -489,10 +489,10 @@ def mark_daily_item_complete(conn: sqlite3.Connection, task_date: str, question_
 def list_knowledge_points_brief(conn: sqlite3.Connection) -> list[dict]:
     rows = conn.execute(
         """
-        SELECT k.id, k.name, e.chapter, k.mastery_requirement
+        SELECT k.id, k.name, e.subject, e.chapter, k.mastery_requirement
         FROM knowledge_points k
         JOIN exam_points e ON e.id = k.exam_point_id
-        ORDER BY k.seq
+        ORDER BY e.subject, k.seq
         """
     ).fetchall()
     return [dict(r) for r in rows]
@@ -501,7 +501,7 @@ def list_knowledge_points_brief(conn: sqlite3.Connection) -> list[dict]:
 def get_taxonomy(conn: sqlite3.Connection) -> list[dict]:
     """知识点体系：章 → 考点 → 知识点，含能力要求、要义、挂题数。"""
     eps = conn.execute(
-        "SELECT id, chapter, name FROM exam_points ORDER BY seq"
+        "SELECT id, subject, chapter, name FROM exam_points ORDER BY subject, seq"
     ).fetchall()
     kp_rows = conn.execute(
         """
@@ -524,9 +524,13 @@ def get_taxonomy(conn: sqlite3.Connection) -> list[dict]:
             }
         )
 
-    chapters: dict[str, dict] = {}
+    chapters: dict[tuple, dict] = {}
     for ep in eps:
-        chap = chapters.setdefault(ep["chapter"], {"chapter": ep["chapter"], "exam_points": []})
+        # 按 (科目, 章) 分组：三科可能共用同名章（如"总论"），不能只按章名合并
+        key = (ep["subject"], ep["chapter"])
+        chap = chapters.setdefault(
+            key, {"subject": ep["subject"], "chapter": ep["chapter"], "exam_points": []}
+        )
         chap["exam_points"].append(
             {
                 "id": ep["id"],

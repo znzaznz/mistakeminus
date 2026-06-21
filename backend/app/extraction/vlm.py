@@ -8,6 +8,8 @@ from __future__ import annotations
 import base64
 import json
 
+import httpx
+
 from ..config import settings
 
 # 给 VLM 的指令：逐页识题，返回严格 JSON。
@@ -54,6 +56,34 @@ def _build_client():
     )
 
 
+def _extract_questions_ollama(page_png: bytes) -> list[dict]:
+    b64 = base64.b64encode(page_png).decode("ascii")
+    prompt = _SYSTEM_PROMPT + "\n\n识别这一页上的所有题目。只输出 JSON。"
+    url = settings.ollama_base_url.rstrip("/") + "/api/generate"
+    try:
+        with httpx.Client(trust_env=False, timeout=180) as http:
+            resp = http.post(
+                url,
+                json={
+                    "model": settings.ollama_vl_model,
+                    "prompt": prompt,
+                    "images": [b64],
+                    "stream": False,
+                    "format": "json",
+                    "options": {"temperature": 0.1},
+                },
+            )
+        resp.raise_for_status()
+    except httpx.HTTPError as e:
+        raise VLMError(f"Ollama 调用失败: {e}") from e
+
+    data = resp.json()
+    content = data.get("response") or data.get("thinking") or ""
+    if not content:
+        raise VLMError("Ollama 返回为空")
+    return _parse_questions_json(content)
+
+
 def _parse_questions_json(content: str) -> list[dict]:
     text = content.strip()
     # 容忍模型偶尔包了 ```json ``` 代码块
@@ -75,6 +105,9 @@ def _parse_questions_json(content: str) -> list[dict]:
 
 def extract_questions(page_png: bytes, client=None) -> list[dict]:
     """对一页整页图调用 VLM，返回该页题目的原始 dict 列表（未校验）。"""
+    if settings.vlm_provider.lower() == "ollama":
+        return _extract_questions_ollama(page_png)
+
     client = client or _build_client()
     b64 = base64.b64encode(page_png).decode("ascii")
     resp = client.chat.completions.create(
