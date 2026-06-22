@@ -2,7 +2,7 @@
 
 本地单用户的刷题 / 错题本工具：导入讲义 PDF → 自动生成题库 → 刷题 → 错题自动沉淀、按遗忘曲线复习。免登录、不上云。
 
-> 需求见 [`REQUIREMENTS.md`](./REQUIREMENTS.md)，设计见 [`PRD.md`](./PRD.md)，任务拆解见 [`issues/`](./issues/)，开发/运维日志见 [`DEVLOG.md`](./DEVLOG.md)。
+> 进度与数据状态见 [`PROJECT_STATUS.md`](./PROJECT_STATUS.md)，产品设计见 [`PRD.md`](./PRD.md)，开发/运维日志见 [`DEVLOG.md`](./DEVLOG.md)。
 
 ## 技术栈
 
