@@ -1,0 +1,799 @@
+[
+ {
+  "knowledge_point_id": 402,
+  "question_type": "单选",
+  "stem": "企业收到客户的预付款项，应当计入（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "客户预付的款项应计入预收账款，不计入应收账款。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "应收账款"
+   },
+   {
+    "key": "B",
+    "text": "预收账款"
+   },
+   {
+    "key": "C",
+    "text": "其他应收款"
+   },
+   {
+    "key": "D",
+    "text": "应收票据"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 402,
+  "question_type": "判断",
+  "stem": "“应收账款”科目核算销售形成的债权，不包含增值税销项税额（销项税额单独记入“应交税费”）。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "应收账款不含销项税额，销项税额单独核算。表述正确。"
+ },
+ {
+  "knowledge_point_id": 403,
+  "question_type": "单选",
+  "stem": "存货管理的核心目标是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "存货管理的核心目标是在保证生产经营连续性的前提下，使存货相关总成本最低。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "使存货周转率最大化"
+   },
+   {
+    "key": "B",
+    "text": "实现绝对零存货"
+   },
+   {
+    "key": "C",
+    "text": "在保证生产经营连续性的前提下使存货相关总成本最低"
+   },
+   {
+    "key": "D",
+    "text": "使存货数量最多"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 403,
+  "question_type": "判断",
+  "stem": "存货管理目标不是单纯追求存货周转率最大化，而是在保证供应前提下使存货相关总成本最低。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "存货管理追求总成本最低下的合理周转。表述正确。"
+ },
+ {
+  "knowledge_point_id": 406,
+  "question_type": "单选",
+  "stem": "ABC分类控制法对存货进行分类的主要依据是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "ABC分类法以资金占用金额为主导：A类金额大品种少严控，C类金额小品种多简化管理。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "存货的品种数量"
+   },
+   {
+    "key": "B",
+    "text": "存货的资金占用金额"
+   },
+   {
+    "key": "C",
+    "text": "存货的存放位置"
+   },
+   {
+    "key": "D",
+    "text": "存货的采购频率"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 406,
+  "question_type": "判断",
+  "stem": "适时制（JIT）库存系统以零库存为导向，依赖稳定的供应链和精准的需求预测。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "JIT以最小必要库存为目标，依赖稳定供应与精准预测。表述正确。"
+ },
+ {
+  "knowledge_point_id": 408,
+  "question_type": "单选",
+  "stem": "与长期负债相比，流动负债的特点是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "流动负债筹资速度快、成本相对较低，但偿还压力大、财务风险较高。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "筹资速度慢、成本高"
+   },
+   {
+    "key": "B",
+    "text": "筹资速度快、成本较低，但财务风险较高"
+   },
+   {
+    "key": "C",
+    "text": "没有偿还压力"
+   },
+   {
+    "key": "D",
+    "text": "完全不受利率波动影响"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 408,
+  "question_type": "判断",
+  "stem": "流动负债融资速度快、成本相对较低，但集中到期偿还压力大，财务风险较高。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "流动负债低成本高风险并存。表述正确。"
+ },
+ {
+  "knowledge_point_id": 409,
+  "question_type": "单选",
+  "stem": "将流动资产由流动负债支持、长期资产由长期资金支持的营运资金管理策略是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "匹配（适中）策略下，流动资产由流动负债支持、长期资产由长期资金支持。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "匹配（适中）策略"
+   },
+   {
+    "key": "B",
+    "text": "激进策略"
+   },
+   {
+    "key": "C",
+    "text": "保守策略"
+   },
+   {
+    "key": "D",
+    "text": "随机策略"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 409,
+  "question_type": "判断",
+  "stem": "保守策略下，部分流动资产由长期资金支持，风险较低但成本较高。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "保守策略以长期资金支持部分流动资产，低风险高成本。表述正确。"
+ },
+ {
+  "knowledge_point_id": 410,
+  "question_type": "单选",
+  "stem": "成本管理追求的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "成本管理不追求绝对最低，而是在保证质量与功能前提下追求相关范围内总成本最优。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "绝对成本最低"
+   },
+   {
+    "key": "B",
+    "text": "在保证质量与功能前提下的总成本最优"
+   },
+   {
+    "key": "C",
+    "text": "人工费最低"
+   },
+   {
+    "key": "D",
+    "text": "材料费最低"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 410,
+  "question_type": "判断",
+  "stem": "成本管理不追求绝对最低成本，而是在保证质量与功能前提下追求总成本最优。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "成本管理求成本最优而非绝对最低。表述正确。"
+ },
+ {
+  "knowledge_point_id": 411,
+  "question_type": "单选",
+  "stem": "下列各项中，属于成本管理原则的是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "成本管理原则包括成本效益原则、融合性原则、适应性原则、重要性原则；实质重于形式、谨慎性、可比性属会计原则。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "成本效益原则"
+   },
+   {
+    "key": "B",
+    "text": "实质重于形式原则"
+   },
+   {
+    "key": "C",
+    "text": "谨慎性原则"
+   },
+   {
+    "key": "D",
+    "text": "可比性原则"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 411,
+  "question_type": "判断",
+  "stem": "成本管理的融合性原则强调将成本管理嵌入业务流程、实现业财融合，而非财务部门单方进行。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "融合性原则强调业财融合。表述正确。"
+ },
+ {
+  "knowledge_point_id": 412,
+  "question_type": "多选",
+  "stem": "下列各项中，属于成本管理内容的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "explanation": "成本管理内容包括成本预测、成本决策、成本计划、成本控制、成本核算、成本分析与考核。选A、B、C、D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "成本预测"
+   },
+   {
+    "key": "B",
+    "text": "成本决策"
+   },
+   {
+    "key": "C",
+    "text": "成本控制"
+   },
+   {
+    "key": "D",
+    "text": "成本核算"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 412,
+  "question_type": "判断",
+  "stem": "成本控制是事中行为，成本核算是事后计量，二者所处时点不同。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "成本控制事中、成本核算事后。表述正确。"
+ },
+ {
+  "knowledge_point_id": 413,
+  "question_type": "单选",
+  "stem": "本量利分析研究的是（）之间的数量依存关系。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "本量利分析研究成本、业务量、利润三者之间的数量依存关系。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "资产、负债、所有者权益"
+   },
+   {
+    "key": "B",
+    "text": "成本、业务量、利润"
+   },
+   {
+    "key": "C",
+    "text": "收入、费用、利润"
+   },
+   {
+    "key": "D",
+    "text": "投入、产出、效益"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 413,
+  "question_type": "判断",
+  "stem": "本量利分析中的“本”特指按成本性态分类后的固定成本与变动成本，混合成本须先行分解。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "本量利的“本”指分解后的固定与变动成本。表述正确。"
+ },
+ {
+  "knowledge_point_id": 415,
+  "question_type": "单选",
+  "stem": "盈亏平衡点销售量的计算公式为（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "盈亏平衡点销售量=固定成本/（单价-单位变动成本）=固定成本/单位边际贡献。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "固定成本/单价"
+   },
+   {
+    "key": "B",
+    "text": "固定成本/（单价-单位变动成本）"
+   },
+   {
+    "key": "C",
+    "text": "固定成本/单位变动成本"
+   },
+   {
+    "key": "D",
+    "text": "固定成本×边际贡献率"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 415,
+  "question_type": "判断",
+  "stem": "单位边际贡献等于单价减去单位变动成本，边际贡献总额用于补偿固定成本后形成利润。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "单位边际贡献=单价-单位变动成本。表述正确。"
+ },
+ {
+  "knowledge_point_id": 416,
+  "question_type": "单选",
+  "stem": "关于本量利分析的局限性，下列说法正确的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "本量利分析依赖线性假设，主要适用于短期决策，长期决策易失真，不适用于资本支出决策。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "可以用于一切经营决策"
+   },
+   {
+    "key": "B",
+    "text": "依赖线性假设，长期决策易失真"
+   },
+   {
+    "key": "C",
+    "text": "能够精确预测风险"
+   },
+   {
+    "key": "D",
+    "text": "已充分考虑存货变动的影响"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 416,
+  "question_type": "判断",
+  "stem": "本量利分析基于线性假设，主要适用于短期经营决策，不适用于资本支出等长期决策。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "本量利适用短期决策，不适用长期资本支出决策。表述正确。"
+ },
+ {
+  "knowledge_point_id": 420,
+  "question_type": "单选",
+  "stem": "在亏损产品是否停产的决策中，若该产品的单位边际贡献大于0，则（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "单位边际贡献大于0时，继续生产可补偿部分固定成本，停产反而减少总利润，故不应停产。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "应当立即停产"
+   },
+   {
+    "key": "B",
+    "text": "不应停产，停产将减少总利润"
+   },
+   {
+    "key": "C",
+    "text": "无法判断"
+   },
+   {
+    "key": "D",
+    "text": "取决于销量是否最大"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 420,
+  "question_type": "判断",
+  "stem": "单位边际贡献为正，并不等于产品已经盈利，因为还未覆盖固定成本。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "边际贡献为正未必盈利，需覆盖固定成本后才有利润。表述正确。"
+ },
+ {
+  "knowledge_point_id": 421,
+  "question_type": "单选",
+  "stem": "企业决定是否接受特殊订单时，一般应满足的条件是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "接受特殊订单一般要求单位边际贡献大于0且不影响正常生产经营（有剩余产能）。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "订单价格高于正常售价"
+   },
+   {
+    "key": "B",
+    "text": "单位边际贡献大于0且不影响正常生产经营"
+   },
+   {
+    "key": "C",
+    "text": "订单数量足够大"
+   },
+   {
+    "key": "D",
+    "text": "能弥补全部固定成本"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 421,
+  "question_type": "判断",
+  "stem": "计算特殊订单的边际贡献时，可剔除不发生的变动成本（如销售佣金），但应包含为该订单专门发生的成本（如定制模具费）。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "特殊订单决策剔除不发生的变动成本，计入专属成本。表述正确。"
+ },
+ {
+  "knowledge_point_id": 422,
+  "question_type": "单选",
+  "stem": "直接材料标准成本等于（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "直接材料标准成本=直接材料标准用量×标准价格。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "标准工时×标准工资率"
+   },
+   {
+    "key": "B",
+    "text": "直接材料标准用量×标准价格"
+   },
+   {
+    "key": "C",
+    "text": "标准工时×制造费用分配率"
+   },
+   {
+    "key": "D",
+    "text": "实际用量×实际价格"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 422,
+  "question_type": "判断",
+  "stem": "考试中标准成本一般采用正常标准（含合理损耗和必要的停工时间），而非理想标准。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "标准成本默认采用正常标准。表述正确。"
+ },
+ {
+  "knowledge_point_id": 428,
+  "question_type": "单选",
+  "stem": "根据《公司法》，公司税后利润分配的正确顺序是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "税后利润分配顺序：弥补以前年度亏损→提取法定公积金→提取任意公积金→向投资者（股东）分配。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "弥补亏损→提取法定公积金→提取任意公积金→向投资者分配"
+   },
+   {
+    "key": "B",
+    "text": "向投资者分配→提取法定公积金→弥补亏损"
+   },
+   {
+    "key": "C",
+    "text": "提取任意公积金→弥补亏损→提取法定公积金"
+   },
+   {
+    "key": "D",
+    "text": "提取法定公积金→向投资者分配→弥补亏损"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 428,
+  "question_type": "判断",
+  "stem": "企业弥补以前年度亏损应当用历年累计未分配利润，不得用资本公积弥补亏损。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "弥补亏损用未分配利润，不得用资本公积。表述正确。"
+ },
+ {
+  "knowledge_point_id": 429,
+  "question_type": "多选",
+  "stem": "下列各项中，属于收入与分配管理内容的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "explanation": "收入与分配管理内容包括收入管理、纳税管理、分配管理。存货管理属于营运资金管理。选A、B、C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "收入管理"
+   },
+   {
+    "key": "B",
+    "text": "纳税管理"
+   },
+   {
+    "key": "C",
+    "text": "分配管理"
+   },
+   {
+    "key": "D",
+    "text": "存货管理"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 429,
+  "question_type": "判断",
+  "stem": "利润分配方案经董事会提出预案后，还需经股东（大）会决议方为生效。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "董事会预案无约束力，股东会决议为生效前提。表述正确。"
+ },
+ {
+  "knowledge_point_id": 431,
+  "question_type": "单选",
+  "stem": "以扩大销售量为定价目标而采用降价策略时，必须满足的条件是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "降价扩大销量须满足需求价格弹性大于1，否则降价反而减少总收入。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "需求价格弹性大于1"
+   },
+   {
+    "key": "B",
+    "text": "需求价格弹性小于1"
+   },
+   {
+    "key": "C",
+    "text": "需求价格弹性等于0"
+   },
+   {
+    "key": "D",
+    "text": "与需求价格弹性无关"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 431,
+  "question_type": "判断",
+  "stem": "利润最大化的定价目标并不等同于单价最高，因为单价过高可能导致销量下降而总利润减少。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "利润最大化不等于单价最高。表述正确。"
+ },
+ {
+  "knowledge_point_id": 433,
+  "question_type": "单选",
+  "stem": "关于纳税管理（税收筹划），下列说法正确的是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "纳税管理是在合法前提下通过事前规划优化计税依据与纳税时间，区别于偷逃税；其本质不是降低名义税率，也不能认为所有财政补贴均免税。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "纳税管理即偷逃税款"
+   },
+   {
+    "key": "B",
+    "text": "通过降低名义税率来实现"
+   },
+   {
+    "key": "C",
+    "text": "在合法前提下优化计税依据与纳税时间"
+   },
+   {
+    "key": "D",
+    "text": "所有财政补贴一律免税"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 433,
+  "question_type": "判断",
+  "stem": "税收筹划的本质是优化计税依据与纳税时间，并需注意区分不征税收入与应税收入。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "税收筹划优化计税依据与时间，需区分不征税收入与应税收入。表述正确。"
+ },
+ {
+  "knowledge_point_id": 436,
+  "question_type": "单选",
+  "stem": "公司提取的法定盈余公积金累计额达到公司注册资本的（）以上时，可以不再提取。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "法定盈余公积金累计额达到注册资本的50%以上时，可不再提取。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "25%"
+   },
+   {
+    "key": "B",
+    "text": "50%"
+   },
+   {
+    "key": "C",
+    "text": "100%"
+   },
+   {
+    "key": "D",
+    "text": "10%"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 436,
+  "question_type": "判断",
+  "stem": "资本保全约束要求公司不得用股本（实收资本）或资本公积向股东分配利润。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "资本保全约束禁止用股本或资本公积分红。表述正确。"
+ },
+ {
+  "knowledge_point_id": 439,
+  "question_type": "单选",
+  "stem": "下列关于财务比率分析局限性的表述中，正确的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "比率分析忽略了企业的绝对规模；它不能完全消除会计政策影响，不能替代非财务信息，也无法准确预测突发事件。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "能完全消除会计政策选择的影响"
+   },
+   {
+    "key": "B",
+    "text": "比率分析忽略了企业的绝对规模"
+   },
+   {
+    "key": "C",
+    "text": "可以替代非财务信息"
+   },
+   {
+    "key": "D",
+    "text": "能准确预测突发事件"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 439,
+  "question_type": "判断",
+  "stem": "财务分析主要依据历史会计数据，对处于战略转型期的企业解释力相对较弱。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "财务分析依赖历史数据，对转型期企业解释力弱。表述正确。"
+ },
+ {
+  "knowledge_point_id": 442,
+  "question_type": "单选",
+  "stem": "净资产收益率（ROE）的计算公式是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "净资产收益率=净利润/平均所有者权益。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "净利润/营业收入"
+   },
+   {
+    "key": "B",
+    "text": "净利润/平均总资产"
+   },
+   {
+    "key": "C",
+    "text": "净利润/平均所有者权益"
+   },
+   {
+    "key": "D",
+    "text": "营业利润/营业收入"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 442,
+  "question_type": "判断",
+  "stem": "按照杜邦分析，净资产收益率=营业净利率×总资产周转率×权益乘数。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "杜邦分解ROE=营业净利率×总资产周转率×权益乘数。表述正确。"
+ },
+ {
+  "knowledge_point_id": 443,
+  "question_type": "单选",
+  "stem": "营业收入增长率的计算公式是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "营业收入增长率=（本期营业收入-上期营业收入）/上期营业收入，分母为上期数。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "（本期营业收入-上期营业收入）/上期营业收入"
+   },
+   {
+    "key": "B",
+    "text": "（本期营业收入-上期营业收入）/本期营业收入"
+   },
+   {
+    "key": "C",
+    "text": "本期营业收入/上期营业收入"
+   },
+   {
+    "key": "D",
+    "text": "本期营业收入/平均总资产"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 443,
+  "question_type": "判断",
+  "stem": "资本保值增值率等于期末所有者权益除以期初所有者权益，大于100%表明资本实现保值。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "资本保值增值率=期末所有者权益/期初所有者权益，>100%为保值。表述正确。"
+ }
+]

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-22T01:21:44",
+  "generated_at": "2026-06-22T15:27:03",
   "tables": {
     "exam_points": 149,
     "knowledge_points": 448,
-    "questions": 2553,
+    "questions": 2797,
     "lecture_materials": 269
   },
   "copied_reports": [

@@ -1,0 +1,772 @@
+[
+ {
+  "knowledge_point_id": 309,
+  "question_type": "多选",
+  "stem": "民间非营利组织财务会计报告的主表包括（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "explanation": "民间非营利组织财务会计报告包括资产负债表、业务活动表、现金流量表和净资产变动表四张主表及附注。选A、B、C、D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "资产负债表"
+   },
+   {
+    "key": "B",
+    "text": "业务活动表"
+   },
+   {
+    "key": "C",
+    "text": "现金流量表"
+   },
+   {
+    "key": "D",
+    "text": "净资产变动表"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 309,
+  "question_type": "判断",
+  "stem": "民间非营利组织以业务活动表替代利润表，按限定性和非限定性分别列示收入与费用。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "业务活动表替代利润表，按限定性/非限定性列示。表述正确。"
+ },
+ {
+  "knowledge_point_id": 311,
+  "question_type": "单选",
+  "stem": "民间非营利组织收到受托代理资产时，应当（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "受托代理业务中，收到受托代理资产借记受托代理资产，贷记受托代理负债；不确认为本组织资产或收入。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "确认为本组织资产"
+   },
+   {
+    "key": "B",
+    "text": "借记受托代理资产，贷记受托代理负债"
+   },
+   {
+    "key": "C",
+    "text": "确认为收入"
+   },
+   {
+    "key": "D",
+    "text": "直接计入净资产"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 311,
+  "question_type": "判断",
+  "stem": "受托代理业务中，民间非营利组织不享有受托代理资产的所有权，不将其确认为本组织资产纳入资产负债表。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "受托代理资产控制权仍属委托方，不确认为本组织资产。表述正确。"
+ },
+ {
+  "knowledge_point_id": 312,
+  "question_type": "单选",
+  "stem": "下列各项中，应当计入民间非营利组织业务活动成本的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "业务活动成本指为开展项目服务活动直接发生的费用；行政管理人员工资、办公费、审计费计入管理费用，筹资费用单独核算。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "行政管理人员工资"
+   },
+   {
+    "key": "B",
+    "text": "开展项目服务活动直接发生的费用"
+   },
+   {
+    "key": "C",
+    "text": "审计费"
+   },
+   {
+    "key": "D",
+    "text": "筹资费用"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 312,
+  "question_type": "判断",
+  "stem": "行政管理人员工资、办公费、审计费等应计入管理费用，不得计入业务活动成本。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "管理性费用计入管理费用，不计入业务活动成本。表述正确。"
+ },
+ {
+  "knowledge_point_id": 24,
+  "question_type": "单选",
+  "stem": "下列关于公司债券的表述中，正确的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "公司债券是公司依照法定程序发行、约定在一定期限还本付息的有价证券，属债权凭证，持有人是债权人而非股东。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "公司债券是公司的所有权凭证"
+   },
+   {
+    "key": "B",
+    "text": "公司债券是公司依照法定程序发行、约定还本付息的有价证券"
+   },
+   {
+    "key": "C",
+    "text": "公司债券持有人是公司股东"
+   },
+   {
+    "key": "D",
+    "text": "公司债券一律不得转让"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 24,
+  "question_type": "判断",
+  "stem": "可转换公司债券属于公司债券。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "可转换公司债券是公司债券的一种。表述正确。"
+ },
+ {
+  "knowledge_point_id": 27,
+  "question_type": "单选",
+  "stem": "公司合并的，应当自作出合并决议之日起（）通知债权人。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "公司合并应当自作出合并决议之日起10日内通知债权人，并于30日内在报纸上公告。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "10日内"
+   },
+   {
+    "key": "B",
+    "text": "15日内"
+   },
+   {
+    "key": "C",
+    "text": "20日内"
+   },
+   {
+    "key": "D",
+    "text": "30日内"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 27,
+  "question_type": "判断",
+  "stem": "公司分立前的债务，由分立后的公司承担连带责任，但债权人与公司另有约定的除外。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "分立前债务由分立后公司连带承担，另有约定除外。表述正确。"
+ },
+ {
+  "knowledge_point_id": 90,
+  "question_type": "多选",
+  "stem": "根据票据法律制度的规定，下列属于票据的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "explanation": "我国票据法规定的票据包括汇票、本票、支票。提单不是票据。选A、B、C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "汇票"
+   },
+   {
+    "key": "B",
+    "text": "本票"
+   },
+   {
+    "key": "C",
+    "text": "支票"
+   },
+   {
+    "key": "D",
+    "text": "提单"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 90,
+  "question_type": "判断",
+  "stem": "持票人对支票出票人的权利，自出票日起6个月不行使而消灭。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "支票的票据权利时效自出票日起6个月。表述正确。"
+ },
+ {
+  "knowledge_point_id": 95,
+  "question_type": "单选",
+  "stem": "下列各项中，不属于我国证券法所调整的证券是（）。",
+  "correct_answer": [
+   "D"
+  ],
+  "explanation": "证券法调整的证券包括股票、公司债券、存托凭证和国务院依法认定的其他证券；银行存单不属于证券法调整的证券。选D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "股票"
+   },
+   {
+    "key": "B",
+    "text": "公司债券"
+   },
+   {
+    "key": "C",
+    "text": "存托凭证"
+   },
+   {
+    "key": "D",
+    "text": "银行存单"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 95,
+  "question_type": "判断",
+  "stem": "我国证券业、银行业、保险业、信托业实行分业经营、分业管理。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "证券法基本原则之一是分业经营、分业管理。表述正确。"
+ },
+ {
+  "knowledge_point_id": 315,
+  "question_type": "多选",
+  "stem": "企业财务管理的内容包括（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "explanation": "企业财务管理内容包括筹资管理、投资管理、营运资金管理、成本管理、收入与分配管理。选A、B、C、D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "筹资管理"
+   },
+   {
+    "key": "B",
+    "text": "投资管理"
+   },
+   {
+    "key": "C",
+    "text": "营运资金管理"
+   },
+   {
+    "key": "D",
+    "text": "成本管理"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 315,
+  "question_type": "判断",
+  "stem": "营运资金管理既包括流动资产管理，也包括流动负债管理。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "营运资金管理是流动资产与流动负债的双向协调。表述正确。"
+ },
+ {
+  "knowledge_point_id": 318,
+  "question_type": "单选",
+  "stem": "下列各项中，属于财务管理原则的是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "风险与收益权衡原则属于财务管理原则；实质重于形式、可比性、重要性属于会计信息质量要求。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "实质重于形式"
+   },
+   {
+    "key": "B",
+    "text": "可比性"
+   },
+   {
+    "key": "C",
+    "text": "风险与收益权衡原则"
+   },
+   {
+    "key": "D",
+    "text": "重要性"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 318,
+  "question_type": "判断",
+  "stem": "“实质重于形式”“可比性”属于会计信息质量要求，不属于财务管理原则。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "这些是会计信息质量要求，不是财务管理原则。表述正确。"
+ },
+ {
+  "knowledge_point_id": 322,
+  "question_type": "单选",
+  "stem": "货币时间价值是指（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "货币时间价值是货币经历一定时间的投资和再投资所增加的价值。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "货币的购买力"
+   },
+   {
+    "key": "B",
+    "text": "货币经历一定时间的投资和再投资所增加的价值"
+   },
+   {
+    "key": "C",
+    "text": "通货膨胀带来的货币贬值"
+   },
+   {
+    "key": "D",
+    "text": "存款获得的利息收入"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 322,
+  "question_type": "判断",
+  "stem": "将现金存入保险柜保管，不产生货币时间价值。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "未投入生产经营周转的货币不产生时间价值。表述正确。"
+ },
+ {
+  "knowledge_point_id": 324,
+  "question_type": "单选",
+  "stem": "为偿还未来某一时点的债务而每年年末等额存入的款项是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "年偿债基金是为偿还未来某一时点债务而每年需等额存入的款项，A=F×(A/F,i,n)。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "年金现值"
+   },
+   {
+    "key": "B",
+    "text": "年偿债基金"
+   },
+   {
+    "key": "C",
+    "text": "年资本回收额"
+   },
+   {
+    "key": "D",
+    "text": "复利终值"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 324,
+  "question_type": "判断",
+  "stem": "年资本回收额与年金现值互为逆运算，即(A/P,i,n)=1/(P/A,i,n)。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "年资本回收额系数是年金现值系数的倒数。表述正确。"
+ },
+ {
+  "knowledge_point_id": 335,
+  "question_type": "单选",
+  "stem": "下列关于预算的表述中，正确的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "预算是指令性计划，预测是描述可能性，二者不同；预算效力源于内部管理制度而非国家法律；预算编制需考虑成本效益，非越细越好。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "预算等同于预测"
+   },
+   {
+    "key": "B",
+    "text": "预算是指令性计划，与预测不同"
+   },
+   {
+    "key": "C",
+    "text": "预算具有国家法律效力"
+   },
+   {
+    "key": "D",
+    "text": "预算编制越细越好"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 335,
+  "question_type": "判断",
+  "stem": "预算的效力源于企业内部管理制度，不具有国家法律效力。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "预算约束力来自内部制度，非国家法律。表述正确。"
+ },
+ {
+  "knowledge_point_id": 337,
+  "question_type": "单选",
+  "stem": "下列各项中，属于预算管理原则的是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "预算管理原则包括战略导向原则、过程控制原则、平衡管理原则、权变性原则；重要性、谨慎性、实质重于形式属会计原则。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "战略导向原则"
+   },
+   {
+    "key": "B",
+    "text": "重要性原则"
+   },
+   {
+    "key": "C",
+    "text": "谨慎性原则"
+   },
+   {
+    "key": "D",
+    "text": "实质重于形式原则"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 337,
+  "question_type": "判断",
+  "stem": "预算管理强调全员参与、全过程控制、全方位覆盖。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "预算管理核心是“三全”管理。表述正确。"
+ },
+ {
+  "knowledge_point_id": 338,
+  "question_type": "单选",
+  "stem": "企业预算管理的决策机构是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "预算管理委员会是预算管理的决策机构；财务部门是执行机构（牵头编制、汇总、监控）。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "财务部门"
+   },
+   {
+    "key": "B",
+    "text": "预算管理委员会"
+   },
+   {
+    "key": "C",
+    "text": "审计部门"
+   },
+   {
+    "key": "D",
+    "text": "总经理办公会"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 338,
+  "question_type": "判断",
+  "stem": "预算管理委员会负责审定预算目标、审批预算方案；财务部门负责预算编制的组织、汇总和监控。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "委员会决策，财务部门组织执行。表述正确。"
+ },
+ {
+  "knowledge_point_id": 341,
+  "question_type": "单选",
+  "stem": "我国企业常用的预算编制程序是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "我国企业常用“上下结合、分级编制、逐级汇总”的预算编制程序。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "自上而下，一次下达"
+   },
+   {
+    "key": "B",
+    "text": "自下而上，逐级上报"
+   },
+   {
+    "key": "C",
+    "text": "上下结合、分级编制、逐级汇总"
+   },
+   {
+    "key": "D",
+    "text": "完全分散，各自编制"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 341,
+  "question_type": "判断",
+  "stem": "预算调整程序与预算编制程序不同，预算调整需经申请、审核、批准。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "预算调整有单独的申请、审核、批准程序。表述正确。"
+ },
+ {
+  "knowledge_point_id": 345,
+  "question_type": "单选",
+  "stem": "企业在预算执行过程中需要对预算进行调整的，（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "预算执行中的动态调整必须履行规定的审批程序（经预算管理委员会批准），部门无权自行修改。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "各部门可以自行调整"
+   },
+   {
+    "key": "B",
+    "text": "必须履行规定的审批程序"
+   },
+   {
+    "key": "C",
+    "text": "无需任何审批"
+   },
+   {
+    "key": "D",
+    "text": "由财务部门直接调整"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 345,
+  "question_type": "判断",
+  "stem": "预算执行开始于预算批准之后，而非预算编制完成即开始执行。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "预算批准后方进入执行。表述正确。"
+ },
+ {
+  "knowledge_point_id": 346,
+  "question_type": "单选",
+  "stem": "销售量差异的计算公式为（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "销售量差异=（实际销量-预算销量）×预算单价。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "（实际销量-预算销量）×预算单价"
+   },
+   {
+    "key": "B",
+    "text": "（实际单价-预算单价）×实际销量"
+   },
+   {
+    "key": "C",
+    "text": "（实际销量-预算销量）×实际单价"
+   },
+   {
+    "key": "D",
+    "text": "实际销量×预算单价"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 346,
+  "question_type": "判断",
+  "stem": "不可控差异（如自然灾害造成的差异）通常不纳入责任中心的预算考核。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "考核基于责任中心可控范围，不可控差异不纳入。表述正确。"
+ },
+ {
+  "knowledge_point_id": 348,
+  "question_type": "多选",
+  "stem": "下列各项中，属于筹资管理内容的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "explanation": "筹资管理内容包括筹资预测、筹资方式选择、筹资规模确定、筹资时机决策、资本结构优化等。选A、B、C、D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "筹资预测"
+   },
+   {
+    "key": "B",
+    "text": "筹资方式选择"
+   },
+   {
+    "key": "C",
+    "text": "筹资规模确定"
+   },
+   {
+    "key": "D",
+    "text": "资本结构优化"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 348,
+  "question_type": "判断",
+  "stem": "筹资管理内容与筹资程序不同，前者是管理职能，后者是操作流程。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "管理内容是职能，筹资程序是流程，二者不同。表述正确。"
+ },
+ {
+  "knowledge_point_id": 351,
+  "question_type": "多选",
+  "stem": "下列各项中，属于筹资管理原则的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "explanation": "筹资管理原则包括筹措合法、规模适当、筹措及时、来源经济、结构合理。选A、B、C、D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "筹措合法"
+   },
+   {
+    "key": "B",
+    "text": "规模适当"
+   },
+   {
+    "key": "C",
+    "text": "筹措及时"
+   },
+   {
+    "key": "D",
+    "text": "来源经济"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 351,
+  "question_type": "判断",
+  "stem": "比较债务筹资的经济性时，应当使用税后资本成本，因为债务利息可以抵税。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "债务利息抵税，经济性比较应用税后资本成本。表述正确。"
+ },
+ {
+  "knowledge_point_id": 357,
+  "question_type": "单选",
+  "stem": "以企业未来现金流为偿付基础发行证券进行融资的方式是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "资产证券化（ABS）以基础资产未来现金流为偿付基础。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "供应链金融"
+   },
+   {
+    "key": "B",
+    "text": "资产证券化"
+   },
+   {
+    "key": "C",
+    "text": "产业基金"
+   },
+   {
+    "key": "D",
+    "text": "绿色债券"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 357,
+  "question_type": "判断",
+  "stem": "有追索权的应收账款保理，卖方承担坏账风险，不终止确认应收账款。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "有追索权保理风险未转移，不终止确认应收账款。表述正确。"
+ },
+ {
+  "knowledge_point_id": 358,
+  "question_type": "单选",
+  "stem": "资产证券化交易结构中，用于隔离风险的载体是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "资产证券化通过设立特殊目的载体（SPV）隔离基础资产风险。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "特殊目的载体（SPV）"
+   },
+   {
+    "key": "B",
+    "text": "发起人母公司"
+   },
+   {
+    "key": "C",
+    "text": "商业银行"
+   },
+   {
+    "key": "D",
+    "text": "担保公司"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 358,
+  "question_type": "判断",
+  "stem": "资产证券化中，发起人提供差额补足等隐性担保的，相关基础资产可能无法实现出表。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "提供隐性担保导致风险未转移，资产无法出表。表述正确。"
+ }
+]

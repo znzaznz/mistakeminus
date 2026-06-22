@@ -1,0 +1,1218 @@
+[
+ {
+  "knowledge_point_id": 117,
+  "question_type": "单选",
+  "stem": "根据会计法律制度的规定，下列关于会计人员从事会计工作基本要求的表述中，不正确的是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "会计从业资格证书已取消，从事会计工作不再要求取得该证书，A表述错误当选。会计人员应具备从事会计工作所需的专业能力、按规定参加继续教育、保守商业秘密，B、C、D正确。",
+  "options": [
+   {
+    "key": "A",
+    "text": "从事会计工作必须取得会计从业资格证书"
+   },
+   {
+    "key": "B",
+    "text": "应当具备从事会计工作所需的专业能力"
+   },
+   {
+    "key": "C",
+    "text": "应当按照规定参加继续教育"
+   },
+   {
+    "key": "D",
+    "text": "应当保守商业秘密"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 117,
+  "question_type": "判断",
+  "stem": "担任单位会计机构负责人（会计主管人员）的，应当具备会计师以上专业技术职务资格或者从事会计工作三年以上经历。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "担任会计机构负责人（会计主管）应具备会计师以上专业技术职务资格，或从事会计工作三年以上经历。表述正确。"
+ },
+ {
+  "knowledge_point_id": 119,
+  "question_type": "单选",
+  "stem": "下列会计法规制度中，层次最高的是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "我国会计法规体系自上而下为：会计法（最高，全国人大常委会）、会计行政法规（国务院）、国家统一的会计制度（财政部部门规章）。会计法层次最高，选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "《会计法》"
+   },
+   {
+    "key": "B",
+    "text": "《企业财务会计报告条例》"
+   },
+   {
+    "key": "C",
+    "text": "企业会计准则"
+   },
+   {
+    "key": "D",
+    "text": "《总会计师条例》"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 119,
+  "question_type": "判断",
+  "stem": "《企业财务会计报告条例》属于会计行政法规，由国务院制定。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "企业财务会计报告条例、总会计师条例属于会计行政法规，由国务院制定。表述正确。"
+ },
+ {
+  "knowledge_point_id": 121,
+  "question_type": "单选",
+  "stem": "财务报告的目标之一是反映企业管理层（）的履行情况。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "财务报告两大目标：①提供与决策有用的信息；②反映企业管理层受托责任的履行情况。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "受托责任"
+   },
+   {
+    "key": "B",
+    "text": "纳税义务"
+   },
+   {
+    "key": "C",
+    "text": "社会责任"
+   },
+   {
+    "key": "D",
+    "text": "环保责任"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 121,
+  "question_type": "判断",
+  "stem": "向财务报告使用者提供与决策有用的信息，是财务报告目标之一。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "财务报告目标包括提供与决策有用的信息和反映管理层受托责任履行情况。表述正确。"
+ },
+ {
+  "knowledge_point_id": 122,
+  "question_type": "多选",
+  "stem": "下列各项会计要素中，属于反映企业财务状况的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "explanation": "六个会计要素中，资产、负债、所有者权益反映财务状况（资产=负债+所有者权益）；收入、费用、利润反映经营成果。选A、B、C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "资产"
+   },
+   {
+    "key": "B",
+    "text": "负债"
+   },
+   {
+    "key": "C",
+    "text": "所有者权益"
+   },
+   {
+    "key": "D",
+    "text": "收入"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 122,
+  "question_type": "判断",
+  "stem": "利润属于反映企业经营成果的会计要素。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "收入、费用、利润是反映经营成果的要素。表述正确。"
+ },
+ {
+  "knowledge_point_id": 124,
+  "question_type": "单选",
+  "stem": "企业披露环境、社会和治理（ESG）等相关信息，属于（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "企业按要求披露环境、社会和治理（ESG）等相关信息，属于可持续信息披露，选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "可持续信息披露"
+   },
+   {
+    "key": "B",
+    "text": "关联方披露"
+   },
+   {
+    "key": "C",
+    "text": "分部报告"
+   },
+   {
+    "key": "D",
+    "text": "或有事项披露"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 124,
+  "question_type": "判断",
+  "stem": "可持续信息披露涉及企业环境、社会和治理（ESG）等相关信息。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "可持续信息披露要求企业披露环境、社会和治理等可持续相关信息，提升信息透明度。表述正确。"
+ },
+ {
+  "knowledge_point_id": 125,
+  "question_type": "多选",
+  "stem": "存货的确认应当同时满足的条件有（）。",
+  "correct_answer": [
+   "A",
+   "B"
+  ],
+  "explanation": "存货确认需同时满足：①与该存货有关的经济利益很可能流入企业；②成本能够可靠计量。已验收入库、已支付货款不是确认条件。选A、B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "与该存货有关的经济利益很可能流入企业"
+   },
+   {
+    "key": "B",
+    "text": "成本能够可靠计量"
+   },
+   {
+    "key": "C",
+    "text": "已经验收入库"
+   },
+   {
+    "key": "D",
+    "text": "已经支付货款"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 125,
+  "question_type": "判断",
+  "stem": "企业的周转材料属于存货。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "存货包括原材料、在产品、半成品、产成品、商品、周转材料等。表述正确。"
+ },
+ {
+  "knowledge_point_id": 127,
+  "question_type": "单选",
+  "stem": "资产负债表日，存货应当按照（）计量。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "存货期末按成本与可变现净值孰低计量；成本高于可变现净值的，计提存货跌价准备。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "历史成本"
+   },
+   {
+    "key": "B",
+    "text": "成本与可变现净值孰低"
+   },
+   {
+    "key": "C",
+    "text": "公允价值"
+   },
+   {
+    "key": "D",
+    "text": "可变现净值"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 127,
+  "question_type": "判断",
+  "stem": "存货成本高于其可变现净值时，应计提存货跌价准备，差额计入资产减值损失。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "成本高于可变现净值时计提跌价准备，差额计入资产减值损失。表述正确。"
+ },
+ {
+  "knowledge_point_id": 128,
+  "question_type": "单选",
+  "stem": "下列情形中，通常不表明存货的可变现净值低于成本的是（）。",
+  "correct_answer": [
+   "D"
+  ],
+  "explanation": "市价持续下跌且无回升希望、生产成本高于市价、产品更新换代滞销等表明可变现净值低于成本；市价短期小幅波动后回升不构成减值迹象，选D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "市价持续下跌且无回升希望"
+   },
+   {
+    "key": "B",
+    "text": "生产成本高于市价"
+   },
+   {
+    "key": "C",
+    "text": "产品更新换代导致滞销"
+   },
+   {
+    "key": "D",
+    "text": "市价短期内小幅波动后回升"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 128,
+  "question_type": "判断",
+  "stem": "存货因质量等原因发生毁损、陈旧，通常表明其可变现净值低于成本。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "因质量等导致毁损、陈旧属于存货减值迹象。表述正确。"
+ },
+ {
+  "knowledge_point_id": 135,
+  "question_type": "多选",
+  "stem": "固定资产满足下列条件之一的，应予终止确认（）。",
+  "correct_answer": [
+   "A",
+   "B"
+  ],
+  "explanation": "固定资产满足之一终止确认：①处于处置状态；②预期通过使用或处置不能产生经济利益。提足折旧或使用满一定年限不是终止确认条件。选A、B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "该固定资产处于处置状态"
+   },
+   {
+    "key": "B",
+    "text": "预期通过使用或处置不能产生经济利益"
+   },
+   {
+    "key": "C",
+    "text": "已计提足额折旧"
+   },
+   {
+    "key": "D",
+    "text": "已使用满10年"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 135,
+  "question_type": "判断",
+  "stem": "固定资产已计提足额折旧但仍可继续使用的，应当终止确认。（）",
+  "correct_answer": [
+   "错"
+  ],
+  "explanation": "终止确认条件是处于处置状态或预期不能产生经济利益。提足折旧但仍在使用的不满足终止确认条件。表述错误。"
+ },
+ {
+  "knowledge_point_id": 137,
+  "question_type": "单选",
+  "stem": "下列各项中，不属于无形资产的是（）。",
+  "correct_answer": [
+   "D"
+  ],
+  "explanation": "无形资产须可辨认；商誉不可辨认，不属于无形资产。专利权、商标权、土地使用权均属无形资产。选D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "专利权"
+   },
+   {
+    "key": "B",
+    "text": "商标权"
+   },
+   {
+    "key": "C",
+    "text": "土地使用权"
+   },
+   {
+    "key": "D",
+    "text": "商誉"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 137,
+  "question_type": "判断",
+  "stem": "无形资产是指企业拥有或者控制的没有实物形态的可辨认非货币性资产。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "无形资产的定义即没有实物形态的可辨认非货币性资产。表述正确。"
+ },
+ {
+  "knowledge_point_id": 140,
+  "question_type": "单选",
+  "stem": "将研究成果或其他知识应用于某项计划或设计，以生产出新的产品，属于内部研究开发项目的（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "开发阶段是将研究成果应用于生产，针对性强、形成成果可能性较大；研究阶段为探索性、不确定性大。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "研究阶段"
+   },
+   {
+    "key": "B",
+    "text": "开发阶段"
+   },
+   {
+    "key": "C",
+    "text": "试运行阶段"
+   },
+   {
+    "key": "D",
+    "text": "准备阶段"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 140,
+  "question_type": "判断",
+  "stem": "内部研究开发项目研究阶段的支出，应于发生时计入当期损益。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "研究阶段支出全部费用化计入当期损益（管理费用）。表述正确。"
+ },
+ {
+  "knowledge_point_id": 142,
+  "question_type": "单选",
+  "stem": "企业内部研究开发项目费用化的支出，期末应当转入（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "费用化支出先归集于研发支出——费用化支出，期末转入管理费用；资本化支出达到预定用途时转入无形资产。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "管理费用"
+   },
+   {
+    "key": "B",
+    "text": "无形资产"
+   },
+   {
+    "key": "C",
+    "text": "研发支出——资本化支出"
+   },
+   {
+    "key": "D",
+    "text": "销售费用"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 142,
+  "question_type": "判断",
+  "stem": "内部开发活动中符合资本化条件的支出，达到预定用途时应转入无形资产。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "资本化支出归集于研发支出——资本化支出，达到预定用途时转入无形资产。表述正确。"
+ },
+ {
+  "knowledge_point_id": 146,
+  "question_type": "单选",
+  "stem": "企业出售无形资产，将取得价款扣除其账面价值及相关税费后的差额计入（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "出售无形资产的净损益计入资产处置损益。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "营业外收入"
+   },
+   {
+    "key": "B",
+    "text": "其他业务收入"
+   },
+   {
+    "key": "C",
+    "text": "资产处置损益"
+   },
+   {
+    "key": "D",
+    "text": "投资收益"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 146,
+  "question_type": "判断",
+  "stem": "企业出售无形资产形成的净损益，应当计入资产处置损益。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "出售无形资产的差额计入资产处置损益。表述正确。"
+ },
+ {
+  "knowledge_point_id": 150,
+  "question_type": "单选",
+  "stem": "下列各项中，属于投资性房地产的是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "投资性房地产是为赚取租金或资本增值而持有的房地产，如出租的办公楼。自用厂房、生产经营用土地使用权属固定资产/无形资产，作为存货的房地产属存货。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "出租的办公楼"
+   },
+   {
+    "key": "B",
+    "text": "自用的厂房"
+   },
+   {
+    "key": "C",
+    "text": "作为存货的房地产"
+   },
+   {
+    "key": "D",
+    "text": "生产经营用土地使用权"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 150,
+  "question_type": "判断",
+  "stem": "投资性房地产在同时满足经济利益很可能流入且成本能可靠计量时予以确认。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "投资性房地产确认需同时满足经济利益很可能流入和成本能可靠计量。表述正确。"
+ },
+ {
+  "knowledge_point_id": 151,
+  "question_type": "单选",
+  "stem": "下列各项中，不应计入外购投资性房地产成本的是（）。",
+  "correct_answer": [
+   "D"
+  ],
+  "explanation": "投资性房地产按成本初始计量，包括购买价款、相关税费及可直接归属的支出；购入后发生的日常维修费计入当期损益，不计入成本。选D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "购买价款"
+   },
+   {
+    "key": "B",
+    "text": "相关税费"
+   },
+   {
+    "key": "C",
+    "text": "可直接归属于该资产的其他支出"
+   },
+   {
+    "key": "D",
+    "text": "购入后发生的日常维修费"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 151,
+  "question_type": "判断",
+  "stem": "投资性房地产应当按照成本进行初始计量。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "投资性房地产初始按成本计量。表述正确。"
+ },
+ {
+  "knowledge_point_id": 153,
+  "question_type": "多选",
+  "stem": "对采用成本模式计量的投资性房地产，下列会计处理正确的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "explanation": "成本模式下：建筑物计提折旧、土地使用权摊销、存在减值迹象时计提减值准备；减值准备一经计提以后期间不得转回。选A、B、C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "建筑物计提折旧"
+   },
+   {
+    "key": "B",
+    "text": "土地使用权进行摊销"
+   },
+   {
+    "key": "C",
+    "text": "存在减值迹象时计提减值准备"
+   },
+   {
+    "key": "D",
+    "text": "计提的减值准备以后期间可以转回"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 153,
+  "question_type": "判断",
+  "stem": "采用成本模式计量的投资性房地产计提的减值准备，以后会计期间不得转回。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "长期资产减值准备一经计提不得转回。表述正确。"
+ },
+ {
+  "knowledge_point_id": 157,
+  "question_type": "单选",
+  "stem": "处置采用成本模式计量的投资性房地产，处置收入扣除账面价值和相关税费后的差额应计入（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "投资性房地产属于企业的日常经营活动，处置差额计入其他业务收入/其他业务成本。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "营业外收支"
+   },
+   {
+    "key": "B",
+    "text": "其他业务收入/其他业务成本"
+   },
+   {
+    "key": "C",
+    "text": "投资收益"
+   },
+   {
+    "key": "D",
+    "text": "资产处置损益"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 157,
+  "question_type": "判断",
+  "stem": "采用公允价值模式计量的投资性房地产处置时，应将原计入其他综合收益、累计公允价值变动等一并结转。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "公允价值模式下处置需结转累计公允价值变动等。表述正确。"
+ },
+ {
+  "knowledge_point_id": 158,
+  "question_type": "多选",
+  "stem": "下列权益性投资中，属于长期股权投资核算范围的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "explanation": "长期股权投资核算对子公司（控制）、合营企业（共同控制）、联营企业（重大影响）的投资；不具有控制、共同控制或重大影响的，作为金融资产核算。选A、B、C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "对子公司的投资"
+   },
+   {
+    "key": "B",
+    "text": "对合营企业的投资"
+   },
+   {
+    "key": "C",
+    "text": "对联营企业的投资"
+   },
+   {
+    "key": "D",
+    "text": "不具有重大影响的权益性投资"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 158,
+  "question_type": "判断",
+  "stem": "对被投资单位不具有控制、共同控制或重大影响的权益性投资，应作为金融资产核算。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "不构成控制、共同控制或重大影响的权益性投资属于金融资产，不属于长投。表述正确。"
+ },
+ {
+  "knowledge_point_id": 160,
+  "question_type": "单选",
+  "stem": "对子公司的长期股权投资采用成本法核算，被投资单位宣告分派现金股利时，投资方应（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "成本法下，被投资单位宣告分派现金股利时确认为投资收益，不调整长期股权投资账面价值。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "确认为投资收益"
+   },
+   {
+    "key": "B",
+    "text": "增加长期股权投资账面价值"
+   },
+   {
+    "key": "C",
+    "text": "减少长期股权投资账面价值"
+   },
+   {
+    "key": "D",
+    "text": "计入其他综合收益"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 160,
+  "question_type": "判断",
+  "stem": "成本法下，被投资单位宣告分派现金股利，投资方不调整长期股权投资的账面价值。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "成本法下宣告现金股利确认投资收益，不调整长投账面价值。表述正确。"
+ },
+ {
+  "knowledge_point_id": 162,
+  "question_type": "单选",
+  "stem": "投资方因增持股份对被投资单位由具有重大影响转为实施控制，其长期股权投资的后续计量应（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "重大影响（联营）采用权益法，控制（子公司）采用成本法；由重大影响转为控制，应由权益法转为成本法。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "由成本法转为权益法"
+   },
+   {
+    "key": "B",
+    "text": "由权益法转为成本法"
+   },
+   {
+    "key": "C",
+    "text": "由金融资产转为权益法"
+   },
+   {
+    "key": "D",
+    "text": "由权益法转为金融资产"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 162,
+  "question_type": "判断",
+  "stem": "因持股比例或影响程度变化，长期股权投资可在成本法、权益法及金融资产之间转换。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "影响程度变化时长投在成本法、权益法及金融资产间转换。表述正确。"
+ },
+ {
+  "knowledge_point_id": 164,
+  "question_type": "单选",
+  "stem": "由两个或两个以上参与方共同控制的安排是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "合营安排是由两个或以上参与方共同控制的安排，分为共同经营和合营企业。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "合营安排"
+   },
+   {
+    "key": "B",
+    "text": "联营安排"
+   },
+   {
+    "key": "C",
+    "text": "代理安排"
+   },
+   {
+    "key": "D",
+    "text": "委托安排"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 164,
+  "question_type": "判断",
+  "stem": "合营安排分为共同经营和合营企业两类。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "合营安排按参与方权利义务分为共同经营和合营企业。表述正确。"
+ },
+ {
+  "knowledge_point_id": 165,
+  "question_type": "单选",
+  "stem": "关于共同经营中合营方的账务处理，下列说法正确的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "共同经营中合营方确认其单独所持及按份额享有或承担的资产、负债、收入、费用（而非按净额）。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "按享有的净资产份额确认"
+   },
+   {
+    "key": "B",
+    "text": "确认单独所持及按份额享有或承担的资产、负债、收入和费用"
+   },
+   {
+    "key": "C",
+    "text": "作为长期股权投资按权益法核算"
+   },
+   {
+    "key": "D",
+    "text": "不确认相关资产负债"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 165,
+  "question_type": "判断",
+  "stem": "共同经营中，合营方应确认其单独所持以及按份额享有或承担的资产、负债、收入和费用。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "共同经营合营方按份额确认资产负债收入费用，非按净额。表述正确。"
+ },
+ {
+  "knowledge_point_id": 166,
+  "question_type": "判断",
+  "stem": "共同经营中不享有共同控制，但享有相关资产权利、承担相关负债义务的参与方，比照合营方进行会计处理。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "享有资产权利、承担负债义务的非共同控制参与方比照合营方处理。表述正确。"
+ },
+ {
+  "knowledge_point_id": 166,
+  "question_type": "单选",
+  "stem": "共同经营中既不享有共同控制、也不享有相关资产权利的参与方，应按（）等规定处理。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "不享有共同控制且不享有相关资产权利的参与方，按金融资产等规定处理。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "金融资产"
+   },
+   {
+    "key": "B",
+    "text": "长期股权投资成本法"
+   },
+   {
+    "key": "C",
+    "text": "合并财务报表"
+   },
+   {
+    "key": "D",
+    "text": "权益法"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 167,
+  "question_type": "单选",
+  "stem": "资产减值是指资产的（）低于其账面价值。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "资产减值即资产可收回金额低于账面价值。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "可收回金额"
+   },
+   {
+    "key": "B",
+    "text": "公允价值"
+   },
+   {
+    "key": "C",
+    "text": "重置成本"
+   },
+   {
+    "key": "D",
+    "text": "账面余额"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 167,
+  "question_type": "多选",
+  "stem": "下列资产的减值，适用《企业会计准则第8号——资产减值》的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "explanation": "该准则主要规范长期资产：固定资产、无形资产、商誉、长期股权投资、成本模式投资性房地产、资产组等；存货、金融资产、递延所得税资产适用各自准则。选A、B、C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "固定资产"
+   },
+   {
+    "key": "B",
+    "text": "无形资产"
+   },
+   {
+    "key": "C",
+    "text": "商誉"
+   },
+   {
+    "key": "D",
+    "text": "存货"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 170,
+  "question_type": "单选",
+  "stem": "确定资产的公允价值减去处置费用后的净额时，最优先采用的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "估计顺序：①公平交易中的销售协议价格；②活跃市场价格；③可获得的最佳信息估计。最优先为销售协议价格。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "活跃市场价格"
+   },
+   {
+    "key": "B",
+    "text": "公平交易中的销售协议价格"
+   },
+   {
+    "key": "C",
+    "text": "可获得的最佳信息估计"
+   },
+   {
+    "key": "D",
+    "text": "账面价值"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 170,
+  "question_type": "判断",
+  "stem": "确定资产公允价值减去处置费用后的净额，应优先采用公平交易中的销售协议价格。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "优先采用销售协议价格，其次活跃市场价格。表述正确。"
+ },
+ {
+  "knowledge_point_id": 173,
+  "question_type": "单选",
+  "stem": "资产组是指企业可以认定的（）的最小资产组合。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "资产组是能够独立产生现金流入的最小资产组合。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "能够独立产生现金流入"
+   },
+   {
+    "key": "B",
+    "text": "能够独立计提折旧"
+   },
+   {
+    "key": "C",
+    "text": "能够独立核算"
+   },
+   {
+    "key": "D",
+    "text": "单独存放"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 173,
+  "question_type": "判断",
+  "stem": "难以对单项资产估计其可收回金额的，应当以该资产所属的资产组为基础进行减值测试。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "难以单独估计可收回金额时按所属资产组测试。表述正确。"
+ },
+ {
+  "knowledge_point_id": 174,
+  "question_type": "单选",
+  "stem": "关于资产组账面价值的确定，下列说法正确的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "资产组账面价值应包括可直接归属以及可合理分摊的资产；可收回金额与账面价值的口径应一致。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "仅包括可直接归属的资产"
+   },
+   {
+    "key": "B",
+    "text": "应包括可直接归属及可合理分摊的资产"
+   },
+   {
+    "key": "C",
+    "text": "等于各单项资产账面价值之和减商誉"
+   },
+   {
+    "key": "D",
+    "text": "按可收回金额确定"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 174,
+  "question_type": "判断",
+  "stem": "确定资产组的账面价值与可收回金额时，二者的口径应当保持一致。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "账面价值与可收回金额口径一致。表述正确。"
+ },
+ {
+  "knowledge_point_id": 175,
+  "question_type": "单选",
+  "stem": "包含商誉的资产组发生减值的，减值损失应当首先抵减（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "资产组减值损失先抵减分摊至该资产组的商誉账面价值，再按比例抵减其他各项资产。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "分摊至该资产组的商誉账面价值"
+   },
+   {
+    "key": "B",
+    "text": "各单项资产账面价值"
+   },
+   {
+    "key": "C",
+    "text": "固定资产账面价值"
+   },
+   {
+    "key": "D",
+    "text": "无形资产账面价值"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 175,
+  "question_type": "判断",
+  "stem": "资产组减值损失抵减后，各单项资产账面价值不得低于其单项可收回金额、公允价值减处置费用后净额和零三者中最高者。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "抵减后单项资产账面价值不低于三者中最高者。表述正确。"
+ },
+ {
+  "knowledge_point_id": 176,
+  "question_type": "单选",
+  "stem": "对于难以独立产生现金流量的总部资产，进行减值测试时应当（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "总部资产难以独立产生现金流量，应分摊至相关资产组或资产组组合后一并测试。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "单独进行减值测试"
+   },
+   {
+    "key": "B",
+    "text": "分摊至相关资产组或资产组组合后进行测试"
+   },
+   {
+    "key": "C",
+    "text": "不进行减值测试"
+   },
+   {
+    "key": "D",
+    "text": "按公允价值单独测试"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 176,
+  "question_type": "判断",
+  "stem": "总部资产难以独立产生现金流量，应当分摊至相关资产组或资产组组合后进行减值测试。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "总部资产分摊后一并测试。表述正确。"
+ },
+ {
+  "knowledge_point_id": 185,
+  "question_type": "单选",
+  "stem": "生产车间管理人员的工资，应当计入（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "生产工人工资计入生产成本，车间管理人员工资计入制造费用，行政人员工资计入管理费用，专设销售机构人员工资计入销售费用。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "生产成本"
+   },
+   {
+    "key": "B",
+    "text": "制造费用"
+   },
+   {
+    "key": "C",
+    "text": "管理费用"
+   },
+   {
+    "key": "D",
+    "text": "销售费用"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 185,
+  "question_type": "判断",
+  "stem": "企业应当在职工为其提供服务的会计期间，按权责发生制确认应付职工薪酬。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "短期薪酬按权责发生制在职工提供服务的期间确认。表述正确。"
+ },
+ {
+  "knowledge_point_id": 186,
+  "question_type": "单选",
+  "stem": "下列带薪缺勤中，属于累积带薪缺勤、期末需要确认负债的是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "累积带薪缺勤可结转下期（如年休假），需确认负债；婚假、产假、丧假属非累积带薪缺勤，不预提。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "年休假"
+   },
+   {
+    "key": "B",
+    "text": "婚假"
+   },
+   {
+    "key": "C",
+    "text": "产假"
+   },
+   {
+    "key": "D",
+    "text": "丧假"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 186,
+  "question_type": "判断",
+  "stem": "非累积带薪缺勤在实际发生缺勤的期间确认薪酬费用，不预提负债。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "非累积带薪缺勤实际发生时确认费用，不预提。表述正确。"
+ },
+ {
+  "knowledge_point_id": 187,
+  "question_type": "单选",
+  "stem": "企业确认短期利润分享计划的应付职工薪酬，应当按照（）确认。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "短期利润分享计划期末按最佳估计数确认应付职工薪酬。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "最佳估计数"
+   },
+   {
+    "key": "B",
+    "text": "协议约定上限"
+   },
+   {
+    "key": "C",
+    "text": "实际支付数"
+   },
+   {
+    "key": "D",
+    "text": "账面利润全额"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 187,
+  "question_type": "判断",
+  "stem": "确认短期利润分享计划义务，须同时满足职工已提供服务且企业取得相应业绩两个条件。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "利润分享计划须同时满足两个条件方可确认。表述正确。"
+ },
+ {
+  "knowledge_point_id": 192,
+  "question_type": "单选",
+  "stem": "下列各项中，属于其他长期职工福利的是（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "其他长期职工福利包括长期带薪缺勤、长期残疾福利、长期利润分享计划、递延奖金等；辞退福利、短期带薪缺勤、设定提存计划属其他类别。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "长期残疾福利"
+   },
+   {
+    "key": "B",
+    "text": "辞退福利"
+   },
+   {
+    "key": "C",
+    "text": "短期带薪缺勤"
+   },
+   {
+    "key": "D",
+    "text": "设定提存计划"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 192,
+  "question_type": "判断",
+  "stem": "其他长期职工福利通常按现值计量。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "其他长期职工福利期限超过12个月，按现值计量。表述正确。"
+ }
+]

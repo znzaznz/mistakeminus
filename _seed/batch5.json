@@ -1,0 +1,658 @@
+[
+ {
+  "knowledge_point_id": 359,
+  "question_type": "单选",
+  "stem": "采用因素分析法预测资金需要量时，应当在基期资金平均占用额的基础上（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "因素分析法以基期资金平均占用额为基础，剔除不合理资金占用，再按预计销售增减及周转变动调整。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "加上不合理的资金占用"
+   },
+   {
+    "key": "B",
+    "text": "剔除不合理的资金占用"
+   },
+   {
+    "key": "C",
+    "text": "不作任何调整"
+   },
+   {
+    "key": "D",
+    "text": "仅考虑销售增长"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 359,
+  "question_type": "判断",
+  "stem": "因素分析法计算简便，但主观性较强，适用于资金各项目与产销量保持一定比例关系的情况。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "因素分析法简便但主观性强，适用于资金与产销量成比例的情形。表述正确。"
+ },
+ {
+  "knowledge_point_id": 367,
+  "question_type": "单选",
+  "stem": "计算项目资本成本时调整β值，应当使用（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "计算项目杠杆β应使用项目自身的资本结构(D/E)，而非可比公司或企业当前的D/E。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "可比公司的D/E"
+   },
+   {
+    "key": "B",
+    "text": "企业当前的D/E"
+   },
+   {
+    "key": "C",
+    "text": "项目自身的D/E"
+   },
+   {
+    "key": "D",
+    "text": "行业平均D/E"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 367,
+  "question_type": "判断",
+  "stem": "当项目风险与企业现有资产风险不同时，不宜直接用企业整体加权平均资本成本作为项目折现率。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "项目风险不同于企业整体风险时，应单独估计项目资本成本。表述正确。"
+ },
+ {
+  "knowledge_point_id": 368,
+  "question_type": "单选",
+  "stem": "按照固定增长股利模型，股票价值等于（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "固定增长模型下股票价值V=D1/(r-g)，其中D1为下期股利，r为必要报酬率，g为增长率。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "D/r"
+   },
+   {
+    "key": "B",
+    "text": "D1/(r-g)"
+   },
+   {
+    "key": "C",
+    "text": "D×r"
+   },
+   {
+    "key": "D",
+    "text": "D1×(r-g)"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 368,
+  "question_type": "判断",
+  "stem": "债券价值等于其未来各期利息的现值与到期本金现值之和。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "债券价值=未来利息现值+本金现值。表述正确。"
+ },
+ {
+  "knowledge_point_id": 375,
+  "question_type": "单选",
+  "stem": "关于双重股权结构，下列说法正确的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "双重股权结构下，同一公司发行表决权不同的两类或多类普通股，常用于创始团队保持控制权；它不是优先股，不改变所有权比例。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "各类股票的表决权相同"
+   },
+   {
+    "key": "B",
+    "text": "不同类别普通股表决权不同，常用于创始团队保持控制权"
+   },
+   {
+    "key": "C",
+    "text": "双重股权结构即优先股"
+   },
+   {
+    "key": "D",
+    "text": "必然损害公司价值"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 375,
+  "question_type": "判断",
+  "stem": "双重股权结构改变的是不同类别普通股的表决权分布，而不改变股东的所有权比例。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "双重股权只改变表决权分布，不改变所有权比例。表述正确。"
+ },
+ {
+  "knowledge_point_id": 376,
+  "question_type": "单选",
+  "stem": "下列各项中，属于企业投资管理原则的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "投资管理原则包括战略性原则、规模适度原则、风险与收益均衡原则、量力而行与尽力而为相结合原则。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "成本最低原则"
+   },
+   {
+    "key": "B",
+    "text": "风险与收益均衡原则"
+   },
+   {
+    "key": "C",
+    "text": "实质重于形式原则"
+   },
+   {
+    "key": "D",
+    "text": "谨慎性原则"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 376,
+  "question_type": "判断",
+  "stem": "战略性原则要求企业投资服从整体发展战略，不得盲目偏离主业或资源错配。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "战略性原则强调投资服从企业发展战略。表述正确。"
+ },
+ {
+  "knowledge_point_id": 377,
+  "question_type": "单选",
+  "stem": "按投资对象的存在形态，企业投资分为（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "按投资对象存在形态，企业投资分为项目投资（实体资产）和证券投资（金融资产）。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "直接投资和间接投资"
+   },
+   {
+    "key": "B",
+    "text": "项目投资和证券投资"
+   },
+   {
+    "key": "C",
+    "text": "对内投资和对外投资"
+   },
+   {
+    "key": "D",
+    "text": "短期投资和长期投资"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 377,
+  "question_type": "判断",
+  "stem": "母公司向其子公司增资，属于对内投资。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "向合并范围内子公司增资属对内投资。表述正确。"
+ },
+ {
+  "knowledge_point_id": 380,
+  "question_type": "单选",
+  "stem": "对独立投资方案进行决策，判断其财务可行的标准是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "独立方案财务可行需同时满足净现值≥0且内含报酬率≥必要报酬率。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "只要净现值大于0"
+   },
+   {
+    "key": "B",
+    "text": "净现值≥0且内含报酬率≥必要报酬率"
+   },
+   {
+    "key": "C",
+    "text": "只要内含报酬率大于0"
+   },
+   {
+    "key": "D",
+    "text": "回收期短于寿命期"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 380,
+  "question_type": "判断",
+  "stem": "在资本受到限制时，应当按现值指数从高到低排序选择独立投资方案。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "资本限额下按现值指数高低排序选取方案。表述正确。"
+ },
+ {
+  "knowledge_point_id": 381,
+  "question_type": "单选",
+  "stem": "对寿命期不同的互斥投资方案进行决策，宜采用（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "寿命期不同的互斥方案应采用等额年金法（或共同年限法）调整后比较，不能直接比净现值。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "直接比较净现值"
+   },
+   {
+    "key": "B",
+    "text": "等额年金法"
+   },
+   {
+    "key": "C",
+    "text": "静态回收期法"
+   },
+   {
+    "key": "D",
+    "text": "会计收益率法"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 381,
+  "question_type": "判断",
+  "stem": "对投资额不同的互斥方案，可采用差额投资内部收益率法，差额内部收益率大于必要报酬率时应选投资额大的方案。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "差额投资内部收益率大于必要报酬率时选投资额大者。表述正确。"
+ },
+ {
+  "knowledge_point_id": 382,
+  "question_type": "单选",
+  "stem": "在固定资产更新决策中，继续使用旧设备的机会成本是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "继续使用旧设备的机会成本是其目前的变现净值（放弃出售取得的现金），而非账面价值。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "旧设备的账面价值"
+   },
+   {
+    "key": "B",
+    "text": "旧设备的原值"
+   },
+   {
+    "key": "C",
+    "text": "旧设备目前的变现净值"
+   },
+   {
+    "key": "D",
+    "text": "旧设备的重置成本"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 382,
+  "question_type": "判断",
+  "stem": "固定资产更新决策中，折旧抵税应当按照税法规定的折旧方法和年限计算，与会计折旧无关。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "折旧抵税按税法口径计算。表述正确。"
+ },
+ {
+  "knowledge_point_id": 383,
+  "question_type": "多选",
+  "stem": "下列各项中，属于企业进行证券投资目的的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "explanation": "证券投资目的包括获取投资收益、补充营业流动资金、满足未来特定支出需要、控制其他企业。选A、B、C、D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "获取投资收益"
+   },
+   {
+    "key": "B",
+    "text": "补充营业流动资金"
+   },
+   {
+    "key": "C",
+    "text": "满足未来特定支出需要"
+   },
+   {
+    "key": "D",
+    "text": "控制其他企业"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 383,
+  "question_type": "判断",
+  "stem": "为满足2年后到期债务的还本需要而投资，应优先选择到期日匹配、本金安全的国债，而非股票。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "满足特定支出需要的投资强调本金安全和到期匹配。表述正确。"
+ },
+ {
+  "knowledge_point_id": 388,
+  "question_type": "单选",
+  "stem": "衡量基金每单位系统性风险所获得的超额收益的指标是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "特雷诺比率=（基金收益率-无风险利率）/β，衡量单位系统性风险的超额收益。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "夏普比率"
+   },
+   {
+    "key": "B",
+    "text": "特雷诺比率"
+   },
+   {
+    "key": "C",
+    "text": "詹森α"
+   },
+   {
+    "key": "D",
+    "text": "信息比率"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 388,
+  "question_type": "判断",
+  "stem": "夏普比率以标准差为分母，衡量基金每单位总风险所获得的超额收益。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "夏普比率=（收益率-无风险利率）/标准差。表述正确。"
+ },
+ {
+  "knowledge_point_id": 389,
+  "question_type": "单选",
+  "stem": "私募股权投资基金主要投资于（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "私募股权投资基金（PE）主要投资于未上市企业股权，退出方式有IPO、并购、回购等。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "上市公司流通股"
+   },
+   {
+    "key": "B",
+    "text": "未上市企业股权"
+   },
+   {
+    "key": "C",
+    "text": "政府债券"
+   },
+   {
+    "key": "D",
+    "text": "银行存款"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 389,
+  "question_type": "判断",
+  "stem": "私募股权投资基金以有限合伙制为主，普通合伙人（GP）负责管理并承担无限责任，有限合伙人（LP）以出资额为限承担有限责任。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "有限合伙制下GP无限责任、LP有限责任。表述正确。"
+ },
+ {
+  "knowledge_point_id": 392,
+  "question_type": "多选",
+  "stem": "下列各项中，属于营运资金管理原则的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "explanation": "营运资金管理原则包括满足正常经营需要、提高资金使用效率、保持适度风险、成本效益权衡。选A、B、C、D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "满足正常经营需要"
+   },
+   {
+    "key": "B",
+    "text": "提高资金使用效率"
+   },
+   {
+    "key": "C",
+    "text": "保持适度风险"
+   },
+   {
+    "key": "D",
+    "text": "成本效益权衡"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 392,
+  "question_type": "判断",
+  "stem": "营运资金并非占用越少越好，应当在风险与收益之间进行权衡。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "营运资金管理需平衡风险与收益，非越少越好。表述正确。"
+ },
+ {
+  "knowledge_point_id": 396,
+  "question_type": "单选",
+  "stem": "下列现金管理模式中，子公司无独立结算权、所有收支均经集团总部账户的是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "统收统支模式下所有收支经集团总部账户，子公司无独立结算权。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "收支两条线"
+   },
+   {
+    "key": "B",
+    "text": "集团现金池"
+   },
+   {
+    "key": "C",
+    "text": "统收统支"
+   },
+   {
+    "key": "D",
+    "text": "财务公司模式"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 396,
+  "question_type": "判断",
+  "stem": "现金池模式下母子公司账户联动、内部计息调剂，与统收统支不同。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "现金池强调账户联动和内部计息，区别于统收统支。表述正确。"
+ },
+ {
+  "knowledge_point_id": 397,
+  "question_type": "单选",
+  "stem": "下列各项中，属于加速收款方法的是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "加速收款方法包括锁箱系统、集中银行制、电子支付等；合理利用信用期、票据支付、延期付款属于付款管理。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "合理利用信用期付款"
+   },
+   {
+    "key": "B",
+    "text": "以票据方式付款"
+   },
+   {
+    "key": "C",
+    "text": "集中银行制（锁箱系统）"
+   },
+   {
+    "key": "D",
+    "text": "延期付款"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 397,
+  "question_type": "判断",
+  "stem": "加速收款、延期付款是现金日常管理的方法，但延期付款不得损害企业的商业信用。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "延期付款应在合理范围内，不得损害商业信用。表述正确。"
+ },
+ {
+  "knowledge_point_id": 398,
+  "question_type": "单选",
+  "stem": "下列各项中，属于应收账款基本功能的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "应收账款的基本功能是促进销售、减少存货积压；短期融资是其次要的衍生功能。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "短期融资"
+   },
+   {
+    "key": "B",
+    "text": "促进销售"
+   },
+   {
+    "key": "C",
+    "text": "替代信用调查"
+   },
+   {
+    "key": "D",
+    "text": "增加坏账"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 398,
+  "question_type": "判断",
+  "stem": "应收账款具有促进销售和减少存货的功能，其短期融资功能属于次要的衍生功能。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "融资功能是应收账款的次要衍生功能。表述正确。"
+ },
+ {
+  "knowledge_point_id": 399,
+  "question_type": "多选",
+  "stem": "下列各项中，属于应收账款成本的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "explanation": "应收账款成本包括机会成本、管理成本、坏账成本（及短缺成本）；放弃现金折扣成本属于信用政策决策变量，不是应收账款的固有成本。选A、B、C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "机会成本"
+   },
+   {
+    "key": "B",
+    "text": "管理成本"
+   },
+   {
+    "key": "C",
+    "text": "坏账成本"
+   },
+   {
+    "key": "D",
+    "text": "放弃现金折扣成本"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 399,
+  "question_type": "判断",
+  "stem": "计算应收账款机会成本时应当乘以变动成本率，而非毛利率。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "机会成本中按变动成本率计算占用资金。表述正确。"
+ },
+ {
+  "knowledge_point_id": 401,
+  "question_type": "单选",
+  "stem": "计算应收账款周转天数（DSO）时，应收账款应当取（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "应收账款周转天数应取期初与期末应收账款的平均数，而非期末数。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "期末数"
+   },
+   {
+    "key": "B",
+    "text": "期初数"
+   },
+   {
+    "key": "C",
+    "text": "期初与期末的平均数"
+   },
+   {
+    "key": "D",
+    "text": "期间最大值"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 401,
+  "question_type": "判断",
+  "stem": "账龄分析表按超期时段分层列示应收账款，重点关注逾期时间较长（如90天以上）的账款。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "账龄分析按超期时段分层，重点关注长期逾期账款。表述正确。"
+ }
+]

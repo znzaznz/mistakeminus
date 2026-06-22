@@ -1,0 +1,1017 @@
+[
+ {
+  "knowledge_point_id": 244,
+  "question_type": "单选",
+  "stem": "涉及补价的非货币性资产交换，采用公允价值计量、支付补价方换入资产的成本为（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "支付补价方：换入资产成本=换出资产公允价值+支付的补价+相关税费。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "换出资产公允价值+支付的补价+相关税费"
+   },
+   {
+    "key": "B",
+    "text": "换出资产公允价值-支付的补价+相关税费"
+   },
+   {
+    "key": "C",
+    "text": "换出资产账面价值+支付的补价"
+   },
+   {
+    "key": "D",
+    "text": "换入资产公允价值-支付的补价"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 244,
+  "question_type": "判断",
+  "stem": "非货币性资产交换中，收到补价的一方，其换出资产公允价值与账面价值的差额应当全额确认损益，而非按补价比例确认。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "补价不产生损益，损益按换出资产公允价值与账面价值差额全额确认。表述正确。"
+ },
+ {
+  "knowledge_point_id": 245,
+  "question_type": "单选",
+  "stem": "涉及多项资产的非货币性资产交换，账面价值模式下分配换入资产总成本的依据是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "账面价值模式下，按各项换入资产原账面价值的比例分配换入资产总成本。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "各项换入资产公允价值的比例"
+   },
+   {
+    "key": "B",
+    "text": "各项换入资产原账面价值的比例"
+   },
+   {
+    "key": "C",
+    "text": "平均分配"
+   },
+   {
+    "key": "D",
+    "text": "各项换入资产数量的比例"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 245,
+  "question_type": "判断",
+  "stem": "公允价值模式下涉及多项换入资产的，应按各项换入资产公允价值占换入资产公允价值总额的比例分配换入资产总成本。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "公允价值模式按换入各项资产公允价值比例分配总成本。表述正确。"
+ },
+ {
+  "knowledge_point_id": 247,
+  "question_type": "多选",
+  "stem": "下列各项中，属于债务重组方式的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "explanation": "债务重组方式包括：以资产清偿债务、将债务转为权益工具、修改其他债务条款，以及上述方式的组合。选A、B、C、D。",
+  "options": [
+   {
+    "key": "A",
+    "text": "以资产清偿债务"
+   },
+   {
+    "key": "B",
+    "text": "将债务转为权益工具"
+   },
+   {
+    "key": "C",
+    "text": "修改其他债务条款"
+   },
+   {
+    "key": "D",
+    "text": "以上三种方式的组合"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 247,
+  "question_type": "判断",
+  "stem": "债务人以现金清偿债务的，支付现金小于债务账面价值的差额计入投资收益。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "债务人现金清偿，债务账面价值与所付现金的差额计入投资收益。表述正确。"
+ },
+ {
+  "knowledge_point_id": 248,
+  "question_type": "单选",
+  "stem": "债务重组中，债权人将债权的账面价值与收到对价之间的差额计入（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "债权人将债权账面价值与收到对价的差额计入当期损益（投资收益）。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "营业外收支"
+   },
+   {
+    "key": "B",
+    "text": "投资收益"
+   },
+   {
+    "key": "C",
+    "text": "资本公积"
+   },
+   {
+    "key": "D",
+    "text": "其他综合收益"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 248,
+  "question_type": "判断",
+  "stem": "债务重组中债权人放弃的债权已计提坏账准备的，应先冲减坏账准备，不足冲减的差额计入投资收益。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "已计提坏账准备的，先冲减坏账准备，不足部分计入投资收益。表述正确。"
+ },
+ {
+  "knowledge_point_id": 251,
+  "question_type": "单选",
+  "stem": "所得税会计核算采用的方法是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "所得税会计采用资产负债表债务法，以暂时性差异为基础确认递延所得税。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "应付税款法"
+   },
+   {
+    "key": "B",
+    "text": "递延法"
+   },
+   {
+    "key": "C",
+    "text": "资产负债表债务法"
+   },
+   {
+    "key": "D",
+    "text": "利润表债务法"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 251,
+  "question_type": "判断",
+  "stem": "资产负债表债务法以资产、负债的账面价值与其计税基础之间的暂时性差异为基础确认递延所得税。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "债务法以账面价值与计税基础的暂时性差异为基础。表述正确。"
+ },
+ {
+  "knowledge_point_id": 255,
+  "question_type": "单选",
+  "stem": "适用所得税税率发生变化的，对已确认的递延所得税资产和递延所得税负债应当（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "税率变化时，对已确认的递延所得税资产和负债按新税率重新计量。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "不予调整"
+   },
+   {
+    "key": "B",
+    "text": "按新税率重新计量"
+   },
+   {
+    "key": "C",
+    "text": "追溯调整以前年度"
+   },
+   {
+    "key": "D",
+    "text": "转入资本公积"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 255,
+  "question_type": "判断",
+  "stem": "因税率变化对已确认递延所得税重新计量产生的差额，除与直接计入所有者权益的交易相关外，应计入当期所得税费用。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "税率变化的重新计量差额一般计入当期所得税费用。表述正确。"
+ },
+ {
+  "knowledge_point_id": 256,
+  "question_type": "单选",
+  "stem": "当期应交所得税的计算基础是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "当期应交所得税=应纳税所得额×当期适用所得税税率；应纳税所得额由会计利润经纳税调整得出。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "会计利润×税率"
+   },
+   {
+    "key": "B",
+    "text": "应纳税所得额×当期适用所得税税率"
+   },
+   {
+    "key": "C",
+    "text": "营业收入×税率"
+   },
+   {
+    "key": "D",
+    "text": "利润总额×税率"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 256,
+  "question_type": "判断",
+  "stem": "计算应纳税所得额时，国债利息收入应作纳税调整减少处理。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "国债利息免征所得税，会计已计入收入的应纳税调减。表述正确。"
+ },
+ {
+  "knowledge_point_id": 258,
+  "question_type": "单选",
+  "stem": "所得税费用等于（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "所得税费用=当期所得税+递延所得税。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "当期所得税+递延所得税"
+   },
+   {
+    "key": "B",
+    "text": "当期所得税-递延所得税"
+   },
+   {
+    "key": "C",
+    "text": "应纳税所得额×税率"
+   },
+   {
+    "key": "D",
+    "text": "利润总额×税率"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 258,
+  "question_type": "判断",
+  "stem": "利润表中的所得税费用包括当期所得税和递延所得税两个组成部分。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "所得税费用由当期所得税与递延所得税构成。表述正确。"
+ },
+ {
+  "knowledge_point_id": 262,
+  "question_type": "单选",
+  "stem": "境外经营的记账本位币与母公司记账本位币不同的，编制合并财务报表时应当（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "境外经营记账本位币与母公司不同的，须对其财务报表进行外币折算后纳入合并。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "无需折算"
+   },
+   {
+    "key": "B",
+    "text": "对其财务报表进行外币折算"
+   },
+   {
+    "key": "C",
+    "text": "按历史汇率重述"
+   },
+   {
+    "key": "D",
+    "text": "不纳入合并范围"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 262,
+  "question_type": "判断",
+  "stem": "境外经营记账本位币的确定，应根据其经营活动自主性、现金流独立性、融资币种等实质情况判断，而非仅看注册地。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "记账本位币按经济实质判断，不仅看注册地或法律形式。表述正确。"
+ },
+ {
+  "knowledge_point_id": 264,
+  "question_type": "单选",
+  "stem": "判断一项合同是否为租赁，核心是合同中是否存在已识别资产，且（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "租赁的核心判断是存在已识别资产，且承租人获得在一定期间内主导使用该资产的权利并支付对价。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "出租人保留对资产的控制权"
+   },
+   {
+    "key": "B",
+    "text": "承租人获得在一定期间内主导使用该资产的权利"
+   },
+   {
+    "key": "C",
+    "text": "资产所有权发生转移"
+   },
+   {
+    "key": "D",
+    "text": "合同金额超过规定标准"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 264,
+  "question_type": "判断",
+  "stem": "若出租人对资产享有实质性替换权，则该资产不构成已识别资产，相关合同不构成租赁。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "出租人享有实质性替换权的，资产不构成已识别资产。表述正确。"
+ },
+ {
+  "knowledge_point_id": 265,
+  "question_type": "单选",
+  "stem": "关于租赁的分拆，下列说法正确的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "出租人应当分拆租赁和非租赁部分；承租人可选择不分拆（作为单独租赁处理），但一经选择应一贯应用。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "承租人必须分拆租赁和非租赁部分"
+   },
+   {
+    "key": "B",
+    "text": "出租人应当分拆租赁和非租赁部分"
+   },
+   {
+    "key": "C",
+    "text": "承租人和出租人均不得分拆"
+   },
+   {
+    "key": "D",
+    "text": "是否分拆由双方协商决定"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 265,
+  "question_type": "判断",
+  "stem": "承租人可以选择不分拆租赁和非租赁部分，将其作为一项单独租赁处理，但一经选择应当一贯应用。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "承租人可选择不分拆，须一贯应用。表述正确。"
+ },
+ {
+  "knowledge_point_id": 266,
+  "question_type": "单选",
+  "stem": "租赁期是指（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "租赁期是承租人有权使用租赁资产且不可撤销的期间，包括合理确定将行使的续租选择权期间等。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "合同约定的固定期限"
+   },
+   {
+    "key": "B",
+    "text": "承租人有权使用租赁资产且不可撤销的期间"
+   },
+   {
+    "key": "C",
+    "text": "租赁资产的使用寿命"
+   },
+   {
+    "key": "D",
+    "text": "出租人指定的期间"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 266,
+  "question_type": "判断",
+  "stem": "承租人合理确定将行使续租选择权的，续租选择权涵盖的期间应当包括在租赁期内。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "合理确定行使的续租期计入租赁期。表述正确。"
+ },
+ {
+  "knowledge_point_id": 268,
+  "question_type": "单选",
+  "stem": "承租人对使用权资产的后续计量，通常应当（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "使用权资产后续按成本模式计提折旧（折旧期为租赁期与资产尚可使用年限孰短）。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "按公允价值计量"
+   },
+   {
+    "key": "B",
+    "text": "按成本模式计提折旧"
+   },
+   {
+    "key": "C",
+    "text": "不计提折旧"
+   },
+   {
+    "key": "D",
+    "text": "按重估价值计量"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 268,
+  "question_type": "判断",
+  "stem": "承租人租赁负债的利息费用，按实际利率法计算，每期利息=期初租赁负债余额×折现率。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "租赁负债按实际利率法摊销，利息=期初余额×折现率。表述正确。"
+ },
+ {
+  "knowledge_point_id": 269,
+  "question_type": "单选",
+  "stem": "承租人对不作为单独租赁处理的租赁变更进行重新计量时，应当采用（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "租赁变更重新计量时，采用变更日的折现率（如增量借款利率），不沿用原利率。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "原租赁开始日的折现率"
+   },
+   {
+    "key": "B",
+    "text": "变更日的折现率"
+   },
+   {
+    "key": "C",
+    "text": "市场平均利率"
+   },
+   {
+    "key": "D",
+    "text": "不予折现"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 269,
+  "question_type": "判断",
+  "stem": "租赁变更增加了租赁范围，且增加的对价与新增使用权的单独价格相当的，承租人应当作为一项单独租赁处理。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "扩大范围且对价相当的变更作为单独租赁。表述正确。"
+ },
+ {
+  "knowledge_point_id": 270,
+  "question_type": "单选",
+  "stem": "短期租赁是指（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "短期租赁指租赁期不超过12个月、且不包含购买选择权的租赁。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "租赁期不超过6个月的租赁"
+   },
+   {
+    "key": "B",
+    "text": "租赁期不超过12个月且不包含购买选择权的租赁"
+   },
+   {
+    "key": "C",
+    "text": "租赁期不超过24个月的租赁"
+   },
+   {
+    "key": "D",
+    "text": "租赁期不超过资产寿命一半的租赁"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 270,
+  "question_type": "判断",
+  "stem": "对短期租赁和低价值资产租赁，承租人可以选择不确认使用权资产和租赁负债，将租赁付款额计入当期损益。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "短期租赁、低价值资产租赁可简化处理，不确认使用权资产和租赁负债。表述正确。"
+ },
+ {
+  "knowledge_point_id": 271,
+  "question_type": "单选",
+  "stem": "出租人应当将租赁分为（）。",
+  "correct_answer": [
+   "A"
+  ],
+  "explanation": "出租人将租赁分为融资租赁和经营租赁，分类基础是风险报酬是否实质转移。选A。",
+  "options": [
+   {
+    "key": "A",
+    "text": "融资租赁和经营租赁"
+   },
+   {
+    "key": "B",
+    "text": "短期租赁和长期租赁"
+   },
+   {
+    "key": "C",
+    "text": "直接租赁和转租赁"
+   },
+   {
+    "key": "D",
+    "text": "表内租赁和表外租赁"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 271,
+  "question_type": "判断",
+  "stem": "出租人对租赁的分类，其基础是与租赁资产所有权有关的风险和报酬是否实质上转移。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "出租人租赁分类以风险报酬是否实质转移为基础。表述正确。"
+ },
+ {
+  "knowledge_point_id": 274,
+  "question_type": "单选",
+  "stem": "转租赁中，中间出租人对原租赁和转租赁应当（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "转租赁中，中间出租人对原租赁按承租人处理、对转租赁按出租人处理，分别核算。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "仅按承租人会计处理"
+   },
+   {
+    "key": "B",
+    "text": "仅按出租人会计处理"
+   },
+   {
+    "key": "C",
+    "text": "分别按承租人和出租人会计处理"
+   },
+   {
+    "key": "D",
+    "text": "不予确认"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 274,
+  "question_type": "判断",
+  "stem": "转租赁中，中间出租人对转租赁的分类应当独立判断，与原租赁的分类无关。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "转租赁分类独立于原租赁，按自身风险报酬转移情况评估。表述正确。"
+ },
+ {
+  "knowledge_point_id": 275,
+  "question_type": "单选",
+  "stem": "生产商或经销商作为出租人提供融资租赁的，其销售收入应当按照（）确定。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "生产商或经销商出租人的融资租赁销售收入，按标的资产公允价值与最低租赁收款额现值两者孰低确定。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "租赁收款额总额"
+   },
+   {
+    "key": "B",
+    "text": "资产公允价值与最低租赁收款额现值两者孰低"
+   },
+   {
+    "key": "C",
+    "text": "资产的账面价值"
+   },
+   {
+    "key": "D",
+    "text": "资产的重置成本"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 275,
+  "question_type": "判断",
+  "stem": "生产商或经销商作为出租人提供融资租赁的，应当在租赁期开始日确认销售收入和销售成本。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "生产商或经销商出租人的融资租赁形成销售，租赁期开始日确认销售收入和成本。表述正确。"
+ },
+ {
+  "knowledge_point_id": 283,
+  "question_type": "单选",
+  "stem": "合并财务报表的编制基础是（）。",
+  "correct_answer": [
+   "C"
+  ],
+  "explanation": "合并财务报表以控制为基础，将母公司及其全部子公司纳入合并范围。选C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "重大影响"
+   },
+   {
+    "key": "B",
+    "text": "共同控制"
+   },
+   {
+    "key": "C",
+    "text": "控制"
+   },
+   {
+    "key": "D",
+    "text": "所有权"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 283,
+  "question_type": "判断",
+  "stem": "子公司采用的会计政策、会计期间与母公司不一致的，编制合并报表时应当按照母公司的规定对子公司财务报表进行调整。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "编制合并报表前须统一子公司与母公司的会计政策和会计期间。表述正确。"
+ },
+ {
+  "knowledge_point_id": 287,
+  "question_type": "单选",
+  "stem": "编制合并所有者权益变动表时，子公司其他综合收益中归属于少数股东的部分应当列示于（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "子公司其他综合收益、净利润等归属于少数股东的部分，列示于少数股东权益。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "归属于母公司所有者权益"
+   },
+   {
+    "key": "B",
+    "text": "少数股东权益"
+   },
+   {
+    "key": "C",
+    "text": "资本公积"
+   },
+   {
+    "key": "D",
+    "text": "盈余公积"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 287,
+  "question_type": "判断",
+  "stem": "合并所有者权益变动表应当分别列示归属于母公司所有者的权益变动和少数股东权益变动。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "合并所有者权益变动表分列母公司所有者与少数股东权益变动。表述正确。"
+ },
+ {
+  "knowledge_point_id": 293,
+  "question_type": "单选",
+  "stem": "下列各项中，属于前期差错的是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "前期差错是未运用或错误运用编报前期报表时已存在且可合理取得信息导致的差错，如少提折旧。因新信息修正估计、本期改变政策或估计不属于前期差错。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "因获得新信息修正资产折旧年限"
+   },
+   {
+    "key": "B",
+    "text": "编报前期财务报表时少提折旧"
+   },
+   {
+    "key": "C",
+    "text": "本期改变存货计价方法"
+   },
+   {
+    "key": "D",
+    "text": "本期调整坏账估计比例"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 293,
+  "question_type": "判断",
+  "stem": "企业对重要的前期差错，应当采用追溯重述法予以更正。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "重大前期差错采用追溯重述法更正。表述正确。"
+ },
+ {
+  "knowledge_point_id": 295,
+  "question_type": "单选",
+  "stem": "资产负债表日后事项涵盖的期间是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "资产负债表日后事项是指资产负债表日至财务报告批准报出日之间发生的事项。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "整个会计年度内"
+   },
+   {
+    "key": "B",
+    "text": "资产负债表日至财务报告批准报出日之间"
+   },
+   {
+    "key": "C",
+    "text": "资产负债表日至实际报出日之间"
+   },
+   {
+    "key": "D",
+    "text": "下一会计年度内"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 295,
+  "question_type": "判断",
+  "stem": "资产负债表日后事项的截止日是财务报告批准报出日，而非审计完成日或实际报出日。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "截止日为批准报出日。表述正确。"
+ },
+ {
+  "knowledge_point_id": 298,
+  "question_type": "单选",
+  "stem": "资产负债表日后调整事项中涉及损益的，应当通过（）科目核算。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "日后调整事项涉及损益的，通过以前年度损益调整科目核算，再结转未分配利润并调整盈余公积。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "本年利润"
+   },
+   {
+    "key": "B",
+    "text": "以前年度损益调整"
+   },
+   {
+    "key": "C",
+    "text": "营业外收支"
+   },
+   {
+    "key": "D",
+    "text": "利润分配"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 298,
+  "question_type": "判断",
+  "stem": "资产负债表日后调整事项，应当调整资产负债表日已编制财务报表相关项目的金额。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "调整事项需调整报告年度报表相关项目。表述正确。"
+ },
+ {
+  "knowledge_point_id": 300,
+  "question_type": "单选",
+  "stem": "资产负债表日后非调整事项的会计处理方法是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "非调整事项不调整报告年度财务报表，重大的在附注中披露其性质及影响金额。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "调整报告年度财务报表"
+   },
+   {
+    "key": "B",
+    "text": "不调整报告年度财务报表，在附注中披露"
+   },
+   {
+    "key": "C",
+    "text": "追溯重述"
+   },
+   {
+    "key": "D",
+    "text": "计入以前年度损益调整"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 300,
+  "question_type": "判断",
+  "stem": "资产负债表日后发生的重大非调整事项，应当在财务报表附注中披露其性质及影响金额（无法估计的应予说明）。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "重大非调整事项在附注披露性质及影响金额。表述正确。"
+ },
+ {
+  "knowledge_point_id": 302,
+  "question_type": "多选",
+  "stem": "下列各项中，属于政府会计财务会计要素的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "explanation": "政府财务会计要素包括资产、负债、净资产、收入、费用；所有者权益不是政府会计要素（政府会计用净资产）。选A、B、C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "资产"
+   },
+   {
+    "key": "B",
+    "text": "净资产"
+   },
+   {
+    "key": "C",
+    "text": "收入"
+   },
+   {
+    "key": "D",
+    "text": "所有者权益"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 302,
+  "question_type": "判断",
+  "stem": "政府会计实行预算会计和财务会计适度分离并相互衔接。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "政府会计采用预算会计与财务会计适度分离并相互衔接的双体系。表述正确。"
+ },
+ {
+  "knowledge_point_id": 303,
+  "question_type": "单选",
+  "stem": "政府财务报告以（）核算生成的数据为基础编制。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "政府财务报告以财务会计核算数据为基础，反映财务状况、运行情况和现金流量；决算报告以预算会计数据为基础。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "预算会计"
+   },
+   {
+    "key": "B",
+    "text": "财务会计"
+   },
+   {
+    "key": "C",
+    "text": "统计核算"
+   },
+   {
+    "key": "D",
+    "text": "税务核算"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 303,
+  "question_type": "判断",
+  "stem": "政府决算报告以预算会计核算生成的数据为基础，主要反映预算收支执行结果。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "决算报告以预算会计数据为基础，反映预算执行结果。表述正确。"
+ },
+ {
+  "knowledge_point_id": 306,
+  "question_type": "单选",
+  "stem": "部门（单位）合并财务报表的编制基础是（）。",
+  "correct_answer": [
+   "B"
+  ],
+  "explanation": "部门（单位）合并财务报表以本部门所属各单位的个别财务报表为基础编制，并抵销内部重复项目。选B。",
+  "options": [
+   {
+    "key": "A",
+    "text": "本部门本级的财务报表"
+   },
+   {
+    "key": "B",
+    "text": "本部门所属各单位的个别财务报表"
+   },
+   {
+    "key": "C",
+    "text": "上级主管部门的报表"
+   },
+   {
+    "key": "D",
+    "text": "本部门的决算报表"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 306,
+  "question_type": "判断",
+  "stem": "编制部门（单位）合并财务报表时，应当抵销内部往来、内部收入费用等重复项目。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "合并时抵销内部往来、内部收入费用等。表述正确。"
+ },
+ {
+  "knowledge_point_id": 308,
+  "question_type": "多选",
+  "stem": "下列各项中，属于民间非营利组织会计要素的有（）。",
+  "correct_answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "explanation": "民间非营利组织会计要素为资产、负债、净资产、收入、费用，没有所有者权益和利润。选A、B、C。",
+  "options": [
+   {
+    "key": "A",
+    "text": "资产"
+   },
+   {
+    "key": "B",
+    "text": "净资产"
+   },
+   {
+    "key": "C",
+    "text": "收入"
+   },
+   {
+    "key": "D",
+    "text": "利润"
+   }
+  ]
+ },
+ {
+  "knowledge_point_id": 308,
+  "question_type": "判断",
+  "stem": "民间非营利组织的会计要素中没有“所有者权益”和“利润”，净资产等于资产减去负债。（）",
+  "correct_answer": [
+   "对"
+  ],
+  "explanation": "民非组织用净资产，净资产=资产-负债，无所有者权益和利润概念。表述正确。"
+ }
+]
