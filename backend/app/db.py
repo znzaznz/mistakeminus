@@ -4,10 +4,52 @@ S0 只需保证：数据库文件能自动创建、连接正常。
 后续切片（S1 起）在这里扩充题库 / 错题本 / 作答记录的 schema。
 """
 
+import json
 import sqlite3
 from pathlib import Path
 
-from .config import settings
+from .config import PROJECT_ROOT, settings
+
+# 题库数据以 data/imports/*.jsonl 为可追踪源（SQLite 不进 git）。
+# 全新 clone / 删库后，启动时按表逐表重建（仅当该表为空时载入）。
+SNAPSHOT_DIR = PROJECT_ROOT / "data" / "imports"
+SNAPSHOT_TABLES = ["exam_points", "knowledge_points", "questions", "lecture_materials"]
+
+
+def _table_empty(conn: sqlite3.Connection, table: str) -> bool:
+    return conn.execute(f"SELECT 1 FROM {table} LIMIT 1").fetchone() is None
+
+
+def seed_from_snapshot(
+    conn: sqlite3.Connection, snapshot_dir: Path | None = None
+) -> dict[str, int]:
+    """从 data/imports/*.jsonl 重建题库数据，仅载入当前为空的表（幂等、不覆盖现有数据）。
+
+    按 SNAPSHOT_TABLES 顺序载入以满足外键依赖（考点→知识点→题目）。
+    返回 {表名: 载入行数}。
+    """
+    snapshot_dir = snapshot_dir or SNAPSHOT_DIR
+    loaded: dict[str, int] = {}
+    for table in SNAPSHOT_TABLES:
+        path = snapshot_dir / f"{table}.jsonl"
+        if not path.exists() or not _table_empty(conn, table):
+            continue
+        rows = [
+            json.loads(line)
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+        if not rows:
+            continue
+        cols = list(rows[0].keys())
+        conn.executemany(
+            f"INSERT INTO {table} ({','.join(cols)}) VALUES ({','.join('?' for _ in cols)})",
+            [[r.get(c) for c in cols] for r in rows],
+        )
+        loaded[table] = len(rows)
+    if loaded:
+        conn.commit()
+    return loaded
 
 
 def get_connection(db_path: Path | None = None) -> sqlite3.Connection:

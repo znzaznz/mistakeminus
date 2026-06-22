@@ -34,7 +34,7 @@ python -m venv .venv
 .venv/Scripts/python.exe -m uvicorn app.main:app --reload --port 8000
 ```
 
-启动后访问 http://127.0.0.1:8000/health 应返回服务/数据库/配置状态。SQLite 数据库文件 `mistakegenie.db` 会在首次启动时自动创建。
+启动后访问 http://127.0.0.1:8000/health 应返回服务/数据库/配置状态。SQLite 数据库 `mistakegenie.db` 不进 git，首次启动会自动创建并**从 `data/imports/*.jsonl` 重建题库数据**（考点/知识点/题目/讲义），无需手动导入。如需手动重建：`cd backend && python -m scripts.import_portable_data`。
 
 ## 启动前端
 

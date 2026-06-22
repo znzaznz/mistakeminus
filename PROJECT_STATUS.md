@@ -54,18 +54,15 @@ MistakeGenie：本地单用户的刷题 / 错题本工具。导入讲义 PDF →
 
 ## 四、数据与版本库的维护说明
 
-### 现状
-- **主库 `mistakegenie.db`（SQLite）进 git**（见 `.gitignore` 注释「主库要进 git，避免题库数据丢失」）。
-- **可重建数据包 `data/imports/*.jsonl`** 也进 git，是 db 的可 diff 文本快照。改完数据后用 `python -m scripts.export_portable_data` 重新导出，二者一起提交。
-- **备份**：所有 `mistakegenie.db.bak-*` 已统一收纳到 `backups/` 文件夹（被 `.gitignore` 整体忽略，存在硬盘上但不进 git）。改库前先 `cp mistakegenie.db backups/mistakegenie.db.bak-<说明>-<时间戳>`。
-- **种子源**：自编题的 JSON / 生成脚本放 `_seed/`（`b1.py`–`b6.py` 为本轮补题源，`ch*.json` 为更早的自编源）。
+### 数据源与重建（已落实）
+**`data/imports/*.jsonl` 是题库数据的唯一可追踪源；`mistakegenie.db`（SQLite）不进 git。**
 
-### 建议（待决策）
-**把 `mistakegenie.db` 改成不进 git，改以 `data/imports/*.jsonl` 为唯一可追踪数据源，启动时由 jsonl 重建 db。**
-
-- 理由：`.db` 是二进制，每次改一道题整库重写、git 里塞一坨无法 diff 的 blob，仓库越滚越大、history 看不出改了什么。jsonl 是文本，改了哪几道题 `git diff` 一目了然，也天然适合 code review。
-- 代价：需要写一个「jsonl → db」的重建/seed 脚本（其实是现有 `export_portable_data` 的逆向，工作量不大），并在启动流程里跑一次。
-- 现状先按既有约定办（db 与 jsonl 都提交），这个切换是独立改造，不影响当前数据。
+- 理由：`.db` 是二进制，改一道题整库重写、git 里塞无法 diff 的 blob，仓库越滚越大、history 看不出改了什么；jsonl 是文本，`git diff` 一眼看清改了哪几道题，也适合 review。
+- **自动重建**：全新 clone（或删库重来）后，app 启动时（`backend/app/main.py` lifespan → `db.seed_from_snapshot`）自动按 `data/imports/*.jsonl` 逐表重建主库；仅载入当前为空的表，已有数据则跳过，不会覆盖。
+- **手动重建**：`cd backend && python -m scripts.import_portable_data`（空表载入）；加 `--force` 先清空 4 张数据表再重灌（jsonl 更新后用）。
+- **改完数据要重新导出快照**：`cd backend && python -m scripts.export_portable_data`，再提交 `data/imports/*.jsonl`。这是把本地库变更落进版本库的唯一途径——只改 db 不导出，改动不会进 git。
+- **备份**：所有 `mistakegenie.db.bak-*` 收纳在 `backups/`（`.gitignore` 整体忽略）。改库前先 `cp mistakegenie.db backups/mistakegenie.db.bak-<说明>-<时间戳>`。
+- **种子源**：自编题的 JSON / 生成脚本放 `_seed/`（`b1.py`–`b6.py` 为补题源，`ch*.json` 为更早的自编源）。
 
 ## 五、下一步
 

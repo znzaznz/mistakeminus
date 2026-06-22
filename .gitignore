@@ -22,7 +22,10 @@ backfill_preview.txt
 import_console.txt
 import_log.txt
 
-# 数据库：当前主库要进 git，避免题库数据丢失；备份仍忽略
+# 数据库：SQLite 主库与备份均不进 git。
+# 题库数据以 data/imports/*.jsonl 为唯一可追踪源，启动时由其重建主库
+# （见 backend/app/db.py: seed_from_snapshot）。
+*.db
 *.db-journal
 *.db.bak*
 *.bak

@@ -58,6 +58,12 @@ from .schemas import (
 async def lifespan(app: FastAPI):
     # 启动时确保数据库文件存在、基础 schema 就绪
     db.init_db()
+    # 全新库（或删库重来）：从 data/imports/*.jsonl 重建题库数据，已有数据则跳过
+    conn = db.get_connection()
+    try:
+        db.seed_from_snapshot(conn)
+    finally:
+        conn.close()
     yield
 
 
