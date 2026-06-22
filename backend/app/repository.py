@@ -12,9 +12,11 @@ def get_practice_questions(
     conn: sqlite3.Connection,
     limit: int = 10,
     knowledge_point_id: int | None = None,
+    subject: str | None = None,
 ) -> list[dict]:
     """取一批题供练习。排除需人工确认的题；随机取样。
 
+    可按知识点（knowledge_point_id）或科目（subject）筛选。
     不返回正确答案/解析（避免作答前泄题）。
     """
     params: list = []
@@ -22,6 +24,10 @@ def get_practice_questions(
     if knowledge_point_id is not None:
         kp_filter = "AND q.knowledge_point_id = ?"
         params.append(knowledge_point_id)
+    subject_filter = ""
+    if subject:
+        subject_filter = "AND ep.subject = ?"
+        params.append(subject)
     params.append(limit)
     rows = conn.execute(
         f"""
@@ -30,11 +36,13 @@ def get_practice_questions(
                k.name AS knowledge_point_name
         FROM questions q
         LEFT JOIN knowledge_points k ON k.id = q.knowledge_point_id
+        LEFT JOIN exam_points ep ON ep.id = k.exam_point_id
         WHERE q.needs_review = 0
           AND NOT (q.question_type IN ('单选', '多选') AND q.options = '[]')
           AND q.stem NOT LIKE '%【答案】%'
           AND q.stem NOT LIKE '%【解析】%'
           {kp_filter}
+          {subject_filter}
         ORDER BY RANDOM()
         LIMIT ?
         """,

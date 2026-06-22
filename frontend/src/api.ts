@@ -33,8 +33,13 @@ export async function updateSettings(dailyTargetCount: number): Promise<import("
   return r.json();
 }
 
-export async function fetchQuestions(limit = 10): Promise<import("./types").Question[]> {
-  const r = await apiFetch(`/questions?limit=${limit}`);
+export async function fetchQuestions(
+  limit = 10,
+  subject?: string
+): Promise<import("./types").Question[]> {
+  const params = new URLSearchParams({ limit: String(limit) });
+  if (subject) params.set("subject", subject);
+  const r = await apiFetch(`/questions?${params.toString()}`);
   if (!r.ok) throw new Error(`取题失败：HTTP ${r.status}`);
   return r.json();
 }

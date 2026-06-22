@@ -121,6 +121,19 @@ body {
   border-radius: 10px;
 }
 
+.app-subject-select {
+  padding: 8px 12px;
+  border: 1px solid var(--border, rgba(15, 23, 42, 0.15));
+  border-radius: 7px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--surface);
+  cursor: pointer;
+  margin-right: 4px;
+}
+
 .app-nav__btn {
   padding: 8px 16px;
   border: none;

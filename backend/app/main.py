@@ -118,11 +118,12 @@ def health() -> dict:
 def list_questions(
     limit: int = Query(default=10, ge=1, le=100),
     knowledge_point_id: int | None = Query(default=None),
+    subject: str | None = Query(default=None),
     conn: sqlite3.Connection = Depends(get_db),
 ) -> list[dict]:
-    """取一批题供练习（不含正确答案/解析）。可按知识点筛选。"""
+    """取一批题供练习（不含正确答案/解析）。可按知识点或科目筛选。"""
     return repository.get_practice_questions(
-        conn, limit=limit, knowledge_point_id=knowledge_point_id
+        conn, limit=limit, knowledge_point_id=knowledge_point_id, subject=subject
     )
 
 

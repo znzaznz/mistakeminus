@@ -2,12 +2,15 @@ import { useEffect, useMemo, useState } from "react";
 import {
   fetchDailyTask,
   fetchDailyTaskQuestions,
+  fetchQuestions,
   mediaUrl,
   submitAttempt,
 } from "./api";
-import type { AttemptResult, DailyTaskSummary, Option, DailyTaskQuestion } from "./types";
+import type { AttemptResult, DailyTaskSummary, Option, Question } from "./types";
 
-function effectiveOptions(q: DailyTaskQuestion): Option[] {
+const SUBJECT_BATCH = 20; // 按科目刷题：每组题量
+
+function effectiveOptions(q: Question): Option[] {
   if (q.options.length > 0) return q.options;
   if (q.question_type === "判断") {
     return [
@@ -29,9 +32,10 @@ function optionClass(chosen: boolean, result: AttemptResult | null, isAnswer: bo
   return cls;
 }
 
-export default function Practice() {
+export default function Practice({ subject = "" }: { subject?: string }) {
+  const subjectMode = subject !== "";
   const [summary, setSummary] = useState<DailyTaskSummary | null>(null);
-  const [questions, setQuestions] = useState<DailyTaskQuestion[] | null>(null);
+  const [questions, setQuestions] = useState<Question[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState<string[]>([]);
@@ -47,13 +51,19 @@ export default function Practice() {
     setResult(null);
     setCorrectCount(0);
     try {
-      const [s, qs] = await Promise.all([
-        fetchDailyTask(),
-        fetchDailyTaskQuestions(),
-      ]);
-      setSummary(s);
-      const pending = qs.filter((q) => !q.completed);
-      setQuestions(pending.length > 0 ? pending : qs);
+      if (subjectMode) {
+        // 按科目刷题：直接从该科目题池随机取一组，不走每日任务/SM2
+        setSummary(null);
+        setQuestions(await fetchQuestions(SUBJECT_BATCH, subject));
+      } else {
+        const [s, qs] = await Promise.all([
+          fetchDailyTask(),
+          fetchDailyTaskQuestions(),
+        ]);
+        setSummary(s);
+        const pending = qs.filter((q) => !q.completed);
+        setQuestions(pending.length > 0 ? pending : qs);
+      }
     } catch (e) {
       setError(String(e));
     }
@@ -61,12 +71,16 @@ export default function Practice() {
 
   useEffect(() => {
     load();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [subject]);
 
   const q = questions?.[idx];
   const options = useMemo(() => (q ? effectiveOptions(q) : []), [q]);
   const isMulti = q?.question_type === "多选";
-  const progressPct = summary && summary.total > 0 ? (summary.completed / summary.total) * 100 : 0;
+  // 进度：每日任务用后端 summary；按科目用本组本地进度（已答 idx / 本组题量）
+  const total = subjectMode ? questions?.length ?? 0 : summary?.total ?? 0;
+  const completed = subjectMode ? idx : summary?.completed ?? 0;
+  const progressPct = total > 0 ? (completed / total) * 100 : 0;
 
   function toggle(key: string) {
     if (result) return;
@@ -84,8 +98,10 @@ export default function Practice() {
       const res = await submitAttempt(q.id, selected);
       setResult(res);
       if (res.is_correct) setCorrectCount((c) => c + 1);
-      const s = await fetchDailyTask();
-      setSummary(s);
+      if (!subjectMode) {
+        const s = await fetchDailyTask();
+        setSummary(s);
+      }
     } catch (e) {
       setError(String(e));
     } finally {
@@ -106,10 +122,14 @@ export default function Practice() {
         <button className="btn btn--primary" onClick={load}>重试</button>
       </Centered>
     );
-  if (!questions || !summary)
-    return <Centered><p className="loading-text">加载今日任务中…</p></Centered>;
+  if (!questions || (!subjectMode && !summary))
+    return (
+      <Centered>
+        <p className="loading-text">{subjectMode ? "加载题目中…" : "加载今日任务中…"}</p>
+      </Centered>
+    );
 
-  if (summary.completed >= summary.total && summary.total > 0) {
+  if (!subjectMode && summary && summary.completed >= summary.total && summary.total > 0) {
     return (
       <Centered>
         <div className="state-icon">🎉</div>
@@ -121,17 +141,27 @@ export default function Practice() {
   }
 
   if (questions.length === 0)
-    return <Centered><p className="state-desc">今日暂无题目，请先导入题库。</p></Centered>;
+    return (
+      <Centered>
+        <p className="state-desc">
+          {subjectMode ? `「${subject}」暂无可刷题目。` : "今日暂无题目，请先导入题库。"}
+        </p>
+      </Centered>
+    );
 
   if (idx >= questions.length) {
     return (
       <Centered>
         <div className="state-icon">✅</div>
-        <h2 className="state-title">本批完成</h2>
+        <h2 className="state-title">本组完成</h2>
         <p className="state-desc">
-          进度 {summary.completed}/{summary.total} · 本批答对 {correctCount} 题
+          {subjectMode
+            ? `「${subject}」本组 ${questions.length} 题 · 答对 ${correctCount} 题`
+            : `进度 ${summary!.completed}/${summary!.total} · 本批答对 ${correctCount} 题`}
         </p>
-        <button className="btn btn--primary" onClick={load}>继续今日任务</button>
+        <button className="btn btn--primary" onClick={load}>
+          {subjectMode ? "再来一组" : "继续今日任务"}
+        </button>
       </Centered>
     );
   }
@@ -144,7 +174,9 @@ export default function Practice() {
 
       <div className="question-card">
         <div className="question-card__meta">
-          <span className="badge">今日 {summary.completed}/{summary.total}</span>
+          <span className="badge">
+            {subjectMode ? `${subject} ${completed}/${total}` : `今日 ${completed}/${total}`}
+          </span>
           <span className="badge badge--muted">{q!.question_type}</span>
         </div>
 
