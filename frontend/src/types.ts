@@ -66,6 +66,7 @@ export type KnowledgePointBrief = {
   id: number;
   name: string;
   chapter: string;
+  subject?: string | null;
   mastery_requirement: string | null;
 };
 
@@ -80,6 +81,14 @@ export type UploadDraft = {
   explanation: string | null;
   chapter: string | null;
   exam_point: string | null;
+  subject?: string | null;
+  knowledge_point_id?: number | null;
+  classify_confidence?: number | null;
+  needs_review?: boolean;
+  classify_note?: string | null;
+  answer_inferred?: boolean;
+  explanation_generated?: boolean;
+  text_polished?: boolean;
 };
 
 export type ConfirmUploadBody = {

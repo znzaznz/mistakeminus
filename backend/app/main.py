@@ -18,6 +18,8 @@ from . import db, grading, mistakes, repository
 from .classify import format_question_text
 from .config import settings
 from .llm import LLMError, generate_similar_question
+from .extraction import vlm
+from .upload_pipeline import process_screenshot_upload
 from .similar import (
     delete_saved_similar_for_origin,
     delete_similar_question,
@@ -35,7 +37,6 @@ from .uploads import (
     insert_draft,
     save_upload_image,
 )
-from .extraction import vlm
 from .schemas import (
     AttemptRequest,
     AttemptResult,
@@ -370,19 +371,20 @@ async def upload_screenshot(
     file: UploadFile = File(...),
     conn: sqlite3.Connection = Depends(get_db),
 ) -> dict:
-    """上传错题截图，VLM 识题返回可编辑草稿。"""
+    """上传错题截图：OCR 转写 → 分科归类 → 补缺答案/解析，返回可编辑草稿。"""
     data = await file.read()
     if not data:
         raise HTTPException(status_code=400, detail="空文件")
     suffix = Path(file.filename or "").suffix or ".png"
     image_path = save_upload_image(data, settings.media_dir, suffix=suffix)
     try:
-        raw_list = vlm.extract_questions(data)
+        raw = process_screenshot_upload(conn, data)
     except vlm.VLMError as e:
-        raise HTTPException(status_code=502, detail=str(e))
-    if not raw_list:
-        raise HTTPException(status_code=422, detail="未识别到题目")
-    raw = raw_list[0]
+        raise HTTPException(status_code=502, detail=str(e)) from e
+    except LLMError as e:
+        raise HTTPException(status_code=502, detail=str(e)) from e
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e)) from e
     draft_id = insert_draft(conn, image_path, raw)
     draft = get_draft(conn, draft_id)
     return draft

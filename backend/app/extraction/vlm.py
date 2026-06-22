@@ -12,7 +12,7 @@ import httpx
 
 from ..config import settings
 
-# 给 VLM 的指令：逐页识题，返回严格 JSON。
+# 给 VLM 的指令：逐页识题，返回严格 JSON（PDF 批量导入用）。
 _SYSTEM_PROMPT = """你是一个会计考试题目识别助手。我会给你一页讲义/真题的整页截图。
 请识别这一页上的所有题目，按从上到下顺序，输出**严格 JSON**，形如：
 {"questions": [
@@ -39,6 +39,38 @@ _SYSTEM_PROMPT = """你是一个会计考试题目识别助手。我会给你一
 - has_image 表示该题是否配有图示/表格。
 - confidence 反映你对识别准确度的把握，模糊不清的题给低分。"""
 
+# 错题截图：只做 OCR 转写，禁止推断答案/解析。
+_SCREENSHOT_OCR_PROMPT = """你是 OCR 转写助手。给你一张考试题目截图，请**只做文字转写**，不要做题、不要推断答案、不要补充解析。
+
+只转写图片上**肉眼可见**的文字，输出严格 JSON：
+{"questions": [
+  {
+    "stem": "题干可见文字",
+    "question_type": "单选" | "多选" | "判断" | null,
+    "options": [{"key": "A", "text": "选项可见文字"}, ...],
+    "correct_answer": [],
+    "explanation": "",
+    "chapter": "",
+    "exam_point": "",
+    "year": "2022" | null,
+    "has_image": true | false,
+    "confidence": 0.0~1.0,
+    "answer_visible": true | false,
+    "explanation_visible": true | false
+  }
+]}
+
+硬性要求：
+- **绝对禁止**根据会计知识推断正确答案或编写解析
+- correct_answer **仅当**图上有明确答案标注（如「答案：B」「正确答案 BD」、选项旁明文标出）才可填写；否则必须 []
+- explanation **仅当**图上有「解析」「答案解析」等段落才可填写；否则 ""
+- answer_visible / explanation_visible 如实标注图上是否看得见答案/解析
+- 忽略视频播放器按钮、字幕、水印、UI 浮层等无关文字
+- stem 只放题干；选项放进 options，不要合并进 stem
+- 黄色圈划/手写标记**不算**答案，除非旁边有明文「答案」
+- 看不清的字用「□」占位，不要猜
+- 只输出一个 JSON 对象，不要 markdown、不要额外说明"""
+
 
 class VLMError(RuntimeError):
     pass
@@ -56,9 +88,13 @@ def _build_client():
     )
 
 
-def _extract_questions_ollama(page_png: bytes) -> list[dict]:
+def _extract_questions_ollama(
+    page_png: bytes,
+    system_prompt: str = _SYSTEM_PROMPT,
+    user_text: str = "识别这一页上的所有题目。只输出 JSON。",
+) -> list[dict]:
     b64 = base64.b64encode(page_png).decode("ascii")
-    prompt = _SYSTEM_PROMPT + "\n\n识别这一页上的所有题目。只输出 JSON。"
+    prompt = system_prompt + "\n\n" + user_text
     url = settings.ollama_base_url.rstrip("/") + "/api/generate"
     try:
         with httpx.Client(trust_env=False, timeout=180) as http:
@@ -104,20 +140,34 @@ def _parse_questions_json(content: str) -> list[dict]:
 
 
 def extract_questions(page_png: bytes, client=None) -> list[dict]:
-    """对一页整页图调用 VLM，返回该页题目的原始 dict 列表（未校验）。"""
+    """对一页整页图调用 VLM，返回该页题目的原始 dict 列表（未校验）。PDF 导入用。"""
+    return _call_vlm(page_png, _SYSTEM_PROMPT, "识别这一页上的所有题目。", client)
+
+
+def extract_screenshot(page_png: bytes, client=None) -> list[dict]:
+    """错题截图 OCR 转写：只提取可见文字，不推断答案/解析。"""
+    return _call_vlm(
+        page_png,
+        _SCREENSHOT_OCR_PROMPT,
+        "请 OCR 转写截图上的题目文字，严格遵守不做推断。",
+        client,
+    )
+
+
+def _call_vlm(page_png: bytes, system_prompt: str, user_text: str, client=None) -> list[dict]:
     if settings.vlm_provider.lower() == "ollama":
-        return _extract_questions_ollama(page_png)
+        return _extract_questions_ollama(page_png, system_prompt, user_text)
 
     client = client or _build_client()
     b64 = base64.b64encode(page_png).decode("ascii")
     resp = client.chat.completions.create(
         model=settings.qwen_vl_model,
         messages=[
-            {"role": "system", "content": _SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt},
             {
                 "role": "user",
                 "content": [
-                    {"type": "text", "text": "识别这一页上的所有题目。"},
+                    {"type": "text", "text": user_text},
                     {
                         "type": "image_url",
                         "image_url": {"url": f"data:image/png;base64,{b64}"},

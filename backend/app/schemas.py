@@ -124,6 +124,14 @@ class UploadDraftOut(BaseModel):
     explanation: str | None = None
     chapter: str | None = None
     exam_point: str | None = None
+    subject: str | None = None
+    knowledge_point_id: int | None = None
+    classify_confidence: float | None = None
+    needs_review: bool = False
+    classify_note: str | None = None
+    answer_inferred: bool = False
+    explanation_generated: bool = False
+    text_polished: bool = False
 
 
 class ConfirmUploadRequest(BaseModel):

@@ -9,8 +9,10 @@ import json
 
 from .config import settings
 
-_CLASSIFY_PROMPT = """你是中级会计《经济法》题目分类助手。
-把下面这道题归类到「{chapter}」的**唯一一个**知识点。
+SUBJECTS = ("中级会计实务", "财务管理", "经济法")
+
+_CLASSIFY_PROMPT = """你是中级会计《{subject}》题目分类助手。
+把下面这道题归类到本科的**唯一一个**知识点。
 
 可选知识点（knowledge_point_name 必须与下列名称完全一致）：
 {candidates}
@@ -22,6 +24,72 @@ _CLASSIFY_PROMPT = """你是中级会计《经济法》题目分类助手。
 只输出一个 JSON 对象，不要 markdown、不要额外说明：
 {{"knowledge_point_name": "...", "confidence": 0.0~1.0}}
 confidence 反映你对归类准确度的把握。"""
+
+_INFER_SUBJECT_PROMPT = """你是中级会计考试分科助手。根据题目内容和可见章节标题，判断属于哪一科。
+
+科目只能是：中级会计实务、财务管理、经济法
+
+可见章节/讲义标题（可能为空）：{chapter_hint}
+
+题目：
+{question}
+
+只输出 JSON：{{"subject": "中级会计实务|财务管理|经济法", "confidence": 0.0~1.0}}"""
+
+_POLISH_PROMPT = """你是中级会计考试题目的 OCR 校对编辑。下面是视觉模型从截图转写的题目 JSON，可能有缺字、错字、选项错位或噪声。
+
+OCR 原始 JSON：
+{ocr_json}
+
+任务：**只做文字润色与结构整理**，输出规范、可入库的题目 JSON。
+
+要求：
+1. 修正 OCR 缺字/错字/乱码（如「所得税付」→「所得税收付」），「□」占位可结合上下文合理补全
+2. stem 只保留题干，不得把 A/B/C/D 选项文字塞进 stem
+3. 单选/多选：options 规整为 4 项，key 依次为 A/B/C/D，text 非空；判断题：对/错 两项
+4. question_type：OCR 为 null 时，根据题干「单选/多选/判断」或选项结构推断
+5. correct_answer：仅当 OCR 里 answer_visible 为 true 且有内容时润色保留；否则必须 []
+6. explanation：仅当 OCR 里 explanation_visible 为 true 且有内容时润色保留；否则必须 ""
+7. chapter / exam_point / year 只润色 OCR 已有字段，不要凭空编造
+8. **禁止**根据会计知识新写答案或解析
+
+只输出 JSON，不要 markdown：
+{{
+  "stem": "...",
+  "question_type": "单选" | "多选" | "判断",
+  "options": [{{"key": "A", "text": "..."}}],
+  "correct_answer": [],
+  "explanation": "",
+  "chapter": "",
+  "exam_point": "",
+  "year": "2022" | null
+}}"""
+
+_ENRICH_PROMPT = """你是中级会计《{subject}》教研助手。下面是从截图 OCR 转写的一道题（答案/解析可能缺失）。
+
+知识点：{knowledge_point_name}
+知识点要义：{essence}
+
+题目：
+{question}
+
+题型：{question_type}
+图上已有答案：{has_answer}
+图上已有解析：{has_explanation}
+
+任务：
+1. 若图上**没有**答案，给出正确答案（correct_answer）
+2. 若图上**没有**解析，写一段简洁解析（80~200字）
+3. 若图上已有答案/解析，原样保留在输出里，不要改
+
+只输出 JSON，不要 markdown：
+{{
+  "correct_answer": ["A"],
+  "explanation": "...",
+  "answer_inferred": true,
+  "explanation_generated": true
+}}
+answer_inferred / explanation_generated 表示该字段是否由你补充（图上已有则为 false）。"""
 
 _CHAPTER_DISAMBIGUATION: dict[str, str] = {
     "总论": """
@@ -93,7 +161,8 @@ def classify_question(
     question_text: str,
     candidates: list[dict],
     *,
-    chapter: str = "总论",
+    subject: str = "经济法",
+    chapter: str | None = None,
     client=None,
 ) -> dict:
     """调用文本模型归类一题。返回 {knowledge_point_name, confidence}。"""
@@ -101,11 +170,16 @@ def classify_question(
     lines = []
     for c in candidates:
         hint = (c.get("essence") or "")[:120].replace("\n", " ")
-        lines.append(f"- {c['name']}" + (f"（{hint}…）" if hint else ""))
+        ch = c.get("chapter") or ""
+        label = f"{ch} · {c['name']}" if ch else c["name"]
+        lines.append(f"- {label}" + (f"（{hint}…）" if hint else ""))
+    disambiguation = ""
+    if subject == "经济法" and chapter:
+        disambiguation = _CHAPTER_DISAMBIGUATION.get(chapter, "")
     prompt = _CLASSIFY_PROMPT.format(
-        chapter=chapter,
+        subject=subject,
         candidates="\n".join(lines),
-        disambiguation=_CHAPTER_DISAMBIGUATION.get(chapter, ""),
+        disambiguation=disambiguation,
         question=question_text,
     )
     resp = client.chat.completions.create(
@@ -118,6 +192,161 @@ def classify_question(
     return {
         "knowledge_point_name": str(data.get("knowledge_point_name", "")).strip(),
         "confidence": float(data.get("confidence", 0)),
+    }
+
+
+def infer_subject(
+    question_text: str,
+    chapter_hint: str = "",
+    *,
+    client=None,
+) -> dict:
+    """判断题目所属科目。返回 {subject, confidence}。"""
+    client = client or _build_client()
+    prompt = _INFER_SUBJECT_PROMPT.format(
+        chapter_hint=chapter_hint or "（无）",
+        question=question_text,
+    )
+    resp = client.chat.completions.create(
+        model=settings.qwen_text_model,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.1,
+    )
+    content = resp.choices[0].message.content or ""
+    data = _parse_json_object(content)
+    subject = str(data.get("subject", "")).strip()
+    if subject not in SUBJECTS:
+        for s in SUBJECTS:
+            if s in subject:
+                subject = s
+                break
+        else:
+            subject = "经济法"
+    return {"subject": subject, "confidence": float(data.get("confidence", 0))}
+
+
+def polish_ocr_question(ocr: dict, *, client=None) -> dict:
+    """润色 OCR 结果：补全缺字、整理题干与选项结构（不编造答案/解析）。"""
+    client = client or _build_client()
+    ocr_payload = {
+        k: ocr.get(k)
+        for k in (
+            "stem",
+            "question_type",
+            "options",
+            "correct_answer",
+            "explanation",
+            "chapter",
+            "exam_point",
+            "year",
+            "answer_visible",
+            "explanation_visible",
+        )
+    }
+    prompt = _POLISH_PROMPT.format(ocr_json=json.dumps(ocr_payload, ensure_ascii=False))
+    resp = client.chat.completions.create(
+        model=settings.qwen_text_model,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.1,
+    )
+    content = resp.choices[0].message.content or ""
+    data = _parse_json_object(content)
+
+    answer_visible = bool(ocr.get("answer_visible"))
+    explanation_visible = bool(ocr.get("explanation_visible"))
+
+    correct_answer = data.get("correct_answer") or []
+    if isinstance(correct_answer, str):
+        correct_answer = [correct_answer]
+    if not answer_visible:
+        correct_answer = []
+
+    explanation = str(data.get("explanation") or "")
+    if not explanation_visible:
+        explanation = ""
+
+    options = data.get("options") or ocr.get("options") or []
+    qtype = data.get("question_type") or ocr.get("question_type") or "单选"
+    if qtype not in ("单选", "多选", "判断"):
+        qtype = "单选"
+
+    return {
+        "stem": str(data.get("stem") or ocr.get("stem") or "").strip(),
+        "question_type": qtype,
+        "options": options,
+        "correct_answer": [str(a).strip() for a in correct_answer if str(a).strip()],
+        "explanation": explanation.strip(),
+        "chapter": str(data.get("chapter") or ocr.get("chapter") or "").strip(),
+        "exam_point": str(data.get("exam_point") or ocr.get("exam_point") or "").strip(),
+        "year": data.get("year") if data.get("year") is not None else ocr.get("year"),
+        "answer_visible": answer_visible,
+        "explanation_visible": explanation_visible,
+        "confidence": float(ocr.get("confidence", 0.5)),
+        "has_image": bool(ocr.get("has_image")),
+        "text_polished": True,
+    }
+
+
+def enrich_missing_fields(
+    question_text: str,
+    question_type: str,
+    *,
+    subject: str,
+    knowledge_point_name: str,
+    essence: str,
+    correct_answer: list[str],
+    explanation: str,
+    answer_visible: bool,
+    explanation_visible: bool,
+    client=None,
+) -> dict:
+    """图上缺答案/解析时，用文本模型补全。"""
+    need_answer = not answer_visible or not correct_answer
+    need_explanation = not explanation_visible or not (explanation or "").strip()
+    if not need_answer and not need_explanation:
+        return {
+            "correct_answer": correct_answer,
+            "explanation": explanation or "",
+            "answer_inferred": False,
+            "explanation_generated": False,
+        }
+
+    client = client or _build_client()
+    prompt = _ENRICH_PROMPT.format(
+        subject=subject,
+        knowledge_point_name=knowledge_point_name,
+        essence=essence or "（要义暂无）",
+        question=question_text,
+        question_type=question_type,
+        has_answer="是" if answer_visible and correct_answer else "否",
+        has_explanation="是" if explanation_visible and explanation else "否",
+    )
+    resp = client.chat.completions.create(
+        model=settings.qwen_text_model,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.2,
+    )
+    content = resp.choices[0].message.content or ""
+    data = _parse_json_object(content)
+    out_answer = correct_answer
+    out_expl = explanation or ""
+    answer_inferred = False
+    explanation_generated = False
+    if need_answer:
+        raw_ans = data.get("correct_answer") or []
+        if isinstance(raw_ans, str):
+            raw_ans = [raw_ans]
+        if raw_ans:
+            out_answer = [str(a).strip() for a in raw_ans if str(a).strip()]
+            answer_inferred = bool(data.get("answer_inferred", True))
+    if need_explanation:
+        out_expl = str(data.get("explanation") or "").strip()
+        explanation_generated = bool(data.get("explanation_generated", True))
+    return {
+        "correct_answer": out_answer,
+        "explanation": out_expl,
+        "answer_inferred": answer_inferred,
+        "explanation_generated": explanation_generated,
     }
 
 

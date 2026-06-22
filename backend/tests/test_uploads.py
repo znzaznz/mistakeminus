@@ -29,14 +29,19 @@ def client(tmp_path):
     conn.close()
 
 
-MOCK_VLM = [{
+MOCK_DRAFT = {
     "stem": "上传题",
     "question_type": "单选",
     "options": [{"key": "A", "text": "对"}, {"key": "B", "text": "错"}],
     "correct_answer": ["A"],
     "explanation": "解析",
     "confidence": 0.9,
-}]
+    "subject": "经济法",
+    "knowledge_point_id": None,
+    "answer_inferred": False,
+    "explanation_generated": False,
+    "needs_review": False,
+}
 
 
 def test_save_upload_image(tmp_path):
@@ -54,8 +59,8 @@ def test_draft_from_confirm():
     assert d.stem == "题"
 
 
-@patch("app.main.vlm.extract_questions", return_value=MOCK_VLM)
-def test_upload_api(mock_vlm, client):
+@patch("app.main.process_screenshot_upload", return_value=MOCK_DRAFT)
+def test_upload_api(mock_pipeline, client):
     c, conn, _ = client
     r = c.post(
         "/uploads",
@@ -65,10 +70,11 @@ def test_upload_api(mock_vlm, client):
     data = r.json()
     assert data["stem"] == "上传题"
     assert data["id"]
+    assert data["subject"] == "经济法"
 
 
-@patch("app.main.vlm.extract_questions", return_value=MOCK_VLM)
-def test_confirm_upload(mock_vlm, client):
+@patch("app.main.process_screenshot_upload", return_value=MOCK_DRAFT)
+def test_confirm_upload(mock_pipeline, client):
     c, conn, media = client
     draft_id = c.post(
         "/uploads",

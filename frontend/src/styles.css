@@ -46,10 +46,12 @@ body {
   background-attachment: fixed;
 }
 
-#root {
+#root,
+.app-shell {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 /* ── Layout ── */
@@ -74,10 +76,22 @@ body {
   flex-wrap: wrap;
 }
 
+.app-header__row {
+  display: contents;
+}
+
 .app-brand {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.app-brand__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .app-brand__icon {
@@ -97,14 +111,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
-}
-
-.app-brand__title {
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--text);
-  letter-spacing: -0.02em;
-  line-height: 1.2;
 }
 
 .app-brand__subtitle {
@@ -132,6 +138,114 @@ body {
   background: var(--surface);
   cursor: pointer;
   margin-right: 4px;
+}
+
+.app-subject {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.app-subject-menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.app-subject-menu-btn:hover,
+.app-subject-menu-btn[aria-expanded="true"] {
+  border-color: var(--primary);
+  background: var(--primary-subtle);
+}
+
+.app-subject-menu-btn__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 18px;
+}
+
+.app-subject-menu-btn__icon span {
+  display: block;
+  height: 2px;
+  border-radius: 99px;
+  background: var(--text);
+  transition: background 0.15s ease;
+}
+
+.app-subject-menu-btn[aria-expanded="true"] .app-subject-menu-btn__icon span {
+  background: var(--primary);
+}
+
+.app-subject-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(15, 23, 42, 0.35);
+  cursor: pointer;
+}
+
+.app-subject-panel {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  left: auto;
+  z-index: 200;
+  min-width: 168px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+}
+
+.app-subject-panel__title {
+  margin: 0 0 6px;
+  padding: 4px 10px 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.app-subject-panel__item {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.app-subject-panel__item:hover {
+  background: #f1f5f9;
+  color: var(--text);
+}
+
+.app-subject-panel__item--active {
+  background: var(--primary-subtle);
+  color: var(--primary);
+  font-weight: 600;
 }
 
 .app-nav__btn {
@@ -163,6 +277,12 @@ body {
 .app-main {
   flex: 1;
   padding: 28px 20px 48px;
+}
+
+@media (min-width: 769px) {
+  .app-brand {
+    margin-right: auto;
+  }
 }
 
 /* ── Page shell ── */
@@ -791,4 +911,113 @@ body {
 .mistake-book__drill-btn {
   flex: 1;
   min-width: 0;
+}
+
+/* ── Mobile layout（仅小屏，不影响桌面） ── */
+@media (max-width: 768px) {
+  html,
+  body,
+  #root,
+  .app-shell {
+    height: 100%;
+    height: 100dvh;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .app-header {
+    position: relative;
+    flex-shrink: 0;
+    padding-top: env(safe-area-inset-top, 0);
+  }
+
+  .app-header__inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    max-width: none;
+    padding: 12px max(16px, env(safe-area-inset-right)) 12px
+      max(16px, env(safe-area-inset-left));
+  }
+
+  .app-header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .app-brand {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .app-brand__icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .app-brand__title {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .app-main {
+    flex: 1;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding: 16px max(16px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom))
+      max(16px, env(safe-area-inset-left));
+  }
+
+  .page,
+  .page--centered {
+    max-width: none;
+  }
+
+  .question-card {
+    padding: 18px 16px;
+  }
+
+  .question-card__stem {
+    font-size: 16px;
+  }
+
+  .app-nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .app-nav__btn {
+    padding: 8px 4px;
+    font-size: 13px;
+    text-align: center;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .app-subject-select--desktop {
+    display: none;
+  }
+
+  .app-subject-menu-btn {
+    display: flex;
+  }
+
+  .app-subject-backdrop {
+    display: block;
+  }
+
+  .app-subject-panel {
+    display: block;
+  }
 }

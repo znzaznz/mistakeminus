@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     # ===== 通义千问 / DashScope =====
     dashscope_api_key: str = ""
     dashscope_base_url: str = "https://dashscope.aliyuncs.com/compatible-mode/v1"
-    qwen_vl_model: str = "qwen-vl-max"
+    qwen_vl_model: str = "qwen-vl-plus"
     qwen_text_model: str = "qwen-plus"
 
     # ===== 本地 Ollama =====

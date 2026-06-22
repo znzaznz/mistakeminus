@@ -78,7 +78,7 @@ def run(conn, *, all_questions: bool = False, dry: bool = False) -> dict:
                 outcome = keyword_classify(row["stem"], name_to_id)
                 if outcome is None:
                     text = format_question_text(row["stem"], row["options"])
-                    raw = classify_question(text, kps, chapter=chapter)
+                    raw = classify_question(text, kps, subject="经济法", chapter=chapter)
                     outcome = plan_classification(
                         knowledge_point_name=raw["knowledge_point_name"],
                         confidence=raw["confidence"],
